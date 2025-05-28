@@ -1,4 +1,4 @@
-g<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Button?>
@@ -42,7 +42,7 @@ g<?xml version="1.0" encoding="UTF-8"?>
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="31.0" layoutX="13.0" layoutY="211.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="13.0" layoutY="211.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="152.0" />
       <Text fill="WHITE" layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Students">
          <font>
             <Font name="Century Gothic" size="16.0" />
@@ -53,18 +53,13 @@ g<?xml version="1.0" encoding="UTF-8"?>
             <Image url="@../../../Resources/Icons/person.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="144.0" layoutY="216.0">
-         <image>
-            <Image url="@../../../Resources/Icons/navigate_next.png" />
-         </image>
-      </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="13.0" layoutY="246.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
-      <Text fill="WHITE" layoutX="55.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billings">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="14.0" layoutY="310.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <Text fill="WHITE" layoutX="56.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Billings">
          <font>
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="251.0">
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="315.0">
          <image>
             <Image url="@../../../Resources/Icons/dollar-sign.png" />
          </image>
@@ -86,7 +81,7 @@ g<?xml version="1.0" encoding="UTF-8"?>
          </image>
       </ImageView>
       <Line endX="749.0" layoutX="251.0" layoutY="66.0" startX="-70.0" stroke="#bfbdbd" />
-      <Text layoutX="209.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Students">
+      <Text layoutX="209.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Students (Science, Technology Engineering, and Mathematics)">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>
@@ -123,14 +118,41 @@ g<?xml version="1.0" encoding="UTF-8"?>
             <Image url="@../../../Resources/Icons/trash-2.png" />
          </image>
       </ImageView>
-      <TableView fx:id="Students" layoutX="194.0" layoutY="109.0" prefHeight="386.0" prefWidth="793.0">
+      <TableView fx:id="StudentsSTEM" layoutX="194.0" layoutY="109.0" prefHeight="386.0" prefWidth="793.0">
         <columns>
           <TableColumn prefWidth="164.0" text="User ID" />
           <TableColumn prefWidth="131.0" text="First Name" />
             <TableColumn prefWidth="135.0" text="Last Name" />
             <TableColumn prefWidth="173.0" text="Email" />
-            <TableColumn prefWidth="189.0" text="Strand" />
+            <TableColumn prefWidth="189.0" text="Strand (STEM)" />
         </columns>
       </TableView>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="144.0" layoutY="216.0">
+         <image>
+            <Image url="@../../../Resources/Icons/keyboard_arrow_down.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="14.0" layoutY="242.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="24.0" layoutY="247.0">
+         <image>
+            <Image url="@../../../Resources/Icons/navigate_next.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="48.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="31.0" layoutX="14.0" layoutY="273.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="24.0" layoutY="278.0">
+         <image>
+            <Image url="@../../../Resources/Icons/navigate_next.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="48.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEM">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
