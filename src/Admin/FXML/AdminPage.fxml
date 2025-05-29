@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.Controllers.AdminController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Resources/Admin%20Dashboard.png" />
          </image>
       </ImageView>
+      <Button fx:id="dashboardadminbutton" layoutX="28.0" layoutY="166.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="adminstudentbutton" layoutX="28.0" layoutY="191.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="adminbillingsbutton" layoutX="28.0" layoutY="216.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="addadminbutton" layoutX="298.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="addstudentbutton" layoutX="296.0" layoutY="356.0" mnemonicParsing="false" onAction="#addstudentButtonHandler" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="logoutadminbutton" layoutX="28.0" layoutY="555.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: transparent;" textFill="WHITE" />
    </children>
 </AnchorPane>
