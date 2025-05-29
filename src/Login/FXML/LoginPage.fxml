@@ -26,7 +26,7 @@
       <Label layoutX="600.0" layoutY="282.0" prefHeight="38.0" prefWidth="214.0" text="Password" textFill="WHITE" />
       <PasswordField fx:id="passwordtextfield" layoutX="600.0" layoutY="319.0" prefHeight="40.0" prefWidth="330.0" promptText="Password" style="-fx-background-radius: 10;" />
       <Label layoutX="600.0" layoutY="201.0" prefHeight="38.0" prefWidth="57.0" text="Username" textFill="WHITE" />
-      <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="667.0" layoutY="391.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Sign in" textFill="#42736c">
+      <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="667.0" layoutY="391.0" onAction="#loginbuttonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Sign in" textFill="#42736c">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

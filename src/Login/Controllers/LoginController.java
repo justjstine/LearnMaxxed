@@ -39,7 +39,7 @@ public class LoginController {
         FXMLLoader loader;
 
         if ("admin".equals(uname) && "admin".equals(pword)) {
-        loader = new FXMLLoader(getClass().getResource("AdminPage.fxml"));
+        loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
         root = loader.load();
         //AdminController aUserController = loader.getController();
         
