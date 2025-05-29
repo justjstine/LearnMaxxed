@@ -1,4 +1,4 @@
-package Login.Controllers;
+package Admin.Controllers;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-public class AdminController {
+public class AdminDashboardController {
     @FXML
     private Button addadminbutton;
 
