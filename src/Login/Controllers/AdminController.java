@@ -1,11 +1,6 @@
 package Login.Controllers;
 
 import java.io.IOException;
-import java.net.URL;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
-import java.util.ResourceBundle;
 
 import javafx.fxml.FXML;
 import javafx.scene.Parent;
@@ -31,10 +26,6 @@ public class AdminController {
 
     @FXML
     private Button logoutadminbutton;
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
 
     @FXML
 private void addstudentButtonHandler(javafx.event.ActionEvent event) throws IOException {
