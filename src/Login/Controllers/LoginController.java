@@ -3,6 +3,7 @@ import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
 
+import Database.DatabaseHandler;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -34,11 +35,11 @@ public class LoginController {
     private Parent root;
 
     public void loginbuttonHandler(ActionEvent event) throws IOException {
-         String uname = usernametextfield.getText();
+        String uname = usernametextfield.getText();
         String pword = passwordtextfield.getText();
         FXMLLoader loader;
 
-        if ("admin".equals(uname) && "admin".equals(pword)) {
+        if (DatabaseHandler.validateadminLogin(uname, pword)) {
         loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
         root = loader.load();
         
