@@ -102,8 +102,8 @@
             <Image url="@../../../Resources/Icons/add_circle.png" />
          </image>
       </ImageView>
-      <Button fx:id="LogoutButton" layoutX="15.0" layoutY="544.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="146.0" />
-      <JFXButton fx:id="CreateButton1" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="518.0" layoutY="509.0" prefHeight="47.0" prefWidth="163.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Update" textFill="#42736c">
+      <Button fx:id="LogoutButton" layoutX="15.0" layoutY="544.0" mnemonicParsing="false" opacity="0.96" prefHeight="25.0" prefWidth="146.0" />
+      <JFXButton fx:id="UpdateButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="518.0" layoutY="509.0" prefHeight="47.0" prefWidth="163.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Update" textFill="#42736c">
          <font>
             <Font name="Century Gothic Bold" size="24.0" />
          </font>
@@ -113,7 +113,7 @@
             <Image url="@../../../Resources/Icons/refresh-cw.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="CreateButton11" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="789.0" layoutY="509.0" prefHeight="47.0" prefWidth="163.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Delete" textFill="#42736c">
+      <JFXButton fx:id="Deletebutton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="789.0" layoutY="509.0" prefHeight="47.0" prefWidth="163.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Delete" textFill="#42736c">
          <font>
             <Font name="Century Gothic Bold" size="24.0" />
          </font>
@@ -132,5 +132,8 @@
             <TableColumn prefWidth="189.0" text="Strand" />
         </columns>
       </TableView>
+      <Button fx:id="DashboardButton" layoutX="29.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="116.0" />
+      <Button fx:id="StudentsButton" layoutX="29.0" layoutY="216.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="128.0" />
+      <Button fx:id="BillingsButton" layoutX="29.0" layoutY="252.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="20.0" prefWidth="116.0" />
    </children>
 </AnchorPane>
