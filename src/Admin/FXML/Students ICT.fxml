@@ -154,5 +154,16 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="14.0" layoutY="350.0" opacity="0.95" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="355.0">
+         <image>
+            <Image url="@../../../Resources/Icons/gmail_groups.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
