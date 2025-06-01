@@ -9,8 +9,11 @@ import org.controlsfx.control.textfield.CustomTextField;
 import com.jfoenix.controls.JFXButton;
 
 import Admin.Controllers.AdminStudentsController;
+import Admin.Controllers.AdminStudentsICTController;
+import Admin.Controllers.AdminStudentsSTEMController;
 import Data.Students;
 import Database.DatabaseHandler;
+import Utils.InputValidator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -22,6 +25,8 @@ import javafx.stage.Stage;
 
 public class StudentsCreateController implements Initializable {
     private AdminStudentsController parentController;
+    private AdminStudentsICTController parentICTController;
+    private AdminStudentsSTEMController parentSTEMController;
 
     @FXML
     private JFXButton cancelButton, createAccountButton;
@@ -118,6 +123,12 @@ public class StudentsCreateController implements Initializable {
             return;
         }
 
+        String validationError = InputValidator.validateStudentFields(username, fname, lname, email, password);
+        if (validationError != null) {
+            showAlert(AlertType.ERROR, validationError);
+            return;
+        }
+
         int subscriptionID = DatabaseHandler.getSubscriptionIDByPlanType(planType);
         String strandID = DatabaseHandler.getStrandIDByName(strand);
 
@@ -131,6 +142,12 @@ public class StudentsCreateController implements Initializable {
             if (parentController != null) {
                 parentController.displayStudents();
             }
+            if (parentICTController != null) {
+                parentICTController.displayStudents();
+            }
+            if (parentSTEMController != null) {
+                parentSTEMController.displayStudents();
+            }
         } else {
             showAlert(AlertType.ERROR, "Failed to create student account. Please try again.");
         }
@@ -139,4 +156,14 @@ public class StudentsCreateController implements Initializable {
     public void setParentController(AdminStudentsController controller) {
         this.parentController = controller;
     }
+    
+    public void setParentController(AdminStudentsICTController controller) {
+        this.parentICTController = controller;
+    }
+
+    public void setParentController(AdminStudentsSTEMController controller) {
+        this.parentSTEMController = controller;
+    }
+
+    
 }
