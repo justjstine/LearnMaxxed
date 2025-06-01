@@ -9,8 +9,11 @@ import org.controlsfx.control.textfield.CustomTextField;
 import com.jfoenix.controls.JFXButton;
 
 import Admin.Controllers.AdminStudentsController;
+import Admin.Controllers.AdminStudentsICTController; 
+import Admin.Controllers.AdminStudentsSTEMController; 
 import Data.Students;
 import Database.DatabaseHandler;
+import Utils.InputValidator;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -23,7 +26,9 @@ import javafx.stage.Stage;
 public class StudentsUpdateController implements Initializable {
     ObservableList<Students> studentsTable = FXCollections.observableArrayList();
     private AdminStudentsController parentController;
-    private Students selectedStudent; // Store the student being updated
+    private AdminStudentsICTController parentICTController; 
+    private AdminStudentsSTEMController parentSTEMController; 
+    private Students selectedStudent; 
 
     @FXML
     private JFXButton cancelButton, updateAccountButton;
@@ -107,6 +112,13 @@ public class StudentsUpdateController implements Initializable {
             return;
         }
 
+        // Add this validation before proceeding
+        String validationError = InputValidator.validateStudentFields(username, fname, lname, email, password);
+        if (validationError != null) {
+            showAlert(AlertType.ERROR, validationError);
+            return;
+        }
+
         // Plan type logic
         int paymentID = -1; // Default for free plan
         if (planType.equalsIgnoreCase("Free")) {
@@ -161,7 +173,13 @@ public class StudentsUpdateController implements Initializable {
             showAlert(AlertType.INFORMATION, "Student account updated successfully!");
             ((Stage) updateAccountButton.getScene().getWindow()).close();
             if (parentController != null) {
-                parentController.displayStudents();
+                parentController.displayStudents(); // Refresh
+            }
+            if (parentICTController != null) {
+                parentICTController.displayStudents(); // Refresh 
+            }
+            if (parentSTEMController != null) {
+                parentSTEMController.displayStudents(); // Refresh
             }
         } else {
             showAlert(AlertType.ERROR, "Failed to update student account. Please try again.");
@@ -170,5 +188,13 @@ public class StudentsUpdateController implements Initializable {
 
     public void setParentController(AdminStudentsController controller) {
         this.parentController = controller;
+    }
+
+    public void setParentController(AdminStudentsICTController controller) {
+        this.parentICTController = controller;
+    }
+
+    public void setParentController(AdminStudentsSTEMController controller) {
+        this.parentSTEMController = controller;
     }
 }

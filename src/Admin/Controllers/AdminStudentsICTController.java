@@ -9,6 +9,7 @@ import org.controlsfx.control.textfield.CustomTextField;
 import com.jfoenix.controls.JFXButton;
 
 import Admin.Controllers.StudentsCRUD.StudentsCreateController;
+import Admin.Controllers.AdminStudentsICTController;
 import Data.Students;
 import Database.DatabaseHandler;
 import javafx.collections.FXCollections;
@@ -28,18 +29,19 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class AdminStudentsController implements Initializable {
+public class AdminStudentsICTController implements Initializable {
 
-    ObservableList<Students> studentsList = FXCollections.observableArrayList();
 
-    @FXML
-    private Button ictButton, stembutton, logoutButton, studentsButton;
+    ObservableList<Students> studentsictList = FXCollections.observableArrayList();
 
     @FXML
-    private JFXButton createButton, deletebutton;
+    private Button stemButton, logoutButton, studentsButton;
 
     @FXML
-    private TableView<Students> studentsTable;
+    private JFXButton createButton, deleteButton;
+
+    @FXML
+    private TableView<Students> studentsictTable; 
 
     @FXML
     private TableColumn<Students, Integer> userIDColumn;
@@ -65,9 +67,9 @@ public class AdminStudentsController implements Initializable {
     }
 
     public void displayStudents() {
-        studentsList.clear();
+        studentsictList.clear();
 
-        ResultSet result = DatabaseHandler.getStudents();
+        ResultSet result = DatabaseHandler.getStudentsICT();
         if (result == null) {
             System.err.println("Error: ResultSet is null. Check database connection.");
             return;
@@ -85,13 +87,13 @@ public class AdminStudentsController implements Initializable {
                 int subscriptionID = result.getInt("SubscriptionID");
                 int paymentID = result.getInt("PaymentID");
 
-                studentsList.add(new Students(userID, firstName, lastName, email, username, password, strand, subscriptionID, paymentID, created));
+                studentsictList.add(new Students(userID, firstName, lastName, email, username, password, strand, subscriptionID, paymentID, created));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        studentsTable.setItems(studentsList);
+        studentsictTable.setItems(studentsictList); 
     }
 
     @FXML
@@ -102,14 +104,13 @@ public class AdminStudentsController implements Initializable {
 
             StudentsCreateController createController = loader.getController();
             createController.setParentController(this);
-            Stage popupStage = new javafx.stage.Stage();
+            Stage popupStage = new Stage();
             popupStage.setTitle("Create Student");
             popupStage.initModality(Modality.APPLICATION_MODAL);
             popupStage.initStyle(StageStyle.UNDECORATED);
             popupStage.setScene(new Scene(root));
             popupStage.showAndWait();
 
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -117,7 +118,7 @@ public class AdminStudentsController implements Initializable {
 
     @FXML
     private void updateButtonHandler() {
-        Students selectedStudent = studentsTable.getSelectionModel().getSelectedItem();
+        Students selectedStudent = studentsictTable.getSelectionModel().getSelectedItem(); 
         if (selectedStudent == null) {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("No Selection");
@@ -130,7 +131,6 @@ public class AdminStudentsController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/FXML/UpdatePopup.fxml"));
             Parent root = loader.load();
 
-            // Get the controller and pass the selected student and parent controller
             Admin.Controllers.StudentsCRUD.StudentsUpdateController updateController = loader.getController();
             updateController.setParentController(this);
             updateController.setStudentToUpdate(selectedStudent);
@@ -148,19 +148,17 @@ public class AdminStudentsController implements Initializable {
 
     @FXML
     private void deleteButtonHandler() {
-        Students selectedStudent = studentsTable.getSelectionModel().getSelectedItem();
-
+        Students selectedStudent = studentsictTable.getSelectionModel().getSelectedItem(); 
         if (selectedStudent != null) {
             boolean deleted = DatabaseHandler.deleteStudent(selectedStudent);
             if (deleted) {
                 Alert alert = new Alert(AlertType.INFORMATION);
-                studentsList.remove(selectedStudent);
+                studentsictList.remove(selectedStudent);
                 alert.setTitle("Success");
                 alert.setHeaderText(null);
                 alert.setContentText("Student deleted successfully!");
             } else {
                 Alert alert = new Alert(AlertType.ERROR);
-                alert = new javafx.scene.control.Alert(AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText(null);
                 alert.setContentText("Failed to delete student.");
@@ -179,7 +177,7 @@ public class AdminStudentsController implements Initializable {
         String searchText = searchField.getText().toLowerCase();
         ObservableList<Students> filteredList = FXCollections.observableArrayList();
 
-        for (Students student : studentsList) {
+        for (Students student : studentsictList) {
             if (student.getFirstName().toLowerCase().contains(searchText) ||
                 student.getLastName().toLowerCase().contains(searchText) ||
                 student.getEmail().toLowerCase().contains(searchText) ||
@@ -188,7 +186,7 @@ public class AdminStudentsController implements Initializable {
             }
         }
 
-        studentsTable.setItems(filteredList);
+        studentsictTable.setItems(filteredList); 
     }
 
     @FXML 
@@ -207,21 +205,9 @@ public class AdminStudentsController implements Initializable {
     }
 
     @FXML 
-    private void ictButtonHandler() {
+    private void stemButtonHandler() {
         try {
-            Stage stage = (Stage) ictButton.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/StudentsICT.fxml"));
-            stage.setTitle("Students ICT");
-            stage.setScene(new Scene(root, 1000, 600));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-    
-    @FXML
-    private void stembuttonHandler() {
-        try {
-            Stage stage = (Stage) stembutton.getScene().getWindow();
+            Stage stage = (Stage) stemButton.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/StudentsSTEM.fxml"));
             stage.setTitle("Students STEM");
             stage.setScene(new Scene(root, 1000, 600));
@@ -230,4 +216,15 @@ public class AdminStudentsController implements Initializable {
         }
     }
 
+    @FXML
+    private void studentsButtonHandler() {
+        try {
+            Stage stage = (Stage) studentsButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
+            stage.setTitle("All Students");
+            stage.setScene(new Scene(root, 1000, 600));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

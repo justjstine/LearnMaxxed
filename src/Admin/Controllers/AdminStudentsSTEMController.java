@@ -28,18 +28,18 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class AdminStudentsController implements Initializable {
+public class AdminStudentsSTEMController implements Initializable {
 
-    ObservableList<Students> studentsList = FXCollections.observableArrayList();
-
-    @FXML
-    private Button ictButton, stembutton, logoutButton, studentsButton;
+    ObservableList<Students> studentsstemList = FXCollections.observableArrayList();
 
     @FXML
-    private JFXButton createButton, deletebutton;
+    private Button ictButton, logoutButton, studentsButton;
 
     @FXML
-    private TableView<Students> studentsTable;
+    private JFXButton createButton, deleteButton;
+
+    @FXML
+    private TableView<Students> studentsstemTable; 
 
     @FXML
     private TableColumn<Students, Integer> userIDColumn;
@@ -65,9 +65,9 @@ public class AdminStudentsController implements Initializable {
     }
 
     public void displayStudents() {
-        studentsList.clear();
+        studentsstemList.clear();
 
-        ResultSet result = DatabaseHandler.getStudents();
+        ResultSet result = DatabaseHandler.getStudentsSTEM();
         if (result == null) {
             System.err.println("Error: ResultSet is null. Check database connection.");
             return;
@@ -85,13 +85,13 @@ public class AdminStudentsController implements Initializable {
                 int subscriptionID = result.getInt("SubscriptionID");
                 int paymentID = result.getInt("PaymentID");
 
-                studentsList.add(new Students(userID, firstName, lastName, email, username, password, strand, subscriptionID, paymentID, created));
+                studentsstemList.add(new Students(userID, firstName, lastName, email, username, password, strand, subscriptionID, paymentID, created));
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        studentsTable.setItems(studentsList);
+        studentsstemTable.setItems(studentsstemList); 
     }
 
     @FXML
@@ -102,14 +102,13 @@ public class AdminStudentsController implements Initializable {
 
             StudentsCreateController createController = loader.getController();
             createController.setParentController(this);
-            Stage popupStage = new javafx.stage.Stage();
+            Stage popupStage = new Stage();
             popupStage.setTitle("Create Student");
             popupStage.initModality(Modality.APPLICATION_MODAL);
             popupStage.initStyle(StageStyle.UNDECORATED);
             popupStage.setScene(new Scene(root));
             popupStage.showAndWait();
 
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -117,7 +116,7 @@ public class AdminStudentsController implements Initializable {
 
     @FXML
     private void updateButtonHandler() {
-        Students selectedStudent = studentsTable.getSelectionModel().getSelectedItem();
+        Students selectedStudent = studentsstemTable.getSelectionModel().getSelectedItem();
         if (selectedStudent == null) {
             Alert alert = new Alert(AlertType.WARNING);
             alert.setTitle("No Selection");
@@ -130,7 +129,6 @@ public class AdminStudentsController implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/FXML/UpdatePopup.fxml"));
             Parent root = loader.load();
 
-            // Get the controller and pass the selected student and parent controller
             Admin.Controllers.StudentsCRUD.StudentsUpdateController updateController = loader.getController();
             updateController.setParentController(this);
             updateController.setStudentToUpdate(selectedStudent);
@@ -148,19 +146,18 @@ public class AdminStudentsController implements Initializable {
 
     @FXML
     private void deleteButtonHandler() {
-        Students selectedStudent = studentsTable.getSelectionModel().getSelectedItem();
+        Students selectedStudent = studentsstemTable.getSelectionModel().getSelectedItem();
 
         if (selectedStudent != null) {
             boolean deleted = DatabaseHandler.deleteStudent(selectedStudent);
             if (deleted) {
                 Alert alert = new Alert(AlertType.INFORMATION);
-                studentsList.remove(selectedStudent);
+                studentsstemList.remove(selectedStudent);
                 alert.setTitle("Success");
                 alert.setHeaderText(null);
                 alert.setContentText("Student deleted successfully!");
             } else {
                 Alert alert = new Alert(AlertType.ERROR);
-                alert = new javafx.scene.control.Alert(AlertType.ERROR);
                 alert.setTitle("Error");
                 alert.setHeaderText(null);
                 alert.setContentText("Failed to delete student.");
@@ -179,7 +176,7 @@ public class AdminStudentsController implements Initializable {
         String searchText = searchField.getText().toLowerCase();
         ObservableList<Students> filteredList = FXCollections.observableArrayList();
 
-        for (Students student : studentsList) {
+        for (Students student : studentsstemList) {
             if (student.getFirstName().toLowerCase().contains(searchText) ||
                 student.getLastName().toLowerCase().contains(searchText) ||
                 student.getEmail().toLowerCase().contains(searchText) ||
@@ -188,7 +185,7 @@ public class AdminStudentsController implements Initializable {
             }
         }
 
-        studentsTable.setItems(filteredList);
+        studentsstemTable.setItems(filteredList); 
     }
 
     @FXML 
@@ -217,17 +214,16 @@ public class AdminStudentsController implements Initializable {
             e.printStackTrace();
         }
     }
-    
+
     @FXML
-    private void stembuttonHandler() {
+    private void studentsButtonHandler() {
         try {
-            Stage stage = (Stage) stembutton.getScene().getWindow();
-            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/StudentsSTEM.fxml"));
-            stage.setTitle("Students STEM");
+            Stage stage = (Stage) studentsButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
+            stage.setTitle("All Students");
             stage.setScene(new Scene(root, 1000, 600));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-
 }
