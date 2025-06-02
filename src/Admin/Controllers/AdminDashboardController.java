@@ -9,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class AdminDashboardController {
+    
     @FXML
     private Button addadminbutton;
 
@@ -33,4 +34,18 @@ private void addstudentButtonHandler(javafx.event.ActionEvent event) throws IOEx
     Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
     stage.setScene(new Scene(studentsRoot, 1000, 600));
 }
+
+    @FXML
+private void addadminButtonHandler(javafx.event.ActionEvent event) throws IOException {
+    Parent addAdminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
+    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+    stage.setScene(new Scene(addAdminRoot, 1000, 600));
+}
+@FXML
+private void adminbillingsButtonHandler(javafx.event.ActionEvent event) throws IOException {
+    Parent billingsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BillingsAdmin.fxml"));
+    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+    stage.setScene(new Scene(billingsRoot, 1000, 600));
+}
+
 }
