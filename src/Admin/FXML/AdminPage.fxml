@@ -14,8 +14,8 @@
       </ImageView>
       <Button fx:id="dashboardadminbutton" layoutX="28.0" layoutY="166.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
       <Button fx:id="adminstudentbutton" layoutX="28.0" layoutY="191.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
-      <Button fx:id="adminbillingsbutton" layoutX="28.0" layoutY="216.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
-      <Button fx:id="addadminbutton" layoutX="298.0" layoutY="222.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="adminbillingsbutton" layoutX="28.0" layoutY="216.0" mnemonicParsing="false" onAction="#adminbillingsButtonHandler" prefHeight="0.0" prefWidth="119.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Button fx:id="addadminbutton" layoutX="298.0" layoutY="222.0" mnemonicParsing="false" onAction="#addadminButtonHandler" prefHeight="25.0" prefWidth="256.0" style="-fx-background-color: transparent;" textFill="WHITE" />
       <Button fx:id="addstudentbutton" layoutX="296.0" layoutY="356.0" mnemonicParsing="false" onAction="#addstudentButtonHandler" prefHeight="25.0" prefWidth="209.0" style="-fx-background-color: transparent;" textFill="WHITE" />
       <Button fx:id="logoutadminbutton" layoutX="28.0" layoutY="555.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="87.0" style="-fx-background-color: transparent;" textFill="WHITE" />
    </children>
