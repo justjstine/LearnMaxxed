@@ -3,6 +3,7 @@ package Admin.Controllers;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,7 +12,7 @@ import javafx.stage.Stage;
 public class AdminDashboardController {
     
     @FXML
-    private Button addadminbutton;
+    private Button addadminbutton, adminbutton;
 
     @FXML
     private Button addstudentbutton;
@@ -29,23 +30,44 @@ public class AdminDashboardController {
     private Button logoutadminbutton;
 
     @FXML
-private void addstudentButtonHandler(javafx.event.ActionEvent event) throws IOException {
-    Parent studentsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
+    public void addstudentButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent studentsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(studentsRoot, 1000, 600));
+    }
+
+    @FXML
+    public void addadminButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent addAdminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(addAdminRoot, 1000, 600));
+    }
+
+    @FXML
+    public void adminbillingsButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent billingsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BillingsAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(billingsRoot, 1000, 600));
+    }
+    @FXML
+    public void adminButtonHandler(javafx.event.ActionEvent event) throws IOException {
+    Parent adminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
     Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-    stage.setScene(new Scene(studentsRoot, 1000, 600));
+    stage.setScene(new Scene(adminRoot, 1000, 600));
 }
 
     @FXML
-private void addadminButtonHandler(javafx.event.ActionEvent event) throws IOException {
-    Parent addAdminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
-    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-    stage.setScene(new Scene(addAdminRoot, 1000, 600));
-}
-@FXML
-private void adminbillingsButtonHandler(javafx.event.ActionEvent event) throws IOException {
-    Parent billingsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BillingsAdmin.fxml"));
-    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-    stage.setScene(new Scene(billingsRoot, 1000, 600));
-}
-
+    public void logoutButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        try {
+            Stage stage = (Stage) logoutadminbutton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+            Stage newStage = new Stage();
+            newStage.setTitle("Login");
+            newStage.setScene(new Scene(root, 1000, 600));
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

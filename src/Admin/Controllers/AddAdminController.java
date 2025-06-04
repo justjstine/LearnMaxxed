@@ -5,6 +5,8 @@ import java.net.URL;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
+import org.controlsfx.control.textfield.CustomTextField;
+
 import com.jfoenix.controls.JFXButton;
 
 import Admin.Controllers.AdminCRUD.AdminCreateController;
@@ -48,10 +50,13 @@ public class AddAdminController implements Initializable {
     private TableColumn<Admin, String> adminPasswordColumn;
 
     @FXML
-    private Button logoutButton;
+    private Button logoutButton, billingsButton;
 
     @FXML
-    private Button goToStudentsbutton;
+    private Button goToStudentsbutton, dashboardButton;
+
+    @FXML
+    private CustomTextField searchField;
 
     @FXML
     private TableView<Admin> adminTable;
@@ -169,33 +174,69 @@ private void adminDeleteButtonHandler() {
     }
 }
 
- @FXML 
-    private void adminlogoutButtonHandler() {
+@FXML
+private void logoutButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        // If you have a logout button, get the stage from it, or from the event
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.close();
+        Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+        Stage newStage = new Stage();
+        newStage.setTitle("Login");
+        newStage.setScene(new Scene(root, 1000, 600));
+        newStage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+    @FXML 
+    private void goToStudentsButtonHandler() {
+         try {
+            Stage stage = (Stage) goToStudentsbutton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
+            stage.setTitle("Students");
+            stage.setScene(new Scene(root, 1000, 600));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void dashboardButtonHandler() {
         try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Login");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
+            Stage stage = (Stage) dashboardButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+            stage.setTitle("Admin Dashboard");
+            stage.setScene(new Scene(root, 1000, 600));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @FXML 
-    private void goToStudentsButtonHandler() {
+    private void goToBillingsButtonHandler() {
         try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-           Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Students");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
+            Stage stage = (Stage) billingsButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/BillingsAdmin.fxml"));
+            stage.setTitle("Admin Billings");
+            stage.setScene(new Scene(root, 1000, 600));
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    private void searchFieldHandler() {
+        String searchText = searchField.getText().toLowerCase();
+        ObservableList<Admin> filteredList = FXCollections.observableArrayList();
+
+        for (Admin admin : adminList) {
+            if (admin.getAdminUserName().toLowerCase().contains(searchText)) {
+                filteredList.add(admin);
+            }
+        }
+
+        adminTable.setItems(filteredList);
     }
 }

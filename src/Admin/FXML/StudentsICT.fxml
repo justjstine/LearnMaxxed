@@ -31,7 +31,7 @@
             <Font name="Century Gothic" size="24.0" />
          </font></Text>
       <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="13.0" layoutY="176.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
+      <Rectangle fx:id="dashboardadminbutton" arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="31.0" layoutX="13.0" layoutY="176.0" opacity="0.4" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="152.0" />
       <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
          <image>
             <Image url="@../../../Resources/Icons/inbox.png" />
@@ -170,5 +170,8 @@
          </image>
       </ImageView>
       <Button fx:id="stemButton" layoutX="20.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stemButtonHandler" opacity="0.0" prefHeight="20.0" prefWidth="138.0" />
+      <Button fx:id="dashboardbutton" layoutX="22.0" layoutY="175.0" mnemonicParsing="false" onAction="#dashboardadminbuttonHandler" opacity="0.0" prefHeight="25.0" prefWidth="138.0" />
+      <Button fx:id="adminbutton" layoutX="17.0" layoutY="357.0" mnemonicParsing="false" onAction="#adminButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="138.0" />
+      <Button fx:id="adminbillingsbutton" layoutX="18.0" layoutY="312.0" mnemonicParsing="false" onAction="#adminbillingsButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="138.0" />
    </children>
 </AnchorPane>

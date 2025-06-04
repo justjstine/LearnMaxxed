@@ -1,5 +1,6 @@
 package Admin.Controllers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
@@ -35,7 +36,7 @@ public class AdminStudentsICTController implements Initializable {
     ObservableList<Students> studentsictList = FXCollections.observableArrayList();
 
     @FXML
-    private Button stemButton, logoutButton, studentsButton;
+    private Button stemButton, logoutButton, studentsButton, dashboardbutton, adminbillingsbutton, adminbutton;
 
     @FXML
     private JFXButton createButton, deleteButton;
@@ -227,4 +228,24 @@ public class AdminStudentsICTController implements Initializable {
             e.printStackTrace();
         }
     }
+
+     @FXML
+    public void adminButtonHandler(javafx.event.ActionEvent event) throws IOException {
+    Parent adminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
+    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+    stage.setScene(new Scene(adminRoot, 1000, 600));
+    }
+
+    @FXML
+     public void adminbillingsButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent billingsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BillingsAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(billingsRoot, 1000, 600));
+     }
+     @FXML
+     public void dashboardadminbuttonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent adminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(adminRoot, 1000, 600));
+     }
 }
