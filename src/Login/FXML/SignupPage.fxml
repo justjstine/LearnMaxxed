@@ -56,7 +56,7 @@
             <Image url="@../../../Resources/Icons/arrow-left%20(1).png" />
          </image>
       </ImageView>
-      <Button fx:id="backButton" layoutX="126.0" layoutY="102.0" mnemonicParsing="false" onAction="#handlebackButton" prefHeight="38.0" prefWidth="32.0" />
+      <Button fx:id="backButton" layoutX="126.0" layoutY="102.0" mnemonicParsing="false" onAction="#handlebackButton" opacity="0.0" prefHeight="38.0" prefWidth="32.0" />
       <ImageView fx:id="eyeIcon" fitHeight="20.0" fitWidth="23.0" layoutX="476.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Resources/Icons/eyeIcon.png" />
