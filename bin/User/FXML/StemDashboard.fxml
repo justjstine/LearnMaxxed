@@ -72,6 +72,26 @@
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
+                  <ImageView disable="true" fitHeight="109.0" fitWidth="114.0" layoutX="16.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/science.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="35.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemistry">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView disable="true" fitHeight="105.0" fitWidth="100.0" layoutX="197.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../Downloads/engineering.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="218.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physics">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
                </children></AnchorPane>
          </content>
       </ScrollPane>

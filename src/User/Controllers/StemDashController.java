@@ -1,8 +1,7 @@
 package User.Controllers;
 
-import Data.Students;
 import Data.Session;
-
+import Data.Students;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -39,7 +38,7 @@ public class StemDashController {
 
         Students student = Session.getLoggedInStudent();
         if (student != null) {
-            usernameSidePanel.setText(student.getFirstName() + " " + student.getLastName());
+            usernameSidePanel.setText(student.getFirstName());
             welcomebackUsername.setText("Welcome back, " + student.getFirstName() + "!");
         } else {
             welcomebackUsername.setText("Welcome back!");
