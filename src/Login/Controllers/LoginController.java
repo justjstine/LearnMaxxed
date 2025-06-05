@@ -40,18 +40,19 @@ public class LoginController {
         FXMLLoader loader;
 
         if (DatabaseHandler.validateadminLogin(uname, pword)) {
-        loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
-        root = loader.load();
-        
-
-    } else {
-        Alert alert = new Alert(AlertType.ERROR);
-        alert.setTitle("Error");
-        alert.setHeaderText(null);
-        alert.setContentText("Invalid username or password. Please try again.");
-        alert.showAndWait();
-        return;
-    }
+            loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+            root = loader.load();
+        } else if (DatabaseHandler.validatePremiumLogin(uname, pword)) {
+            loader = new FXMLLoader(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+            root = loader.load();
+        } else {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Invalid username or password. Please try again.");
+            alert.showAndWait();
+            return;
+        }
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
