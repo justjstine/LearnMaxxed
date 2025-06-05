@@ -39,7 +39,7 @@ public class IctDashController {
 
         Students student = Session.getLoggedInStudent();
         if (student != null) {
-            usernameSidePanel.setText(student.getFirstName());
+            usernameSidePanel.setText(student.getFirstName() + " " + student.getLastName());
             welcomebackUsername.setText("Welcome back, " + student.getFirstName() + "!");
         } else {
             welcomebackUsername.setText("Welcome back!");
