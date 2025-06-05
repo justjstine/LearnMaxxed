@@ -13,8 +13,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import org.controlsfx.control.textfield.CustomTextField;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import java.sql.ResultSet;
@@ -61,10 +65,13 @@ public class BillingsAdminController implements Initializable {
     private ComboBox<String> strandfilterCombo;
 
     @FXML
-    private Button goToStudentsbutton;
+    private Button adminstudentbutton, adminbutton;
 
     @FXML
-    private Button logoutButton;
+    private Button logoutButton, dashboardButton;
+
+    @FXML
+    private CustomTextField searchField;
 
     private ObservableList<Billings> billingList = FXCollections.observableArrayList();
 
@@ -171,14 +178,11 @@ public class BillingsAdminController implements Initializable {
 
     @FXML
     private void goToStudentsButtonHandler() {
-        try {
-            Stage stage = (Stage) goToStudentsbutton.getScene().getWindow();
-            stage.close();
+          try {
+            Stage stage = (Stage) dashboardButton.getScene().getWindow();
             Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/Students.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Students");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
+            stage.setTitle("Students");
+            stage.setScene(new Scene(root, 1000, 600));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -219,4 +223,56 @@ public class BillingsAdminController implements Initializable {
             }
         }
     }
+
+    @FXML
+    private void logoutButtonHandler() {
+        try {
+            Stage stage = (Stage) logoutButton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+            Stage newStage = new Stage();
+            newStage.setTitle("Login");
+            newStage.setScene(new Scene(root, 1000, 600));
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void dashboardButtonHandler() {
+     try {
+            Stage stage = (Stage) dashboardButton.getScene().getWindow();
+            Parent root = FXMLLoader.load(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+            stage.setTitle("Students STEM");
+            stage.setScene(new Scene(root, 1000, 600));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void searchFieldHandler() {
+        String searchText = searchField.getText().toLowerCase();
+        ObservableList<Billings> filteredList = FXCollections.observableArrayList();
+
+        for (Billings billing : billingList) {
+            if (billing.getFirstName().toLowerCase().contains(searchText) ||
+                billing.getLastName().toLowerCase().contains(searchText) ||
+                billing.getEmail().toLowerCase().contains(searchText)) {
+                filteredList.add(billing);
+            }
+        }
+
+        billingAdminTable.setItems(filteredList);
+    }
+
+    @FXML
+    public void adminButtonHandler(javafx.event.ActionEvent event) throws IOException {
+    Parent adminRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/addAdmin.fxml"));
+    Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+    stage.setScene(new Scene(adminRoot, 1000, 600));
+    }
+
+    
 }
