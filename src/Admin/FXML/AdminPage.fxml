@@ -60,7 +60,7 @@
             <Font name="Century Gothic Bold" size="16.0" />
          </font>
       </Text>
-      <Button fx:id="logoutButton" layoutX="15.0" layoutY="544.0" mnemonicParsing="false" onAction="#logoutButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="146.0" />
+      <Button fx:id="logoutadminbutton" layoutX="15.0" layoutY="544.0" mnemonicParsing="false" onAction="#logoutButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="146.0" />
       <Text fill="#4e4c4c" layoutX="255.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Welcome to your Dashboard, Admin! " wrappingWidth="699.981201171875">
          <font>
             <Font name="Century Gothic" size="36.0" />

@@ -45,6 +45,7 @@ public class LoginController {
     } else if (DatabaseHandler.validatestudentLogin(uname, pword)) {
         Data.Students student = DatabaseHandler.getStudentByUsername(uname);
         if (student != null) {
+            Data.Session.setLoggedInStudent(student);
             String strand = student.getStrand();
             String planType = student.getPlanType(); // "Subscribed" or "Free"
             int subscriptionID = student.getSubscriptionID(); // 1 for premium, 2 for free
