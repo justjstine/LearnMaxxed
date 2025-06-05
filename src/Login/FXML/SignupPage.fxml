@@ -24,11 +24,7 @@
             <Font name="System Bold" size="33.0" />
          </font>
       </Label>
-      <TextField fx:id="usernameField" blendMode="LIGHTEN" layoutX="140.0" layoutY="212.0" prefHeight="38.0" prefWidth="362.0" promptText="Username" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </TextField>
+      <TextField fx:id="usernameField" layoutX="140.0" layoutY="212.0" prefHeight="38.0" prefWidth="362.0" promptText="Username" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
       <PasswordField layoutX="140.0" layoutY="287.0" prefHeight="38.0" prefWidth="362.0" promptText="Password" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
       <TextField fx:id="passwordText" layoutX="140.0" layoutY="287.0" prefHeight="38.0" prefWidth="329.0" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
       <PasswordField fx:id="passwordField" layoutX="140.0" layoutY="287.0" prefHeight="38.0" prefWidth="329.0" promptText="Password" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
@@ -63,5 +59,7 @@
          </image>
       </ImageView>
       <CheckBox fx:id="checkBox" layoutX="478.0" layoutY="298.0" mnemonicParsing="false" onAction="#changeVisibility" opacity="0.0" prefHeight="20.0" prefWidth="7.0" />
+      <Label layoutX="510.0" layoutY="178.0" prefHeight="38.0" prefWidth="214.0" text="First Name" textFill="WHITE" />
+      <Label layoutX="691.0" layoutY="178.0" prefHeight="38.0" prefWidth="214.0" text="Last Name" textFill="WHITE" />
    </children>
 </AnchorPane>

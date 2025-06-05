@@ -188,7 +188,13 @@ public class SignupController implements Initializable {
 
         if (success) {
             showAlert(AlertType.INFORMATION, "Account created successfully!");
-            ((Stage) signupButton.getScene().getWindow()).close();
+            try {
+                Stage stage = (Stage) signupButton.getScene().getWindow();
+                Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+                stage.setScene(new Scene(root));
+            } catch (Exception e) {
+                showAlert(AlertType.ERROR, "Unable to redirect to login screen.");
+            }
         } else {
             showAlert(AlertType.ERROR, "Failed to create account. Please try again.");
         }
