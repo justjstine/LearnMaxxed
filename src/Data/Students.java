@@ -67,4 +67,15 @@ public class Students {
     public String getCreated() {
         return created.get();
     }
+
+     public String getPlanType() {
+        if (getSubscriptionID() == 1) {
+            return "Subscribed";
+        } else if (getSubscriptionID() == 2) {
+            return "Free";
+        } else {
+            return "Unknown";
+        }
+    }
+
 }

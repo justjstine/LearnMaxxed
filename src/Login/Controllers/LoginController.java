@@ -35,30 +35,63 @@ public class LoginController {
     private Parent root;
 
     public void loginbuttonHandler(ActionEvent event) throws IOException {
-        String uname = usernametextfield.getText();
-        String pword = passwordtextfield.getText();
-        FXMLLoader loader;
+    String uname = usernametextfield.getText();
+    String pword = passwordtextfield.getText();
+    FXMLLoader loader;
 
-        if (DatabaseHandler.validateadminLogin(uname, pword)) {
-            loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
-            root = loader.load();
-        } else if (DatabaseHandler.validatePremiumLogin(uname, pword)) {
-            loader = new FXMLLoader(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
-            root = loader.load();
+    if (DatabaseHandler.validateadminLogin(uname, pword)) {
+        loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+        root = loader.load();
+    } else if (DatabaseHandler.validatestudentLogin(uname, pword)) {
+        Data.Students student = DatabaseHandler.getStudentByUsername(uname);
+        if (student != null) {
+            String strand = student.getStrand();
+            String planType = student.getPlanType(); // "Subscribed" or "Free"
+            int subscriptionID = student.getSubscriptionID(); // 1 for premium, 2 for free
+
+            if ("Subscribed".equalsIgnoreCase(planType) || subscriptionID == 1) {
+                // Premium user: show premium dashboard
+                loader = new FXMLLoader(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+                root = loader.load();
+            } else {
+                // Free user: show only their strand dashboard
+                if ("STEM".equalsIgnoreCase(strand)) {
+                    loader = new FXMLLoader(getClass().getResource("/User/FXML/StemDashboard.fxml"));
+                    root = loader.load();
+                } else if ("ICT".equalsIgnoreCase(strand)) {
+                    loader = new FXMLLoader(getClass().getResource("/User/FXML/IctDashboard.fxml"));
+                    root = loader.load();
+                } else {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Access Denied");
+                    alert.setHeaderText(null);
+                    alert.setContentText("Your strand does not have a dashboard.");
+                    alert.showAndWait();
+                    return;
+                }
+            }
         } else {
-            Alert alert = new Alert(AlertType.ERROR);
+            Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText(null);
-            alert.setContentText("Invalid username or password. Please try again.");
+            alert.setContentText("Student not found.");
             alert.showAndWait();
             return;
         }
-
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    } else {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setHeaderText(null);
+        alert.setContentText("Invalid username or password. Please try again.");
+        alert.showAndWait();
+        return;
     }
+
+    stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    scene = new Scene(root);
+    stage.setScene(scene);
+    stage.show();
+}
     
     public void signupButtonHandler(ActionEvent event) {
         try {
