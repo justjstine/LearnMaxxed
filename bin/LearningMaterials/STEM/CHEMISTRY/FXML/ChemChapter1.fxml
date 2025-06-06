@@ -147,5 +147,20 @@
             <Font size="1.0" />
          </font>
       </Button>
+      <Button fx:id="chemistry1SideButton" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#chem1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="chemistry2SideButton" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#chem2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="chemistry3SideButton" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#chem3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

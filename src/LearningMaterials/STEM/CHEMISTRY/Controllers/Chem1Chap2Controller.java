@@ -67,6 +67,50 @@ public class Chem1Chap2Controller {
         }
     }
 
+    public void chem1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        try {
+            Stage stage = (Stage) logoutButton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
+            Stage newStage = new Stage();
+            newStage.setTitle("LearnMaxxing");
+            newStage.setScene(new Scene(root, 1000, 600));
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void chem2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        try {
+            Stage stage = (Stage) logoutButton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter3.fxml"));
+            Stage newStage = new Stage();
+            newStage.setTitle("LearnMaxxing");
+            newStage.setScene(new Scene(root, 1000, 600));
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void chem3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        try {
+            Stage stage = (Stage) logoutButton.getScene().getWindow();
+            stage.close();
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter4.fxml"));
+            Stage newStage = new Stage();
+            newStage.setTitle("LearnMaxxing");
+            newStage.setScene(new Scene(root, 1000, 600));
+            newStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     @FXML
     public void handleSubjectSelection() {
         String selected = (String) subjectComboBox.getSelectionModel().getSelectedItem();
