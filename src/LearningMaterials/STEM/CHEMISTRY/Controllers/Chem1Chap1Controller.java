@@ -128,6 +128,20 @@ public class Chem1Chap1Controller {
                 e.printStackTrace();
             }
         }
+
+        if ("Physics".equals(selected)) {
+            try {
+                Stage stage = (Stage) logoutButton.getScene().getWindow();
+                stage.close();
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
+                Stage newStage = new Stage();
+                newStage.setTitle("Physics");
+                newStage.setScene(new Scene(root, 1000, 600));
+                newStage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @FXML

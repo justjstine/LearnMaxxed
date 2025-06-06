@@ -120,7 +120,21 @@ public class Chem1Chap4Controller {
                 stage.close();
                 Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
                 Stage newStage = new Stage();
-                newStage.setTitle("Chemistry");
+                newStage.setTitle("LearnMaxxing");
+                newStage.setScene(new Scene(root, 1000, 600));
+                newStage.show();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        if ("Physics".equals(selected)) {
+            try {
+                Stage stage = (Stage) logoutButton.getScene().getWindow();
+                stage.close();
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
+                Stage newStage = new Stage();
+                newStage.setTitle("Physics");
                 newStage.setScene(new Scene(root, 1000, 600));
                 newStage.show();
             } catch (Exception e) {
