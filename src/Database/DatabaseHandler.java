@@ -479,9 +479,9 @@ public static boolean updateUserSubscriptionStatus(int userId, String status) {
             } else if (status.equalsIgnoreCase("Cancelled")) {
                 
                 try (PreparedStatement delTrans = conn.prepareStatement("DELETE FROM Transaction WHERE UserID = ?")) {
-                    delTrans.setInt(1, userId);
-                    delTrans.executeUpdate();
-                }
+    delTrans.setInt(1, userId);
+    delTrans.executeUpdate();
+}
             }
         }
 
@@ -491,6 +491,7 @@ public static boolean updateUserSubscriptionStatus(int userId, String status) {
     }
     return false;
 }
+
 private static void addTransactionForUser(int userId, Connection conn) {
     String sql = """
         INSERT INTO Transaction (UserID, PaymentID, SubscriptionID, StrandID, TransactionDate)
