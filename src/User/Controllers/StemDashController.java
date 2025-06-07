@@ -87,6 +87,13 @@ public class StemDashController {
     }
 
     @FXML
+    public void biologyButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent physicsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physicsRoot, 1000, 600));
+    }
+
+    @FXML
     public void handleSubjectSelection() {
         String selected = subjectComboBox.getSelectionModel().getSelectedItem();
         Stage stage = (Stage) logoutButton.getScene().getWindow();
@@ -98,9 +105,8 @@ public class StemDashController {
                 Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
                 stage.setScene(new Scene(physicsRoot, 1000, 600));
             } else if ("Biology".equals(selected)) {
-                // Add your Biology FXML path here if you have one
-                // Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
-                // stage.setScene(new Scene(biologyRoot, 1000, 600));
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {
             e.printStackTrace();

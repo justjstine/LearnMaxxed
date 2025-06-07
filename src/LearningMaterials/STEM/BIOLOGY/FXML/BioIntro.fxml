@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.STEM.BIOLOGY.Controllers.BioIntroController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="655.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Biology">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="585.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Welcome to Senior High School Biology for STEM!">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology is the science of life. It explores the structure, function, growth, evolution, and interactions of living organisms. As a STEM student, you’ll be diving deeper into biological concepts with an analytical and investigative mindset. This course not only helps you understand life on a molecular, cellular, and systemic level. It also builds a foundation for future careers in health, biotechnology, research, and environmental science." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The course is divided into three major chapters: The Cell and Molecular Biology, Life Processes and Organismal Biology, and Genetics, Evolution, and Ecology. Each topic features 2–3 paragraph readings designed to be accessible yet rigorous, with a focus on developing both knowledge and critical thinking. You'll gain skills in scientific reasoning, data interpretation, and biological problem-solving, all while exploring life from the microscopic to the global scale." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By the end of this course, you should be able to:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Understand and explain biological structures and their functions" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Analyze how living systems interact at molecular, cellular, and ecological levels" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Apply biological concepts to health, environment, and biotechnology" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Use scientific methods to investigate biological questions" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEM Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="WHITE" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIology 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio1Button" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#bio1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio2Button" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#bio2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio3Button" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#bio3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -83,9 +83,8 @@ public class Chem1Chap4Controller {
                 Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
                 stage.setScene(new Scene(physicsRoot, 1000, 600));
             } else if ("Biology".equals(selected)) {
-                // Add your Biology FXML path here if you have one
-                // Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
-                // stage.setScene(new Scene(biologyRoot, 1000, 600));
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {
             e.printStackTrace();
