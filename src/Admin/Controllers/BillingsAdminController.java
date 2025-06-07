@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -80,6 +81,17 @@ public class BillingsAdminController implements Initializable {
         billingTransactColumn.setCellValueFactory(new PropertyValueFactory<>("transactionID"));
         billingStrandColumn.setCellValueFactory(new PropertyValueFactory<>("strand"));
         billingSubColumn.setCellValueFactory(new PropertyValueFactory<>("subscriptionID"));
+        billingSubColumn.setCellFactory(column -> new TableCell<Billings, Integer>() {
+            @Override
+            protected void updateItem(Integer item, boolean empty) {
+                super.updateItem(item, empty);
+                if (empty || item == null) {
+                    setText(null);
+                } else {
+                    setText(item == 1 ? "Subscribed" : "Free");
+                }
+            }
+        });
         billingFirstNameColumn.setCellValueFactory(new PropertyValueFactory<>("firstName"));
         billingLastNameColumn.setCellValueFactory(new PropertyValueFactory<>("lastName"));
         billingEmailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -166,6 +178,7 @@ public class BillingsAdminController implements Initializable {
 
             Stage popupStage = new Stage();
             popupStage.setTitle("Update Subscription Status");
+            popupStage.initStyle(javafx.stage.StageStyle.UNDECORATED); // <-- Add this line
             popupStage.initModality(javafx.stage.Modality.APPLICATION_MODAL);
             popupStage.setScene(new Scene(root));
             popupStage.showAndWait();
