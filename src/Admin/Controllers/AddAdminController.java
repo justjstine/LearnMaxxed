@@ -97,7 +97,7 @@ public class AddAdminController implements Initializable {
     }
 
     @FXML
-private void adminCreateButtonHandler() {
+    private void adminCreateButtonHandler() {
     try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Admin/FXML/adminCreatePopup.fxml"));
         Parent root = loader.load();
@@ -114,7 +114,8 @@ private void adminCreateButtonHandler() {
     } catch (Exception e) {
         e.printStackTrace();
     }
-}
+}   
+
 @FXML
 private void AdminUpdateButtonHandler() { // <-- lowercase 'a'
     Admin selectedAdmin = adminTable.getSelectionModel().getSelectedItem();

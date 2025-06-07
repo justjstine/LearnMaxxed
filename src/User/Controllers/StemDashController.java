@@ -67,79 +67,43 @@ public class StemDashController {
 
     @FXML
     public void logoutButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Login");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent logoutRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(logoutRoot, 1000, 600));
     }
 
     @FXML
     public void chemistryButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Chemistry");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent chemistryRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chemistryRoot, 1000, 600));
     }
 
     @FXML
     public void physicsButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Physics");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent physicsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physicsRoot, 1000, 600));
     }
-
 
     @FXML
     public void handleSubjectSelection() {
-        String selected = (String) subjectComboBox.getSelectionModel().getSelectedItem();
-        if ("Chemistry".equals(selected)) {
-            try {
-                Stage stage = (Stage) logoutButton.getScene().getWindow();
-                stage.close();
-                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
-                Stage newStage = new Stage();
-                newStage.setTitle("Chemistry");
-                newStage.setScene(new Scene(root, 1000, 600));
-                newStage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
+        String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        try {
+            if ("Chemistry".equals(selected)) {
+                Parent chemistryRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
+                stage.setScene(new Scene(chemistryRoot, 1000, 600));
+            } else if ("Physics".equals(selected)) {
+                Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
+                stage.setScene(new Scene(physicsRoot, 1000, 600));
+            } else if ("Biology".equals(selected)) {
+                // Add your Biology FXML path here if you have one
+                // Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+                // stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
-        }
-
-        if ("Physics".equals(selected)) {
-            try {
-                Stage stage = (Stage) logoutButton.getScene().getWindow();
-                stage.close();
-                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
-                Stage newStage = new Stage();
-                newStage.setTitle("Physics");
-                newStage.setScene(new Scene(root, 1000, 600));
-                newStage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }

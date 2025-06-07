@@ -39,123 +39,64 @@ public class Chem1Chap3Controller {
 
     @FXML
     public void logoutButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Login");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent logoutRoot = FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(logoutRoot, 1000, 600));
     }
 
     @FXML
     public void dashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/StemDashboard.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Login");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent dashboardRoot = FXMLLoader.load(getClass().getResource("/User/FXML/StemDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
     }
 
     public void chem1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("LearnMaxxing");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent chem1Root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem1Root, 1000, 600));
     }
 
     @FXML
     public void chem2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter2.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("LearnMaxxing");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent chem2Root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem2Root, 1000, 600));
     }
 
     @FXML
     public void chem3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter4.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("LearnMaxxing");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent chem3Root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter4.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem3Root, 1000, 600));
     }
 
     @FXML
     public void handleSubjectSelection() {
-        String selected = (String) subjectComboBox.getSelectionModel().getSelectedItem();
-        if ("Chemistry".equals(selected)) {
-            try {
-                Stage stage = (Stage) logoutButton.getScene().getWindow();
-                stage.close();
-                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
-                Stage newStage = new Stage();
-                newStage.setTitle("LearnMaxxing");
-                newStage.setScene(new Scene(root, 1000, 600));
-                newStage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
+        String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        try {
+            if ("Chemistry".equals(selected)) {
+                Parent chemistryRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter1.fxml"));
+                stage.setScene(new Scene(chemistryRoot, 1000, 600));
+            } else if ("Physics".equals(selected)) {
+                Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
+                stage.setScene(new Scene(physicsRoot, 1000, 600));
+            } else if ("Biology".equals(selected)) {
+                // Add your Biology FXML path here if you have one
+                // Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+                // stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
-        }
-
-        if ("Physics".equals(selected)) {
-            try {
-                Stage stage = (Stage) logoutButton.getScene().getWindow();
-                stage.close();
-                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsIntro.fxml"));
-                Stage newStage = new Stage();
-                newStage.setTitle("Physics");
-                newStage.setScene(new Scene(root, 1000, 600));
-                newStage.show();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
     @FXML
     public void nextButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Stage stage = (Stage) logoutButton.getScene().getWindow();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter4.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("Login");
-            newStage.setScene(new Scene(root, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent nextRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Chemistry/FXML/ChemChapter4.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
     public void scrollToTop() {
