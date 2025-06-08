@@ -87,7 +87,7 @@ public class IctDashController {
             usernameSidePanel.setText("");
         }
          subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Web Development", "Database Management");
+        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Web Development", "Animation");
     }
 
 
@@ -123,21 +123,58 @@ public class IctDashController {
     }
 
 
- @FXML
+@FXML
 public void handleSubjectSelection() {
-       String selected = subjectComboBox.getSelectionModel().getSelectedItem();
-    if ("Computer Programming".equals(selected)) {
-        try {
+    String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+    try {
+        if ("Computer Programming".equals(selected)) {
             Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgIntro.fxml"));
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Computer Programming Introduction");
             stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
+        } else if ("Computer Systems".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Computer Systems Introduction");
+            stage.show();
+        } else if ("Animation".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Animation Introduction");
+            stage.show();
         }
+    } catch (Exception e) {
+        e.printStackTrace();
     }
 }
 
+@FXML
+public void ComSysButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysIntro.fxml"));
+        Stage stage = (Stage) ComSysButton.getScene().getWindow();
+        stage.setScene(new Scene(root, 1000, 600));
+        stage.setTitle("Computer Systems Introduction");
+        stage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+@FXML
+public void AnimationButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
+        Stage stage = (Stage) AnimationButton.getScene().getWindow();
+        stage.setScene(new Scene(root, 1000, 600));
+        stage.setTitle("Animation Introduction");
+        stage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 
 }
