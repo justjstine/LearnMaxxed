@@ -43,7 +43,7 @@ public class PhysicsIntroController {
     public void initialize() {
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology");
+        subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology", "Pre Calculus", "Basic Calculus");
     }
 
     @FXML

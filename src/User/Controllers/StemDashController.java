@@ -62,7 +62,7 @@ public class StemDashController {
         }
 
         subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology");
+        subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology", "Pre Calculus", "Basic Calculus");
     }
 
     @FXML
@@ -94,6 +94,13 @@ public class StemDashController {
     }
 
     @FXML
+    public void precalButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent physicsRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Precal/FXML/PCalIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physicsRoot, 1000, 600));
+    }
+
+    @FXML
     public void handleSubjectSelection() {
         String selected = subjectComboBox.getSelectionModel().getSelectedItem();
         Stage stage = (Stage) logoutButton.getScene().getWindow();
@@ -106,6 +113,9 @@ public class StemDashController {
                 stage.setScene(new Scene(physicsRoot, 1000, 600));
             } else if ("Biology".equals(selected)) {
                 Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Pre Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Precal/FXML/PCalIntro.fxml"));
                 stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {

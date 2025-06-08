@@ -1,4 +1,4 @@
-package LearningMaterials.STEM.BIOLOGY.Controllers;
+package LearningMaterials.STEM.PRECAL.Controllers;
 
 import java.io.IOException;
 
@@ -14,18 +14,27 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
-public class BioChap1Controller {
-    @FXML
+public class pCalIntroController {
+     @FXML
     private Button dashboardButton;
 
     @FXML
     private Button logoutButton;
 
     @FXML
-    private ScrollPane scrollPane;
+    private JFXButton nextButton;
 
     @FXML
-    private JFXButton nextButton;
+    private Button physics1Button;
+
+    @FXML
+    private Button physics2Button;
+
+    @FXML
+    private Button physics3Button;
+
+    @FXML
+    private ScrollPane scrollPane;
 
     @FXML
     private JFXComboBox<String> subjectComboBox;
@@ -65,6 +74,9 @@ public class BioChap1Controller {
             } else if ("Biology".equals(selected)) {
                 Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
                 stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Pre Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Precal/FXML/PCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -72,31 +84,31 @@ public class BioChap1Controller {
     }
 
     @FXML
-    public void bioIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent bioIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioIntro.fxml"));
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(bioIntroRoot, 1000, 600));
-    }
-
-    @FXML
-    public void bio2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent bio2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioChap2.fxml"));
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(bio2Root, 1000, 600));
-    }
-
-    @FXML
-    public void bio3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent bio3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioChap3.fxml"));
-        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
-        stage.setScene(new Scene(bio3Root, 1000, 600));
-    }
-
-    @FXML
     public void nextButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioChap2.fxml"));
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/PreCal/FXML/PCalChap1.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void pCal1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCal1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/PreCal/FXML/PCalChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCal1Root, 1000, 600));
+    }
+
+    @FXML
+    public void pCal2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCal2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/PreCal/FXML/PCalChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCal2Root, 1000, 600));
+    }
+
+    @FXML
+    public void pCal3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCal3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/PreCal/FXML/PCalChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCal3Root, 1000, 600));
     }
 
     public void scrollToTop() {
