@@ -139,6 +139,12 @@ public void handleSubjectSelection() {
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Computer Systems Introduction");
             stage.show();
+        } else if ("Web Development".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Web Development Introduction");
+            stage.show();
         } else if ("Animation".equals(selected)) {
             Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();
@@ -171,6 +177,19 @@ public void AnimationButtonHandler(javafx.event.ActionEvent event) {
         Stage stage = (Stage) AnimationButton.getScene().getWindow();
         stage.setScene(new Scene(root, 1000, 600));
         stage.setTitle("Animation Introduction");
+        stage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+@FXML
+public void WebDevButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+        Stage stage = (Stage) WebDevButton.getScene().getWindow();
+        stage.setScene(new Scene(root, 1000, 600));
+        stage.setTitle("Web Development Introduction");
         stage.show();
     } catch (Exception e) {
         e.printStackTrace();
