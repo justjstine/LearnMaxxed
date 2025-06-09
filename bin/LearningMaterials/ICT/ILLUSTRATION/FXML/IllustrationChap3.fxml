@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.ICT.ILLUSTRATION.Controllers.IllustrationChap3Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="2200.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Illustration">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.1 Introduction" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visual storytelling is the art of communicating a narrative through images. Whether it's a comic strip, a children's book illustration, a character concept, or a single dramatic scene, every picture has the potential to tell a story. In this chapter, students will explore how illustration can express ideas, emotions, and action without words—or in combination with them. By understanding key elements such as character, setting, expression, and sequence, young artists will learn how to bring stories to life visually." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="581.0" layoutY="2150.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="55.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By mastering the fundamentals of visual storytelling, students can turn simple drawings into engaging narratives. They'll learn how to build characters, place them in dynamic scenes, and guide the viewer’s eye using layout and visual flow. This chapter develops both creative thinking and technical drawing skills, giving students the tools to tell powerful stories through pictures." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="55.0" layoutY="110.0" prefHeight="53.0" prefWidth="771.0" text="Chapter 3: Elements of Visual Storytelling">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="55.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Good character design shows personality even without words. Factors like age, size, clothing, posture, and style help define who a character is. A knight in rusty armor tells a different story than one in shining gold. Even simple traits like a crooked smile or a slouch can suggest a lot about a character's background or attitude." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="793.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facial expressions help convey the emotions of a scene—whether it’s joy, fear, surprise, anger, or sadness. Learning to exaggerate and simplify expressions makes them easier to read, especially in cartoons and comics. For example, wide eyes and an open mouth show shock, while narrowed eyes and a frown show anger or suspicion." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="932.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A character’s movement and posture tell just as much as their face. A person standing tall with hands on hips looks confident, while someone slouched with arms crossed might seem insecure or upset. Practicing gesture drawing helps students create more dynamic, believable characters." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1049.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The setting is the world where your story takes place. It gives context to the characters and sets the tone of the scene—whether it's a haunted forest, a busy street, or a quiet bedroom." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="1484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.3 Visual Narrative and Sequencing" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Visual storytelling is often about more than just a single image—it’s about a sequence of moments. Sequencing lets artists show progression, action, and change." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Storyboards and Panels" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.2 Characters and Expression" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Characters are the heart of any visual story. They help the audience connect emotionally with the illustration. A character’s pose, facial expression, costume, and body language all contribute to their personality and mood." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Character Design" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Facial Expressions and Emotions" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="900.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body Language" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="1018.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.2 Setting and Environment" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Body Language" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backgrounds can be detailed or simple depending on the style, but they should always support the story. A detailed cityscape suggests a fast-paced world, while an empty field can evoke loneliness or peace. Backgrounds should not distract from the subject, but rather complement it." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mood and Atmosphere" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The environment also helps set the mood. Warm colors like red, orange, and yellow create feelings of energy, heat, or happiness. Cool colors like blue and purple create calm, mystery, or sadness. Fog, lighting, shadows, and textures also influence the atmosphere." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Worldbuilding" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In fantasy or sci-fi illustrations, worldbuilding means designing unique cultures, architecture, clothing, and landscapes. These details make a story world believable and immersive. For example, a flying city with glowing towers gives a completely different feeling than a swamp village made of bones and vines." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panels are used in comics and storyboards to break a story into scenes or moments. The size and shape of panels can control pacing. Small panels can show quick action; large panels slow things down and emphasize key scenes. Learning how to arrange panels is essential for comic artists and animators." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timing and Movement" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1730.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Illustrators suggest time passing by repeating characters in different positions, using motion lines, or showing effects like wind or light. For example, a character shown mid-jump, with their scarf trailing behind, suggests action and speed. Showing what happens before and after helps build story arcs within the image." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="206.0" layoutY="2101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Video guide how to effectively draw Illustrations" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Illustration Chapter 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Illustration Chapter 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Illustration Chapter 3 ">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#comsys1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#comsys2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#comsys3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

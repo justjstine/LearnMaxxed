@@ -87,7 +87,7 @@ public class IctDashController {
             usernameSidePanel.setText("");
         }
          subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Web Development", "Animation");
+        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Web Development", "Animation", "Illustration");
     }
 
 
@@ -150,6 +150,12 @@ public void handleSubjectSelection() {
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Animation Introduction");
+            stage.show();
+        } else if ("Illustration".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Illustration Introduction");
             stage.show();
         }
     } catch (Exception e) {

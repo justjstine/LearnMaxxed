@@ -45,7 +45,7 @@ public class ComProgChap2Controller {
     public void initialize() {
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development");
+        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development", "Illustration");
     }
 
 
@@ -112,11 +112,23 @@ public void handleSubjectSelection() {
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Computer Systems Introduction");
             stage.show();
+        } else if ("Web Development".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Web Development Introduction");
+            stage.show();
         } else if ("Animation".equals(selected)) {
             Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Animation Introduction");
+            stage.show();
+        } else if ("Illustration".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Illustration Introduction");
             stage.show();
         }
     } catch (Exception e) {

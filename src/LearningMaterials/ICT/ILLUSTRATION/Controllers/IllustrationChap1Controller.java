@@ -1,4 +1,4 @@
-package LearningMaterials.ICT.COMPUTERPROGRAMMING.Controllers;
+package LearningMaterials.ICT.ILLUSTRATION.Controllers;
 
 import java.io.IOException;
 
@@ -15,16 +15,16 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
-public class ComProgChap3Controller {
+public class IllustrationChap1Controller {
     
     @FXML
-    private Button ComProg1Button;
+    private Button ComSysButton1;
 
     @FXML
-    private Button ComProg2Button;
+    private Button ComSysButton2;
 
     @FXML
-    private Button ComProg3Button;
+    private Button ComSysButton3;
 
     @FXML
     private Button dashboardButton;
@@ -41,47 +41,46 @@ public class ComProgChap3Controller {
     @FXML
     private JFXComboBox<String> subjectComboBox;
 
-    @FXML
+     @FXML
     public void initialize() {
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
         subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development", "Illustration");
     }
 
-
-     @FXML
-void comprog1ButtonHandler(ActionEvent event) {
+    @FXML
+void comsys1ButtonHandler(ActionEvent event) {
     try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgChapter1.fxml"));
-        Stage stage = (Stage) ComProg1Button.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationChap1.fxml"));
+        Stage stage = (Stage) ComSysButton1.getScene().getWindow();
         stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Programming - Chapter 1");
+        stage.setTitle("Illustration - Chapter 1");
         stage.show();
     } catch (IOException e) {
         e.printStackTrace();
     }
 }
 
-    @FXML
-    void comprog2ButtonHandler(ActionEvent event) {
+@FXML
+void comsys2ButtonHandler(ActionEvent event) {
     try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgChapter2.fxml"));
-        Stage stage = (Stage) ComProg2Button.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationChap2.fxml"));
+        Stage stage = (Stage) ComSysButton2.getScene().getWindow();
         stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Programming - Chapter 2");
+        stage.setTitle("Illustration - Chapter 2");
         stage.show();
     } catch (IOException e) {
         e.printStackTrace();
     }
 }
 
-    @FXML
-    void comprog3ButtonHandler(ActionEvent event) {
+@FXML
+void comsys3ButtonHandler(ActionEvent event) {
     try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgChapter3.fxml"));
-        Stage stage = (Stage) ComProg3Button.getScene().getWindow();
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationChap3.fxml"));
+        Stage stage = (Stage) ComSysButton3.getScene().getWindow();
         stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Programming - Chapter 3");
+        stage.setTitle("Illustration - Chapter 3");
         stage.show();
     } catch (IOException e) {
         e.printStackTrace();
@@ -95,8 +94,7 @@ void comprog1ButtonHandler(ActionEvent event) {
         stage.setScene(new Scene(dashboardRoot, 1000, 600));
     }
 
-
-    @FXML
+@FXML
 public void handleSubjectSelection() {
     String selected = subjectComboBox.getSelectionModel().getSelectedItem();
     try {
@@ -145,6 +143,16 @@ public void handleSubjectSelection() {
 
     @FXML
 public void nextButtonHandler(ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationChap2.fxml"));
+        Stage stage = (Stage) nextButton.getScene().getWindow();
+        stage.setScene(new Scene(root, 1000, 600));
+        stage.setTitle("Illustration - Chapter 2");
+        stage.show();
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+}
+
 }
 
