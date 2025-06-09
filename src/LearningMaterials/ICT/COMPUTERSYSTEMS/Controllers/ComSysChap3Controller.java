@@ -112,6 +112,12 @@ public void handleSubjectSelection() {
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Computer Systems Introduction");
             stage.show();
+        } else if ("Web Development".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Web Development Introduction");
+            stage.show();
         } else if ("Animation".equals(selected)) {
             Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();

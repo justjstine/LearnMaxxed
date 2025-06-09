@@ -108,6 +108,26 @@
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
+                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/desktop_windows.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="360.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/connected_tv.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="530.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/nordic_walking.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="189.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/keyboard-xxl.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
          </content>
       </ScrollPane>
