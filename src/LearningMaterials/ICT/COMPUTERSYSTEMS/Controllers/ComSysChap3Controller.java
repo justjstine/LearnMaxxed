@@ -48,7 +48,7 @@ public class ComSysChap3Controller {
     public void initialize() {
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development");
+        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development", "Illustration");
     }
 
     @FXML

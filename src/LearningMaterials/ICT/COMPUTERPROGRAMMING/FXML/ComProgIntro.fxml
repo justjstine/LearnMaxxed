@@ -27,7 +27,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.83">
             <content>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1850.0" prefWidth="804.0">
                <children>
@@ -76,19 +76,14 @@
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <ImageView fitHeight="199.0" fitWidth="370.0" layoutX="63.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="233.0" fitWidth="423.0" layoutX="180.0" layoutY="488.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Downloads/computer-program-coding-screen.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="199.0" fitWidth="354.0" layoutX="405.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../../../../../../../../Downloads/6-Skills-You-Need-to-Stand-Out-as-a-Computer-Programmer.jpg" />
+                        <Image url="@../../../../../Resources/6-Skills-You-Need-to-Stand-Out-as-a-Computer-Programmer.jpg" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="174.0" fitWidth="283.0" layoutX="246.0" layoutY="879.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Downloads/15090961835_c4f26e4890_b.jpg" />
+                        <Image url="@../../../../../Resources/15090961835_c4f26e4890_b.jpg" />
                      </image>
                   </ImageView>
                   <Text layoutX="208.0" layoutY="1070.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fig. 1: Examples of Programming Languages " textAlignment="JUSTIFY" wrappingWidth="328.77606201171875">
@@ -98,7 +93,7 @@
                   </Text>
                   <ImageView fitHeight="303.0" fitWidth="401.0" layoutX="266.0" layoutY="1250.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Downloads/thinklikecomputerflowchart.svg.png" />
+                        <Image url="@../../../../../Resources/thinklikecomputerflowchart.svg.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="266.0" layoutY="1579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fig. 2: Example of a Flowchart " textAlignment="JUSTIFY" wrappingWidth="328.77606201171875">
