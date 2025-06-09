@@ -77,6 +77,9 @@ public class pCalIntroController {
             }else if ("Pre Calculus".equals(selected)) {
                 Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Precal/FXML/PCalIntro.fxml"));
                 stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Basic Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Basiccal/FXML/BasicCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {
             e.printStackTrace();

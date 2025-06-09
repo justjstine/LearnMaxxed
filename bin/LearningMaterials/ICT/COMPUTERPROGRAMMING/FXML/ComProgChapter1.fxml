@@ -93,7 +93,7 @@
                   </Text>
                   <ImageView fitHeight="238.0" fitWidth="395.0" layoutX="159.0" layoutY="775.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Downloads/1_r7dfFyNmTDN98UMyCMwvPQ.png" />
+                        <Image url="@../../../../../Resources/1_r7dfFyNmTDN98UMyCMwvPQ.png" />
                      </image>
                   </ImageView>
                   <Text layoutX="250.0" layoutY="1002.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fig. 1: Python Keywords" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
