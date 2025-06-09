@@ -27,65 +27,60 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.57">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="940.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1650.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="758.0" text="Biology 2: Life Processes and Organismal Biology">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="870.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1580.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Nutrition and Digestion">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organisms need nutrients to fuel their cells, grow, and maintain bodily functions. Autotrophs like plants produce their own food through photosynthesis, while heterotrophs like animals consume other organisms. In humans and other animals, digestion breaks down food into nutrients that cells can absorb and use." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photosynthesis and cellular respiration are essential life processes. In photosynthesis, plants convert light energy into chemical energy stored in glucose using carbon dioxide and water. This process occurs in the chloroplasts. Cellular respiration, in contrast, takes place in mitochondria and breaks down glucose to produce ATP, the main energy currency of cells." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The digestive system includes organs like the mouth, stomach, and intestines, and relies on both mechanical and chemical processes. Enzymes play a key role in speeding up the breakdown of complex food molecules. Understanding digestion helps us appreciate how the body extracts energy and nutrients from what we eat, and what happens when these processes go wrong." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The human body is organized into systems that perform specific functions. The circulatory system transports nutrients, gases, and waste through the blood. The respiratory system enables gas exchange between the body and the environment. The digestive system breaks down food into nutrients, while the excretory system removes metabolic wastes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="360.0" prefHeight="53.0" prefWidth="686.0" text="Circulation, Respiration, and Excretion">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The circulatory system transports oxygen, nutrients, and waste products throughout the body. The heart pumps blood through arteries and veins, ensuring every cell receives what it needs. The respiratory system works closely with circulation to supply oxygen and remove carbon dioxide through breathing." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="984.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The nervous system and endocrine system coordinate bodily functions. The nervous system uses electrical impulses to respond quickly to stimuli. It consists of the brain, spinal cord, and peripheral nerves. The endocrine system uses hormones released by glands such as the thyroid and pancreas to regulate growth, metabolism, and development over longer periods." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meanwhile, the excretory system (especially the kidneys) helps remove metabolic wastes, maintaining the body's internal balance. These systems highlight the incredible coordination within organisms that allows them to survive, respond to their environment, and maintain homeostasis." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="1079.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The immune system protects the body against disease. It includes physical barriers like skin, specialized white blood cells, and antibodies. Vaccination introduces harmless forms of pathogens to stimulate immune memory. This system plays a critical role in recognizing and eliminating foreign invaders." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="585.0" prefHeight="53.0" prefWidth="686.0" text="Coordination, Reproduction, and Development">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="654.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coordination in living organisms involves the nervous and endocrine systems, which help regulate internal processes and respond to external stimuli. The nervous system uses electrical signals for fast responses, while the endocrine system uses hormones for slower but longer-lasting regulation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="1474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In plants, structures such as roots, stems, leaves, and flowers serve vital roles. Roots absorb water and minerals, stems transport nutrients, leaves carry out photosynthesis, and flowers enable reproduction. Plant hormones like auxins and gibberellins regulate growth and development, responding to environmental cues such as light and gravity." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="729.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reproduction allows organisms to pass on genetic material and ensure the continuation of species. Asexual reproduction creates identical offspring, while sexual reproduction involves genetic variation through the combination of gametes. In animals, this process includes stages like fertilization, embryonic development, and birth. In plants, reproductive structures vary but achieve the same goal, life continuity through new individuals." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="345.0" fitWidth="326.0" layoutX="239.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/istockphoto-459951679-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="304.0" fitWidth="481.0" layoutX="180.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/different-types-of-systems-in-our-body.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="291.0" fitWidth="388.0" layoutX="214.0" layoutY="1144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/SimplePhotosynthesis_CarbonCycle_UGC.jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>
