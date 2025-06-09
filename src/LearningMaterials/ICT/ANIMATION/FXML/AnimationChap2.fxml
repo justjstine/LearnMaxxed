@@ -27,7 +27,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
             <content>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="4300.0" prefWidth="804.0">
                <children>

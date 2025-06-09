@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.ICT.WEBDEVELOPMENT.Controllers.WebDevChap2Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1850.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Animation">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="40.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.1 Introduction" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="595.0" layoutY="1786.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HTML (HyperText Markup Language) is the foundation of every webpage on the internet. It is not a programming language but a markup language used to organize and display content on the web. This chapter introduces students to the fundamentals of HTML and walks them through how to properly structure a website using essential tags. From simple text formatting to embedding images and linking pages, students will learn how to build the skeleton of a fully functional website." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The main building blocks of HTML include elements and tags. Each element is enclosed in angle brackets (e.g., &lt;p&gt; for paragraph) and usually comes in a pair: an opening tag and a closing tag (e.g., &lt;p&gt;This is a paragraph.&lt;/p&gt;). HTML follows a tree-like structure beginning with the &lt;html&gt; root element, which houses the &lt;head&gt; and &lt;body&gt; sections. The &lt;head&gt; contains metadata (like the title and links to stylesheets), while the &lt;body&gt; holds all the visible content." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="40.0" layoutY="109.0" prefHeight="53.0" prefWidth="771.0" text="Chapter 2: HTML – Structuring the Web">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="40.0" layoutY="1594.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.5 Semantic vs Non-Semantic HTML" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="1631.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Semantic HTML gives meaning to the structure. Examples: &lt;header&gt;, &lt;footer&gt;, &lt;article&gt;, &lt;nav&gt;, &lt;main&gt;." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.2 What is  &quot;HyperText&quot;" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The term &quot;HyperText&quot; refers to text that contains links to other text. This is how the web is interconnected — you click a link on one page and are taken to another. HTML uses the &lt;a&gt; tag to create hyperlinks." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="596.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#7c2525" layoutX="62.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;a href=&quot;https://www.deped.gov.ph&quot;&gt;Visit DepEd&lt;/a&gt;" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;p&gt; is the opening tag." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;/p&gt; is the closing tag." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Everything in between is the content of the element." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="753.0" strokeType="OUTSIDE" strokeWidth="0.0" text="There are also self-closing tags that don’t need a closing pair, like &lt;img&gt; and &lt;br&gt;." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="789.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.3  HTML Page Structure" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="821.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Here's the basic structure of an HTML page:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="279.0" fitWidth="368.0" layoutX="104.0" layoutY="844.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/htmlsam.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="54.0" layoutY="1108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;!DOCTYPE html&gt; tells the browser you're using HTML5." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="1139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;html&gt; wraps the entire page." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="1170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;head&gt; contains meta-information like the title and stylesheets." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="1198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* &lt;body&gt; contains all the content visible to users." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="1241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.4  Common HTML Elements and What They Do" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="273.0" fitWidth="401.0" layoutX="145.0" layoutY="1262.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/HTML_Tags.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="65.0" layoutY="1689.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non-semantic HTML like &lt;div&gt; and &lt;span&gt; doesn't tell anything about the content." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="1730.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Why it matters: Using semantic tags improves accessibility (for screen readers), SEO (search engine optimization), and code readability." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#comsys1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#comsys2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#comsys3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

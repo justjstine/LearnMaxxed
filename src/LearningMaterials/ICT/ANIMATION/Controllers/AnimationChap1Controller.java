@@ -94,7 +94,7 @@ void comsys3ButtonHandler(ActionEvent event) {
         stage.setScene(new Scene(dashboardRoot, 1000, 600));
     }
 
-    @FXML
+@FXML
 public void handleSubjectSelection() {
     String selected = subjectComboBox.getSelectionModel().getSelectedItem();
     try {
@@ -109,6 +109,12 @@ public void handleSubjectSelection() {
             Stage stage = (Stage) subjectComboBox.getScene().getWindow();
             stage.setScene(new Scene(root, 1000, 600));
             stage.setTitle("Computer Systems Introduction");
+            stage.show();
+        } else if ("Web Development".equals(selected)) {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Web Development Introduction");
             stage.show();
         } else if ("Animation".equals(selected)) {
             Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
