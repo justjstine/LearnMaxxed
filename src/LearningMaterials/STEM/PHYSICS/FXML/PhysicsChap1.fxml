@@ -27,80 +27,60 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.97">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1250.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1520.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Physics 1: Mechanics and Motion">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Physics 1: Mechanics (Motion and Forces)">
                      <font>
-                        <Font name="Segoe UI Semibold" size="38.0" />
+                        <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1180.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1450.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Kinematics">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kinematics is the branch of physics that deals with the description of motion without considering the forces that cause it. It focuses on key concepts such as displacement, velocity, acceleration, and time. Displacement refers to the change in position of an object, while velocity is the rate of change of displacement. Acceleration, on the other hand, measures how quickly velocity changes over time." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mechanics is the branch of physics that deals with motion and the forces that cause it. Motion is described using position, displacement, speed, velocity, and acceleration. An object’s motion can be uniform, meaning it moves at constant speed, or non-uniform, where speed or direction changes over time. These basic concepts are analyzed in one and two dimensions using vector quantities." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Motion can be described using graphs (displacement-time and velocity-time) or equations known as the kinematic equations. These equations allow us to solve problems involving uniformly accelerated motion—such as a car speeding up on a highway or an object falling under gravity. Understanding these foundational ideas is essential for analyzing more complex motion later on." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="787.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Newton’s Laws of Motion form the foundation for understanding how forces affect motion. The first law explains inertia, stating that an object remains at rest or in uniform motion unless acted upon by an external force. The second law defines the relationship between force, mass, and acceleration through the equation F = ma. The third law states that every action has an equal and opposite reaction." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="363.0" prefHeight="53.0" prefWidth="686.0" text="Laws of Motion">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sir Isaac Newton formulated three laws that describe how objects move and interact with forces. Newton's First Law, or the law of inertia, states that an object will remain at rest or move at constant velocity unless acted upon by a net external force. His Second Law explains how the acceleration of an object depends on its mass and the net force applied, summarized as F = ma. Finally, the Third Law tells us that for every action, there is an equal and opposite reaction." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="880.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free body diagrams are used to analyze forces acting on an object. These diagrams help identify gravitational force, normal force, friction, tension, and applied forces. Understanding how these forces interact allows students to solve problems involving acceleration, equilibrium, and net force in different contexts such as inclined planes or pulley systems." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These principles form the foundation of classical mechanics and are used in a wide range of practical contexts, from assessing a skateboarder's motion to launching rockets. Students can forecast and comprehend motion in both simple and complicated systems by learning to recognize and compute the forces operating on an item." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Work, energy, and power are closely related to motion. Work is done when a force causes displacement in the direction of the force. Kinetic energy is the energy of motion, while potential energy is stored energy due to position or configuration. The law of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="636.0" prefHeight="53.0" prefWidth="686.0" text="Work, Power, and Energy">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="705.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When an object is moved in the direction of a force, work is done. It is computed by multiplying displacement by force. Work is directly related to energy, especially mechanical energy. Kinetic energy, or the energy of motion, and potential energy, or the energy stored because of location, are the two primary categories. According to the Law of Conservation of Energy, energy can only be changed from one form to another; it cannot be created or destroyed." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Momentum is a product of mass and velocity and is conserved in isolated systems. Impulse is the change in momentum caused by a force applied over time. Collisions, whether elastic or inelastic, demonstrate how momentum and energy are transferred between objects. These concepts are key in analyzing real-life events such as car crashes or sports movements." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="825.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Power is the rate at which work is done or energy is transferred. It tells us how quickly a task is completed and is measured in watts (W). In real-world contexts like engineering, understanding work, energy, and power is crucial for designing machines, vehicles, and structures that operate efficiently and safely." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="913.0" prefHeight="53.0" prefWidth="686.0" text="Momentum and Collisions">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="982.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Momentum is a measure of an object's motion, calculated as the product of its mass and velocity. It plays a vital role in analyzing systems where objects interact, such as car crashes or sports collisions. The principle of conservation of momentum states that in a closed, isolated system, the total momentum before a collision is equal to the total momentum after it." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="1081.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Collisions can be classified as either inelastic (where some energy is lost, frequently as heat or deformation) or elastic (where kinetic energy is retained). Students can accurately forecast the results of impacts and interactions in real life by comprehending momentum and impulse, which is the change in momentum caused by a force applied over time." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="259.0" fitWidth="644.0" layoutX="201.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/10f76c13caec5bf5cc2610c53e94d6fc_8-223iap17.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="297.0" fitWidth="429.0" layoutX="187.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Newtons-Laws-of-Motion.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="308.0" fitWidth="487.0" layoutX="159.0" layoutY="976.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Work,%20Energy%20and%20Power%20-%20Physics%20Short%20Handwritten%20Notes%20(3).jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

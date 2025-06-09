@@ -27,65 +27,60 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.77">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="870.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1750.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Chemistry 2: Chemical Reactions and Energy">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="722.0" text="Chemistry 2: Atomic Structure and Periodicity">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="800.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="569.0" layoutY="1680.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Types of Chemical Reactions">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemical reactions involve the transformation of substances through the breaking and forming of bonds. They can be classified into synthesis, decomposition, single replacement, double replacement, and combustion reactions. Each type follows specific patterns and is used in various industrial and biological processes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="526.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An atom is the smallest particle of an element that retains its identity in a chemical reaction. It is composed of a dense central nucleus, containing positively charged protons and neutral neutrons, surrounded by negatively charged electrons in a cloud. The number of protons defines the element and is referred to as the atomic number." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recognizing reaction types helps in predicting products and balancing equations efficiently. This knowledge is critical for understanding how chemicals interact and for designing experiments and industrial processes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Electrons are arranged in energy levels or shells around the nucleus. These energy levels determine the electron configuration of an atom, which influences how it bonds with other atoms. The outermost shell, or valence shell, is particularly important because it determines an atom's chemical reactivity and bonding behavior." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="338.0" prefHeight="53.0" prefWidth="686.0" text="Thermochemistry ">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thermochemistry explores the energy changes associated with chemical reactions. Every reaction either absorbs energy (endothermic) or releases it (exothermic). The amount of heat involved can be measured using calorimetry and is expressed as enthalpy change (ΔH)." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1058.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The periodic table arranges elements in order of increasing atomic number. It is organized into periods (rows) and groups (columns) based on recurring chemical properties. Elements in the same group have similar valence electron configurations, which results in comparable chemical behaviors. For example, Group 1 elements (alkali metals) are highly reactive and form similar compounds." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Studying thermochemistry allows students to understand the energy efficiency of reactions and their implications in real-world applications like combustion engines and refrigeration. It also provides insight into the spontaneity of reactions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <ImageView fitHeight="433.0" fitWidth="535.0" layoutX="135.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Table.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="309.0" fitWidth="520.0" layoutX="142.0" layoutY="716.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Periodic_table_large.svg.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="30.0" layoutY="1156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Several periodic trends can be observed as you move across or down the table. Atomic size decreases across a period due to increased nuclear charge but increases down a group as more electron shells are added. Ionization energy (energy required to remove an electron) increases across a period and decreases down a group. Electronegativity, which measures an atom’s ability to attract electrons in a bond, follows a similar trend" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="555.0" prefHeight="53.0" prefWidth="686.0" text="Kinetics and Equilibrium">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemical kinetics deals with the speed of reactions and the factors that affect them, such as temperature, concentration, and catalysts. Reaction rates help chemists control processes to maximize efficiency and safety." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Isotopes are atoms of the same element that have the same number of protons but different numbers of neutrons. This means they have the same atomic number but different mass numbers. Some isotopes are stable, while others are radioactive and decay over time, releasing radiation. Understanding isotopes is important in fields such as medicine, archaeology, and nuclear energy." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Equilibrium, on the other hand, refers to a state where the forward and reverse reactions occur at the same rate. Understanding Le Châtelier's Principle enables prediction of how systems respond to changes in conditions, which is essential in chemical manufacturing and environmental chemistry." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="279.0" fitWidth="457.0" layoutX="230.0" layoutY="1260.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Hydrogen%20isotopes_0.jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

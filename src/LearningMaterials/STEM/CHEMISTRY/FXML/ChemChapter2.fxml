@@ -29,78 +29,53 @@
       </Text>
         <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1120.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1310.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Chemistry 1: Foundations of Chemistry">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Chemistry 1: Matter and Its Properties">
                      <font>
                         <Font name="Segoe UI Semibold" size="38.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1050.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1240.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Atomic Structure">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atoms are the fundamental building blocks of matter. Each atom consists of a nucleus made up of protons and neutrons, surrounded by a cloud of electrons. Early models such as Dalton's solid sphere model have evolved into more advanced ones, including the quantum mechanical model, which describes the behavior of electrons in terms of probabilities rather than fixed orbits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matter is defined as anything that has mass and occupies space. It includes all the materials and substances around us, whether visible like a book or invisible like air. Chemistry, as a science, begins with the study of matter because understanding its nature allows us to comprehend how different substances behave and interact in various environments." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Understanding the behavior of subatomic particles is essential in explaining chemical properties and reactions. Isotopes are atoms of the same element with different numbers of neutrons, affecting atomic mass but not chemical behavior. Ions, on the other hand, form when atoms gain or lose electrons, leading to charged species that play crucial roles in chemical reactions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matter exists in four physical states: solid, liquid, gas, and plasma. Solids have a definite shape and volume due to tightly packed particles vibrating in place. Liquids maintain a definite volume but take the shape of their container, as particles slide past one another. Gases have neither a definite shape nor volume, allowing them to spread freely. Plasma, found in stars and lightning, consists of highly energized, charged particles." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="363.0" prefHeight="53.0" prefWidth="686.0" text="The Periodic Table">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The periodic table organizes elements based on increasing atomic number and recurring chemical properties. Elements in the same group share similar characteristics due to having the same number of valence electrons. Trends across periods and down groups, such as atomic radius, electronegativity, and ionization energy, help predict element behavior." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matter is classified based on composition into pure substances and mixtures. Pure substances include elements and compounds with uniform and definite compositions. Elements are made up of only one kind of atom, while compounds consist of two or more elements chemically bonded together. Mixtures are physical combinations of substances and may be homogeneous (uniform, like saltwater) or heterogeneous (non-uniform, like a salad)." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Understanding the layout of the periodic table enables students to identify metals, nonmetals, and metalloids and to anticipate how elements might react with one another. This predictive power is fundamental in chemical analysis and synthesis." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physical properties of matter can be observed without changing its identity. These include color, odor, melting point, boiling point, density, and solubility. Chemical properties, in contrast, describe how a substance reacts with other substances, such as flammability or the ability to rust. Observing a chemical property usually involves a chemical change that alters the substance’s composition." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="611.0" prefHeight="53.0" prefWidth="686.0" text="Chemical Bonding">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemical bonding involves the attraction between atoms to form molecules and compounds. The main types are ionic bonds (transfer of electrons), covalent bonds (sharing of electrons), and metallic bonds (delocalized electrons in a metal lattice). Each type results in substances with different properties." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matter can undergo physical or chemical changes. Physical changes affect only the appearance or state of a substance without altering its composition (e.g., melting ice). Chemical changes result in the formation of new substances with different properties, such as when wood burns or iron rusts. Recognizing these changes is essential in identifying and understanding chemical processes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="762.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bonding theories such as Lewis structures and VSEPR (Valence Shell Electron Pair Repulsion) theory help visualize molecule shapes and predict their behavior. Understanding bonding is key to grasping how substances interact and change during chemical reactions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="826.0" prefHeight="53.0" prefWidth="686.0" text="Stoichiometry ">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="895.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stoichiometry deals with the quantitative relationships in chemical reactions. It involves calculating the amounts of reactants and products based on balanced chemical equations. The mole concept is that a bridge between the atomic and macroscopic worlds is central to these calculations." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="977.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Through stoichiometry, students learn to convert between mass, moles, and volume, enabling them to determine how much of a substance is needed or produced in a given reaction. Mastery of this topic is essential for practical applications in laboratory and industrial settings." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="270.0" fitWidth="498.0" layoutX="194.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/States-of-Matter-scaled.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="270.0" fitWidth="498.0" layoutX="200.0" layoutY="828.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Chemical-and-Physical-Changes-1024x683.jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

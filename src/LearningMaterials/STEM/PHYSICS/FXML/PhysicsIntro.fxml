@@ -27,16 +27,16 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="655.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="950.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Physics">
                      <font>
                         <Font name="Segoe UI Semibold" size="51.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="585.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="880.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -46,41 +46,51 @@
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physics is the study of the natural laws that govern matter, energy, space, and time. From the smallest particles to the vastness of galaxies, physics provides a deep and logical framework for understanding how the universe works. In this course, you will build a strong foundation in the fundamental principles of physics and see how they apply to real-world technology, engineering, and everyday experiences." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physics is the study of matter, energy, and the forces that govern the universe. It explains everything from how objects fall to how electricity powers our homes. As a STEM student, you will explore the laws and principles that describe motion, forces, waves, and energy. This course equips you with a deep understanding of how the world works by applying mathematical and experimental methods." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The course is divided into three comprehensive chapters: Mechanics and Motion, Electricity, Magnetism, and Waves, and Modern Physics and Applications. Each topic is presented with clear, concise reading materials (2–3 paragraphs each), supported by examples and applications relevant to STEM learners. This structure is designed to help you grasp complex concepts progressively and apply them to solve problems both in academics and beyond." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="563.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The course is divided into three major chapters: Mechanics, Electricity and Magnetism, and Waves, Sound, and Light. Each topic includes carefully structured reading content designed to enhance both conceptual understanding and problem-solving skills. You will be challenged to apply physics to real-world situations, use equations to describe physical phenomena, and develop scientific reasoning through analysis and experimentation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By the end of this course, you should be able to:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By the end of this course, you should be able to:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Understand and apply physical laws to describe motion, forces, and energy" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Describe motion using concepts of speed, velocity, and acceleration" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Analyze systems involving electricity, magnetism, and wave behavior" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="751.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Analyze the effects of forces on objects and systems" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Explore fundamental ideas in modern physics like quantum and nuclear phenomena" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="781.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Understand electric circuits and the behavior of charges" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Think critically using the scientific method and problem-solving strategies" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="811.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Explore wave motion and how it applies to sound and light" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
+                  <Text layoutX="30.0" layoutY="841.0" strokeType="OUTSIDE" strokeWidth="0.0" text="• Use models, equations, and data to investigate physical systems" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="273.0" fitWidth="496.0" layoutX="154.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/physics.jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

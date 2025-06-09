@@ -27,85 +27,60 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1070.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1205.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="778.0" text="Chemistry 3: Modern Applications and">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="778.0" text="Chemistry 3: Chemical Bonding and ">
                      <font>
-                        <Font name="Segoe UI Semibold" size="41.0" />
+                        <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <Label layoutX="30.0" layoutY="71.0" prefHeight="61.0" prefWidth="686.0" text="Environmental Chemistry">
+                  <Label layoutX="30.0" layoutY="71.0" prefHeight="61.0" prefWidth="686.0" text="Molecular Structure">
                      <font>
-                        <Font name="Segoe UI Semibold" size="41.0" />
+                        <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1000.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1135.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="154.0" prefHeight="53.0" prefWidth="686.0" text="Acids, Bases, and Solutions">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acids and bases are substances that donate and accept protons (H+), respectively. Their strength depends on the extent of ionization in water. The pH scale is used to measure the acidity or basicity of a solution, with indicators helping to determine pH values." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemical bonding involves the interaction of atoms to achieve stability, often by attaining a full outer shell of electrons. Atoms bond by gaining, losing, or sharing electrons. The three main types of chemical bonds are ionic, covalent, and metallic, each involving different mechanisms of electron interaction." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solutions play a central role in chemistry, affecting reaction rates and product formation. Understanding concentration terms such as molarity and how to prepare and dilute solutions is vital for laboratory accuracy." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="786.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ionic bonds occur when electrons are transferred from one atom to another, usually between metals and nonmetals. This results in the formation of positive and negative ions, which are held together by electrostatic forces. For example, in sodium chloride (NaCl), sodium donates one electron to chlorine, forming Na⁺ and Cl⁻ ions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="358.0" prefHeight="53.0" prefWidth="686.0" text="Electrochemistry ">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Electrochemistry focuses on redox (reduction-oxidation) reactions where electrons are transferred. These reactions power batteries, electroplating, and electrolysis. Galvanic cells convert chemical energy into electrical energy, while electrolytic cells do the reverse." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="885.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Covalent bonds form when two nonmetal atoms share electrons to achieve full valence shells. The number of shared electron pairs determines whether the bond is single, double, or triple. Molecules like water (H₂O) and carbon dioxide (CO₂) are formed through covalent bonding. These bonds can be polar or nonpolar depending on the electronegativity difference between atoms." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By mastering electrochemistry, students gain insight into energy conversion and storage, which are crucial in fields like renewable energy and electronics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="981.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemistry plays a critical role in addressing environmental challenges. Pollution from industrial activities, such as the release of greenhouse gases and toxic waste, can be mitigated through green chemistry principles and sustainable practices." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="543.0" prefHeight="53.0" prefWidth="686.0" text="Organic Chemistry and Biochemistry">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="615.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organic chemistry studies carbon-containing compounds, which form the basis of life. Simple hydrocarbons such as alkanes, alkenes, and alkynes serve as the foundation for more complex molecules like alcohols, acids, and polymers." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="1056.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applications of chemistry in agriculture, medicine, and manufacturing showcase how scientific knowledge can be harnessed for societal benefit. Emphasis on responsible use and innovation is essential for future chemists." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biochemistry bridges chemistry and biology by examining biomolecules like carbohydrates, proteins, lipids, and nucleic acids. Understanding these compounds is fundamental in medicine, nutrition, and biotechnology." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="754.0" prefHeight="53.0" prefWidth="686.0" text="Environmental and Industrial Chemistry">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemistry plays a critical role in addressing environmental challenges. Pollution from industrial activities, such as the release of greenhouse gases and toxic waste, can be mitigated through green chemistry principles and sustainable practices." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="901.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applications of chemistry in agriculture, medicine, and manufacturing showcase how scientific knowledge can be harnessed for societal benefit. Emphasis on responsible use and innovation is essential for future chemists." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="237.0" fitWidth="459.0" layoutX="193.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/maxresdefault%20(1).jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="261.0" fitWidth="458.0" layoutX="223.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/IonicCovalent.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>
