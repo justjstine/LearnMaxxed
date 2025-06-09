@@ -27,65 +27,65 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.57">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="930.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1920.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="721.0" text="Biology 3: Genetics, Evolution, and Ecology">
                      <font>
-                        <Font name="Segoe UI Semibold" size="36.0" />
+                        <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="860.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="573.0" layoutY="1850.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="125.0" prefHeight="53.0" prefWidth="686.0" text="Genetics and Heredity">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genetics is the study of heredity, how traits are passed from one generation to the next. The unit of heredity is the gene, a segment of DNA that codes for a specific trait. Gregor Mendel, through experiments with pea plants, discovered the basic principles of inheritance, including dominant and recessive traits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="27.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genetics is the study of heredity and variation. Traits are inherited through genes found on chromosomes. Each gene has different forms called alleles. Mendel’s laws of segregation and independent assortment explain how traits are passed from parents to offspring. Punnett squares are used to predict genetic outcomes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modern genetics explores DNA structure, gene expression, mutations, and biotechnology applications. Tools like Punnett squares, karyotyping, and genetic engineering help us understand and manipulate genes. Genetics has transformed medicine, agriculture, and forensic science, making it a cornerstone of modern biology." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="27.0" layoutY="828.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNA replication, transcription, and translation are key processes in gene expression. During replication, DNA makes an exact copy of itself. Transcription converts DNA into RNA, and translation uses that RNA to synthesize proteins. Mutations are changes in the DNA sequence that may lead to altered traits or diseases." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="374.0" prefHeight="53.0" prefWidth="686.0" text="Evolution and the Diversity of Life">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evolution is the process by which species change over time through mechanisms such as natural selection, mutation, genetic drift, and gene flow. Charles Darwin’s theory of evolution by natural selection explains how advantageous traits become more common in a population over generations." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="28.0" layoutY="1255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evolution explains the diversity of life through natural selection. Organisms with favorable traits are more likely to survive and reproduce. Over time, populations change as advantageous traits become more common. Evidence for evolution includes the fossil record, comparative anatomy, and molecular biology." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fossils, genetic evidence, and observable adaptations support the theory of evolution. It also explains the incredible diversity of life on Earth, from single-celled organisms to complex multicellular species. Evolutionary biology helps us understand common ancestry and the relationships between species." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="28.0" layoutY="1675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecology studies the relationships between organisms and their environment. Populations, communities, and ecosystems interact in dynamic ways. Biotic factors like predators and abiotic factors like temperature and water influence how organisms survive. Energy flows through ecosystems via food chains and food webs." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="581.0" prefHeight="53.0" prefWidth="686.0" text="Ecosystems and Environmental Interactions">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="653.0" strokeType="OUTSIDE" strokeWidth="0.0" text="An ecosystem includes all the living organisms (biotic factors) and non-living elements (abiotic factors) in an area. Organisms interact through food chains, predator-prey relationships, and symbiotic relationships like mutualism and parasitism. These interactions create balance and regulate population sizes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="28.0" layoutY="1775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Human activities affect ecosystems through pollution, deforestation, and climate change. Biodiversity is essential for ecosystem stability and resilience. Conservation biology seeks to protect species and habitats. Sustainable practices aim to balance human needs with environmental preservation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="753.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humans impact ecosystems through activities like deforestation, pollution, and climate change. Ecology teaches us how ecosystems function and why it’s vital to protect biodiversity and natural resources. Understanding these interactions is essential for solving environmental problems and promoting sustainability." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="244.0" fitWidth="428.0" layoutX="188.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Cell-karyotype-exhibiting-trisomy_Credit_NIH.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="397.0" fitWidth="594.0" layoutX="105.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/DNA-replication.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="349.0" fitWidth="624.0" layoutX="80.0" layoutY="896.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/evolution-wiki_ver_1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="327.0" fitWidth="483.0" layoutX="161.0" layoutY="1323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Environmental-Science-vs.-Ecology-2-scaled-1.jpg" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

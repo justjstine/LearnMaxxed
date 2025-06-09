@@ -27,66 +27,71 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="890.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1040.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="721.0" text="Pre-Calculus 3: Advanced Algebra and">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="721.0" text="Pre-Calculus 3: Analytic Geometry and">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <Label layoutX="30.0" layoutY="75.0" prefHeight="62.0" prefWidth="721.0" text="Analytic Geometrylogy">
+                  <Label layoutX="30.0" layoutY="75.0" prefHeight="62.0" prefWidth="721.0" text="Conic Sections">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="820.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="970.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="133.0" prefHeight="53.0" prefWidth="686.0" text="Polynomial and Rational Functions">
+                  <Label layoutX="30.0" layoutY="133.0" prefHeight="53.0" prefWidth="686.0" text="Basics of Analytic Geometry">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Polynomials are algebraic expressions made of terms with whole-number exponents. You’ll learn to identify the behavior of their graphs, such as end behavior and turning points, and solve equations by factoring and dividing polynomials. These skills are essential in solving real-world modeling problems." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Analytic geometry uses algebraic equations to describe geometric figures. The Cartesian coordinate system allows for the representation of points, lines, and curves using coordinates and equations. By combining algebra with geometry, problems involving distance, midpoint, and slope can be solved efficiently. This branch forms the foundation for calculus and other advanced math topics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rational functions, which involve dividing polynomials, introduce the concept of asymptotes and discontinuities. You'll explore their graphs and learn how to interpret features such as vertical and horizontal asymptotes, which represent limits on behavior in real-life systems like velocity or cost." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="338.0" prefHeight="53.0" prefWidth="686.0" text="Sequences, Series, and Mathematical Induction">
+                  <Label layoutX="30.0" layoutY="289.0" prefHeight="53.0" prefWidth="686.0" text="Introduction to Conic Sections">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A sequence is a list of numbers following a rule, while a series is the sum of a sequence. You'll work with arithmetic and geometric sequences and derive formulas to find specific terms or total sums. These patterns are common in computing, financial models, and data science." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A conic section is a curve formed by the intersection of a plane and a cone. The four main types are circles, ellipses, parabolas, and hyperbolas. Each conic section has a standard form equation and specific geometric properties such as vertices, foci, and axes of symmetry. Recognizing and graphing these curves is important in fields such as engineering and physics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You’ll also be introduced to mathematical induction, a logical proof technique used to show that a rule holds true for all natural numbers. This method enhances your ability to reason abstractly and provides a foundation for more advanced proofs in calculus and beyond." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="545.0" prefHeight="53.0" prefWidth="686.0" text="Conic Sections and Parametric Equations">
+                  <Label layoutX="30.0" layoutY="459.0" prefHeight="53.0" prefWidth="686.0" text="Equations of Circles and Ellipses">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="617.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conic sections such as circles, ellipses, parabolas, and hyperbolas are curves formed when a plane intersects a cone. You’ll study their standard equations, graph them, and analyze their key properties such as focus, vertex, and axis. These shapes appear frequently in science and design, from planetary orbits to satellite dishes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="544.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The equation of a circle in standard form is (x - h)² + (y - k)² = r², where (h, k) is the center and r is the radius. Ellipses have the general form (x - h)²/a² + (y - k)²/b² = 1, where the major and minor axes determine the shape. These equations allow precise modeling of curved paths and orbits in real-world applications." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="717.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You’ll also learn about parametric equations where x and y are both expressed in terms of a third variable, often time. This form is especially useful in physics and engineering to describe motion and other dynamic systems. Mastery of these tools helps you model and understand complex behaviors in the world around you." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Label layoutX="30.0" layoutY="629.0" prefHeight="53.0" prefWidth="686.0" text="Properties of Parabolas">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parabolas are defined by the equation y = ax² + bx + c or (x - h)² = 4p(y - k). They have a vertex, axis of symmetry, focus, and directrix. Parabolas model projectile motion, satellite dishes, and other applications where a symmetrical curve is involved. Understanding how parameters affect the shape helps in designing structures and predicting movement." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="30.0" layoutY="799.0" prefHeight="53.0" prefWidth="686.0" text="Understanding Hyperbolas">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="884.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hyperbolas consist of two separate curves and are defined by the equation (x - h)²/a² - (y - k)²/b² = 1. They have asymptotes that guide the shape of the graph and are used to describe scenarios like navigation systems or sound reflection. The properties of hyperbolas are also applied in advanced fields such as relativity and orbital mechanics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>

@@ -27,65 +27,60 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.81">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1020.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1655.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="730.0" text="Biology 1: The Cell and Molecular Biology">
                      <font>
                         <Font name="Segoe UI Semibold" size="38.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="950.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="571.0" layoutY="1585.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="The Nature and Scope of Biology">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology is the study of life and living organisms, covering their origin, structure, growth, function, and interaction with the environment. It is a vast field, encompassing everything from microscopic viruses to complex ecosystems. Scientists use the scientific method to explore biological questions systematically in forming hypotheses, conducting experiments, analyzing data, and drawing conclusions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells are the basic units of life. All organisms are made up of cells, which may be prokaryotic or eukaryotic. Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have complex structures including a nucleus, mitochondria, and endoplasmic reticulum. Studying cell structure helps in understanding how organisms grow, repair, and reproduce." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The study of biology connects with many other disciplines, including chemistry, physics, and mathematics, making it essential for students in STEM. It also lays the groundwork for understanding pressing global issues like disease, biodiversity loss, and climate change. By appreciating the scope of biology, students can begin to see its relevance in daily life and its potential to solve real-world problems." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="804.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cell membranes regulate what enters and exits the cell through selective permeability. They are composed mainly of a phospholipid bilayer with embedded proteins. Transport across the membrane includes passive methods like diffusion and osmosis, and active processes like endocytosis and the sodium-potassium pump, which require energy." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="400.0" prefHeight="53.0" prefWidth="686.0" text="The Cell: Structure and Function">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All living organisms are made up of cells that are the basic units of life. Some organisms, like bacteria, are unicellular, while others, like humans, are multicellular. Cells are classified into two main types: prokaryotic (without a nucleus, e.g., bacteria) and eukaryotic (with a nucleus, e.g., plant and animal cells). Organelles like the nucleus, mitochondria, endoplasmic reticulum, and chloroplasts (in plant cells) carry out specific functions to keep the cell alive and functioning." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="902.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Organelles within the cell have specific functions. The nucleus controls genetic information. Mitochondria are the site of cellular respiration, converting glucose into usable energy. The endoplasmic reticulum and Golgi apparatus are involved in protein and lipid processing, while lysosomes handle waste digestion within the cell." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cell membranes regulate what enters and exits the cell, maintaining homeostasis. Understanding how cells grow, divide (via mitosis and meiosis), and carry out life processes is fundamental to studying biology. From this microscopic level, we begin to grasp the complexity and beauty of living systems." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="1386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells reproduce through cell division. Mitosis is the process by which somatic cells produce two identical daughter cells for growth and repair. Meiosis, on the other hand, occurs in reproductive cells and produces gametes with half the number of chromosomes. These processes ensure genetic continuity and variation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Label layoutX="30.0" layoutY="652.0" prefHeight="53.0" prefWidth="686.0" text="Biomolecules and Cellular Processes">
-                     <font>
-                        <Font name="Segoe UI Semibold" size="25.0" />
-                     </font>
-                  </Label>
-                  <Text layoutX="30.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biological molecules, or biomolecules, are the building blocks of life. These include carbohydrates, lipids, proteins, and nucleic acids. Carbohydrates provide energy, lipids store energy and make up cell membranes, proteins perform countless cellular functions, and nucleic acids (DNA and RNA) store and transmit genetic information." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="29.0" layoutY="1486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biomolecules such as carbohydrates, proteins, lipids, and nucleic acids are essential for cellular function. Carbohydrates provide energy, proteins serve structural and enzymatic roles, lipids are important for membrane structure and energy storage, and nucleic acids like DNA and RNA store and transmit genetic information." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="819.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cells perform numerous processes to sustain life, including cellular respiration (converting glucose into usable energy in the form of ATP) and photosynthesis (in plants, converting light energy into chemical energy). These processes reflect the incredible efficiency and adaptability of living systems and show how energy flows through life forms." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
+                  <ImageView fitHeight="282.0" fitWidth="578.0" layoutX="173.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Simple-Cell.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="307.0" fitWidth="507.0" layoutX="149.0" layoutY="484.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/hq720.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="356.0" fitWidth="905.0" layoutX="136.0" layoutY="995.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Mitosis-vs-Meiosis.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

@@ -27,65 +27,70 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="940.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="990.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="758.0" text="Pre-Calculus 2: Trigonometry">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="870.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="920.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Angles and Trigonometric Functions">
+                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Defining Trigonometric Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.1 Angles and Trigonometric Functions Trigonometry begins with understanding angles and their measurements in degrees and radians. Using the unit circle, you’ll learn to relate angles to coordinates and explore the six main trigonometric functions: sine, cosine, tangent, cosecant, secant, and cotangent. These functions describe ratios in triangles and form the basis for modeling periodic behavior like sound or motion." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trigonometry deals with the relationships between angles and sides of triangles. The six trigonometric functions are sine, cosine, tangent, cosecant, secant, and cotangent. These functions are defined using the ratios of sides in a right triangle. For example, sine is the ratio of the opposite side to the hypotenuse, while cosine is the adjacent side over the hypotenuse." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This topic connects geometry to algebra and helps you solve problems involving rotation, wave patterns, and circular motion. You’ll also begin to understand how trigonometry fits into broader mathematical models used in navigation, astronomy, and physics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="355.0" prefHeight="53.0" prefWidth="686.0" text="Graphs and Identities of Trigonometric Function">
+                  <Label layoutX="30.0" layoutY="261.0" prefHeight="53.0" prefWidth="686.0" text="The Unit Circle and Radian Measure">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trigonometric functions create wave-like graphs that repeat over intervals, known as periodic functions. In this section, you'll graph sine, cosine, and tangent functions, adjusting for amplitude, frequency, and phase shifts. Understanding these changes helps interpret patterns in nature and technology, such as tides, music, and oscillating circuits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The unit circle is a fundamental tool in understanding trigonometric functions. It is a circle of radius one centered at the origin on the coordinate plane. Angles on the unit circle are measured in radians, and trigonometric values correspond to coordinates of points on the circle. This representation extends trigonometric functions beyond right triangles and helps in defining periodic behavior." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You’ll also study trigonometric identities, formulas that hold true for all inputs. These identities allow you to simplify complex expressions and solve tricky equations. Key formulas such as the Pythagorean identity and angle addition identities are essential tools for further study and practical application in many STEM fields." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="601.0" prefHeight="53.0" prefWidth="686.0" text="Solving Triangles and Trigonometric Equations">
+                  <Label layoutX="30.0" layoutY="418.0" prefHeight="53.0" prefWidth="686.0" text="Graphs of Trigonometric Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beyond right triangles, trigonometry helps solve any triangle using the Law of Sines and Law of Cosines. These methods are crucial in real-world applications such as architecture, physics, and engineering. You’ll practice finding unknown sides or angles based on given information and applying these tools in non-right triangle contexts." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphs of trigonometric functions show how the values repeat over regular intervals. The sine and cosine functions have a wave-like pattern, called a sinusoid, with amplitude, period, phase shift, and vertical shift as key features. Tangent graphs have vertical asymptotes and repeat at regular intervals. These graphs are used to model periodic phenomena such as sound waves and tides." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additionally, you’ll learn to solve trigonometric equations using algebraic techniques, identities, and inverse functions. These problems often have multiple solutions due to the periodic nature of trig functions. This lesson enhances your analytical thinking and prepares you to handle complex mathematical relationships." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trigonometric identities are equations that are true for all values of the variable. Basic identities include the Pythagorean identity, reciprocal identities, and quotient identities. These identities are used to simplify expressions and solve equations. Mastering them is essential for more advanced topics in calculus and physics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
+                  <Label layoutX="30.0" layoutY="569.0" prefHeight="53.0" prefWidth="686.0" text="Trigonometric Identities">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="824.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solving trigonometric equations involves finding angles that satisfy a given equation. These solutions may be in degrees or radians and often include multiple values due to the periodic nature of the functions. The laws of sines and cosines are used in solving oblique triangles, which are not right triangles. These tools are applied in real-life problems such as navigation, construction, and astronomy." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="30.0" layoutY="738.0" prefHeight="53.0" prefWidth="686.0" text="Solving Trigonometric Equations">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
                </children></AnchorPane>
             </content>
         </ScrollPane>

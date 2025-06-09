@@ -27,61 +27,66 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="970.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1025.0" prefWidth="804.0">
                <children>
                   <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="730.0" text="Basic Calulus 1: Functions and Graphs">
                      <font>
                         <Font name="Segoe UI Semibold" size="38.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="900.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="955.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Understanding Functions">
+                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Overview of Functions in Calculus">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A function is a special type of relation that assigns exactly one output for every input. In this lesson, you’ll learn how to identify functions, write them in function notation (such as f(x)), and determine their domain and range. Understanding functions means seeing them not just as equations, but as rules or machines that process input values into output values. You’ll explore examples like f(x) = 2x + 3 (a linear function) and f(x) = x² − 4 (a quadratic function), and learn to test if a relation is a function using tools like the vertical line test. These foundations are essential because nearly all mathematical models in science and engineering rely on functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A function is a rule that assigns to each input exactly one output. In calculus, functions serve as the foundation for describing patterns and behaviors of changing quantities. Common types of functions include polynomial, rational, exponential, and trigonometric. Understanding how to read, write, and graph these functions is essential before moving on to the concept of limits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In this lesson, you will explore how functions behave in terms of domain (allowed inputs), range (possible outputs), and overall trends such as increasing, decreasing, or remaining constant. Real-world applications include modeling speed over time or population growth. Beyond memorization, this topic will teach you to understand processes and relationships algebraically, graphically, and numerically." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="413.0" prefHeight="53.0" prefWidth="686.0" text="Graphing Techniques and Transformations">
+                  <Label layoutX="30.0" layoutY="265.0" prefHeight="53.0" prefWidth="686.0" text="Concept of Limits">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphing functions helps visualize mathematical relationships and understand how outputs change with different inputs. You will begin with basic parent functions such as f(x) = x², f(x) = √x, and f(x) = |x| and learn how they transform when their equations change. You will practice shifting graphs, reflecting them across axes, and stretching or compressing them." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The limit of a function describes how a function behaves as the input approaches a certain value. Limits help analyze points where a function may not be defined but still has a predictable trend. For example, the function f(x) = (x² - 1)/(x - 1) is undefined at x = 1, but its limit exists and can be found by simplifying the expression or observing its graph." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Understanding transformations allows you to quickly interpret graphs and predict behavior. You will also work with piecewise functions that have different rules over different domains, and composite functions that involve applying one function to the output of another. These skills enhance your algebraic fluency and prepare you to understand more complex functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="659.0" prefHeight="53.0" prefWidth="686.0" text="Exponential and Logarithmic Functions">
+                  <Label layoutX="31.0" layoutY="433.0" prefHeight="53.0" prefWidth="686.0" text="Types of Limits and When They Don’t Exist">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exponential and logarithmic functions describe how things grow or shrink over time, which is common in biology, chemistry, and finance. Exponential functions involve a constant base raised to a variable exponent and model processes like population growth or compound interest. Logarithms, which are the inverse of exponentials, help us solve equations where the variable is in the exponent." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="31.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A limit may approach a finite number, infinity, or fail to exist. When a function grows without bound as it nears a certain value, it has an infinite limit. In other cases, if the left-hand limit and the right-hand limit are not equal, the overall limit does not exist. These cases are critical in understanding discontinuities in functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will learn how to evaluate, graph, and solve both exponential and logarithmic functions, and use properties such as the product, quotient, and power rules. Applications include measuring pH, earthquake magnitude, and sound intensity. This topic shows how to identify patterns in rapid change and how to reverse-engineer those changes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Label layoutX="30.0" layoutY="601.0" prefHeight="53.0" prefWidth="686.0" text="Continuity and Discontinuities of Functions">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="687.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Continuity of a function depends on the existence of a limit and the function value at a point. A function is continuous at a point if the limit exists, the function is defined at that point, and the value of the function matches the limit. Discontinuities such as holes, jumps, and vertical asymptotes indicate where a function is not continuous." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="31.0" layoutY="769.0" prefHeight="53.0" prefWidth="686.0" text="Formal Definition and Techniques for Finding Limits">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="31.0" layoutY="855.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The formal definition of a limit uses the concept of approaching a value as closely as desired. Though initially explored through tables and graphs, limits are rigorously defined using the epsilon-delta language in higher mathematics. For basic calculus, intuitive understanding and analytical techniques like factoring, rationalizing, and substitution are used to evaluate limits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>

@@ -46,12 +46,12 @@
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology is the science of life. It explores the structure, function, growth, evolution, and interactions of living organisms. As a STEM student, you’ll be diving deeper into biological concepts with an analytical and investigative mindset. This course not only helps you understand life on a molecular, cellular, and systemic level. It also builds a foundation for future careers in health, biotechnology, research, and environmental science." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology is the science of life. It explores the structure, function, growth, evolution, and interactions of living organisms. As a STEM student, you will be diving deeper into biological concepts with an analytical and investigative mindset. This course not only helps you understand life on a molecular, cellular, and systemic level. It also builds a foundation for future careers in health, biotechnology, research, and environmental science." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The course is divided into three major chapters: The Cell and Molecular Biology, Life Processes and Organismal Biology, and Genetics, Evolution, and Ecology. Each topic features 2–3 paragraph readings designed to be accessible yet rigorous, with a focus on developing both knowledge and critical thinking. You'll gain skills in scientific reasoning, data interpretation, and biological problem-solving, all while exploring life from the microscopic to the global scale." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The course is divided into three major chapters: The Cell and Molecular Biology, Life Processes and Organismal Biology, and Genetics, Evolution, and Ecology. Each topic features five-paragraph readings designed to be accessible yet rigorous, with a focus on developing both knowledge and critical thinking. You will gain skills in scientific reasoning, data interpretation, and biological problem-solving, all while exploring life from the microscopic to the global scale." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>

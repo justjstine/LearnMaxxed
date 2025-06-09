@@ -27,61 +27,66 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="940.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1050.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="758.0" text="Basic Calculus 2: Trigonometry">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="758.0" text="Basic Calculus 2: Differential Calculus">
                      <font>
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="870.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="980.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Angles and Trigonometric Functions">
+                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Understanding Derivatives and Rates of Change">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.1 Angles and Trigonometric Functions Trigonometry begins with understanding angles and their measurements in degrees and radians. Using the unit circle, you’ll learn to relate angles to coordinates and explore the six main trigonometric functions: sine, cosine, tangent, cosecant, secant, and cotangent. These functions describe ratios in triangles and form the basis for modeling periodic behavior like sound or motion." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The derivative measures the rate at which a function changes. It is defined as the limit of the average rate of change of a function as the interval approaches zero. The derivative of a function at a point represents the slope of the tangent line to the graph at that point. This concept is central in analyzing how quantities increase or decrease." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This topic connects geometry to algebra and helps you solve problems involving rotation, wave patterns, and circular motion. You’ll also begin to understand how trigonometry fits into broader mathematical models used in navigation, astronomy, and physics." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="355.0" prefHeight="53.0" prefWidth="686.0" text="Graphs and Identities of Trigonometric Function">
+                  <Label layoutX="30.0" layoutY="279.0" prefHeight="53.0" prefWidth="686.0" text="Rules of Differentiation">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trigonometric functions create wave-like graphs that repeat over intervals, known as periodic functions. In this section, you'll graph sine, cosine, and tangent functions, adjusting for amplitude, frequency, and phase shifts. Understanding these changes helps interpret patterns in nature and technology, such as tides, music, and oscillating circuits." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rules for differentiation simplify the process of finding derivatives. The power rule, constant rule, and constant multiple rule are used for basic functions. The sum and difference rules apply to combinations of functions. More advanced rules like the product rule, quotient rule, and chain rule handle more complex expressions. Mastery of these rules enables accurate and efficient computation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You’ll also study trigonometric identities, formulas that hold true for all inputs. These identities allow you to simplify complex expressions and solve tricky equations. Key formulas such as the Pythagorean identity and angle addition identities are essential tools for further study and practical application in many STEM fields." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="601.0" prefHeight="53.0" prefWidth="686.0" text="Solving Triangles and Trigonometric Equations">
+                  <Label layoutX="30.0" layoutY="449.0" prefHeight="53.0" prefWidth="686.0" text="Derivatives of Special Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="670.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beyond right triangles, trigonometry helps solve any triangle using the Law of Sines and Law of Cosines. These methods are crucial in real-world applications such as architecture, physics, and engineering. You’ll practice finding unknown sides or angles based on given information and applying these tools in non-right triangle contexts." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="30.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Derivatives of trigonometric, exponential, and logarithmic functions follow specific formulas. For instance, the derivative of sin(x) is cos(x), and the derivative of eˣ is eˣ. These derivatives are essential in solving problems involving oscillations, population growth, and decay. Understanding these rules builds fluency in working with a variety of mathematical models." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="30.0" layoutY="765.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Additionally, you’ll learn to solve trigonometric equations using algebraic techniques, identities, and inverse functions. These problems often have multiple solutions due to the periodic nature of trig functions. This lesson enhances your analytical thinking and prepares you to handle complex mathematical relationships." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Label layoutX="30.0" layoutY="620.0" prefHeight="53.0" prefWidth="686.0" text="Applications of Derivatives in Optimization">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="707.0" strokeType="OUTSIDE" strokeWidth="0.0" text="One important application of derivatives is finding extrema or turning points of a function. By analyzing the first and second derivatives, we can determine intervals where a function is increasing or decreasing, and where it has local maxima or minima. This helps in optimizing real-life scenarios such as maximizing profit or minimizing cost." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="30.0" layoutY="792.0" prefHeight="53.0" prefWidth="686.0" text="Derivatives in Motion and Graph Analysis">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="30.0" layoutY="879.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Derivatives are also used in analyzing motion. The first derivative of a position function gives velocity, while the second derivative gives acceleration. These ideas are used in physics and engineering to describe how objects move and change over time. Graphical interpretations of derivatives provide visual insights into motion and behavior of functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>

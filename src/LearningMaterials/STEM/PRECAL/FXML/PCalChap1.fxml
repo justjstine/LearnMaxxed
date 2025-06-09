@@ -27,65 +27,70 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.98">
             <content>
-                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="970.0" prefWidth="804.0">
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1080.0" prefWidth="804.0">
                <children>
-                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="730.0" text="Pre-Calculus 1: Functions and Graphs">
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="730.0" text="Functions and Their Graphs">
                      <font>
                         <Font name="Segoe UI Semibold" size="38.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="900.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1010.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </JFXButton>
-                  <Label layoutX="30.0" layoutY="106.0" prefHeight="53.0" prefWidth="686.0" text="Understanding Functions">
+                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A function is a relationship between two sets in which each element of the first set is paired with exactly one element of the second set. Functions can be represented in various ways, such as through equations, tables, graphs, or verbal descriptions. The domain is the set of all possible input values, while the range is the set of resulting output values. Understanding how functions behave is essential in modeling relationships in real life." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Different types of functions include linear, quadratic, polynomial, rational, exponential, and logarithmic functions. Each function type has specific characteristics in terms of its graph shape, intercepts, and asymptotes. For example, linear functions produce straight lines, while quadratic functions form parabolas. Identifying these properties helps in predicting the behavior of a function." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="545.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Function transformations involve shifting, stretching, compressing, or reflecting the graph of a parent function. A horizontal shift occurs when a constant is added to the input, and a vertical shift occurs when a constant is added to the output. Reflections flip the graph across an axis, while stretches and compressions affect the steepness or width of the graph. These changes are essential in graphing functions without plotting many points." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Composite functions are formed by combining two or more functions, denoted as f(g(x)). The output of one function becomes the input of another. The process of finding a composite function requires evaluating the inner function first, then substituting it into the outer function. Understanding composition is helpful when analyzing multi step processes in real-world applications." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="906.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The inverse of a function reverses the roles of input and output. If a function is one-to-one, it has an inverse that is also a function. To find an inverse algebraically, switch the x and y variables and solve for y. Graphically, the inverse reflects the original function across the line y = x. Recognizing and interpreting inverses is important in solving equations and understanding reversibility in systems." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="30.0" layoutY="95.0" prefHeight="53.0" prefWidth="686.0" text="Introduction to Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A function is a special type of relation that assigns exactly one output for every input. In this lesson, you’ll learn how to identify functions, write them in function notation (such as f(x)), and determine their domain and range. Understanding functions means seeing them not just as equations, but as rules or machines that process input values into output values. You’ll explore examples like f(x) = 2x + 3 (a linear function) and f(x) = x² − 4 (a quadratic function), and learn to test if a relation is a function using tools like the vertical line test. These foundations are essential because nearly all mathematical models in science and engineering rely on functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In this lesson, you will explore how functions behave in terms of domain (allowed inputs), range (possible outputs), and overall trends such as increasing, decreasing, or remaining constant. Real-world applications include modeling speed over time or population growth. Beyond memorization, this topic will teach you to understand processes and relationships algebraically, graphically, and numerically." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="413.0" prefHeight="53.0" prefWidth="686.0" text="Graphing Techniques and Transformations">
+                  <Label layoutX="30.0" layoutY="283.0" prefHeight="53.0" prefWidth="686.0" text="Types and Characteristics of Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Graphing functions helps visualize mathematical relationships and understand how outputs change with different inputs. You will begin with basic parent functions such as f(x) = x², f(x) = √x, and f(x) = |x| and learn how they transform when their equations change. You will practice shifting graphs, reflecting them across axes, and stretching or compressing them." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Understanding transformations allows you to quickly interpret graphs and predict behavior. You will also work with piecewise functions that have different rules over different domains, and composite functions that involve applying one function to the output of another. These skills enhance your algebraic fluency and prepare you to understand more complex functions." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
-                     <font>
-                        <Font name="Segoe UI" size="16.0" />
-                     </font>
-                  </Text>
-                  <Label layoutX="30.0" layoutY="659.0" prefHeight="53.0" prefWidth="686.0" text="Exponential and Logarithmic Functions">
+                  <Label layoutX="30.0" layoutY="458.0" prefHeight="53.0" prefWidth="686.0" text="Transformations of Functions">
                      <font>
                         <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
                   </Label>
-                  <Text layoutX="30.0" layoutY="728.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exponential and logarithmic functions describe how things grow or shrink over time, which is common in biology, chemistry, and finance. Exponential functions involve a constant base raised to a variable exponent and model processes like population growth or compound interest. Logarithms, which are the inverse of exponentials, help us solve equations where the variable is in the exponent." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Label layoutX="30.0" layoutY="653.0" prefHeight="53.0" prefWidth="686.0" text="Composition of Functions">
                      <font>
-                        <Font name="Segoe UI" size="16.0" />
+                        <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
-                  </Text>
-                  <Text layoutX="30.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You will learn how to evaluate, graph, and solve both exponential and logarithmic functions, and use properties such as the product, quotient, and power rules. Applications include measuring pH, earthquake magnitude, and sound intensity. This topic shows how to identify patterns in rapid change and how to reverse-engineer those changes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  </Label>
+                  <Label layoutX="30.0" layoutY="823.0" prefHeight="53.0" prefWidth="686.0" text="Inverse Functions">
                      <font>
-                        <Font name="Segoe UI" size="16.0" />
+                        <Font name="Segoe UI Semibold" size="25.0" />
                      </font>
-                  </Text>
+                  </Label>
                </children></AnchorPane>
             </content>
         </ScrollPane>
