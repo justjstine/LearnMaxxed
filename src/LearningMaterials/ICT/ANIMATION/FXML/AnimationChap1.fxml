@@ -27,7 +27,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
             <content>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1200.0" prefWidth="804.0">
                <children>
@@ -81,11 +81,26 @@
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <Text layoutX="235.0" layoutY="949.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example Of how animation is made in Philippines" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                  <Text layoutX="289.0" layoutY="964.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Production of Animation" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
                      <font>
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="174.0" fitWidth="313.0" layoutX="226.0" layoutY="774.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/dGGU4rAkShE-HD.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="playVid" buttonType="RAISED" layoutX="352.0" layoutY="856.0" onAction="#playVidHandler" prefHeight="38.0" prefWidth="52.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text=" " textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="368.0" layoutY="861.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Icons/play_arrow.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>
