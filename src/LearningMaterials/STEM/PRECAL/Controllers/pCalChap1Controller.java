@@ -105,6 +105,16 @@ public class pCalChap1Controller {
         stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
+    @FXML
+    public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent vidRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/STEM/FXML/PreCalChap1Vid.fxml"));
+        Stage vidStage = new Stage();
+        vidStage.setTitle("Pre-Calculus Chapter 1 Video");
+        vidStage.setScene(new Scene(vidRoot, 1280, 800));
+        vidStage.show();
+        
+    }
+
     public void scrollToTop() {
         if (scrollPane != null) {
         scrollPane.setVvalue(0);

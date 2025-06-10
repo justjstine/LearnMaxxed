@@ -105,6 +105,16 @@ public class BasicCalChap2Controller {
         stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
+    @FXML
+    public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent vid3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/STEM/FXML/BasicCalChap2Vid.fxml"));
+        Stage vidStage3 = new Stage();
+        vidStage3.setTitle("Basic Calculus Chapter 2 Video");
+        vidStage3.setScene(new Scene(vid3Root, 1280, 800));
+        vidStage3.show();
+        
+    }
+
     public void scrollToTop() {
         if (scrollPane != null) {
         scrollPane.setVvalue(0);
