@@ -27,7 +27,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.82">
             <content>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="3200.0" prefWidth="804.0">
                <children>
@@ -241,6 +241,21 @@
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="210.0" fitWidth="278.0" layoutX="243.0" layoutY="2314.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/t2dHScJSUkQ-SD.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="playVid" buttonType="RAISED" layoutX="357.0" layoutY="2406.0" onAction="#playVidHandler" prefHeight="38.0" prefWidth="52.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text=" " textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="370.0" layoutY="2412.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Icons/play_arrow.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
             </content>
         </ScrollPane>

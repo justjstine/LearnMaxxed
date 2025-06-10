@@ -146,5 +146,15 @@ public void nextButtonHandler(ActionEvent event) {
     
 }
 
+@FXML
+    public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent vidRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/ICT/FXML/IllustrationChap3Vid.fxml"));
+        Stage vidStage = new Stage();
+        vidStage.setTitle("Illustration Chapter 3 Video");
+        vidStage.setScene(new Scene(vidRoot, 1280, 800));
+        vidStage.show();
+        
+    }
+
 }
 

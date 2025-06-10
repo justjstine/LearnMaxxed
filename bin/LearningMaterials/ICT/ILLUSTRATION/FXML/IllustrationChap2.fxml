@@ -261,6 +261,21 @@
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
+                  <ImageView fitHeight="269.0" fitWidth="487.0" layoutX="145.0" layoutY="4066.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/61mkx_OV61s-HD.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="playVid" buttonType="RAISED" layoutX="360.0" layoutY="4195.0" onAction="#playVidHandler" prefHeight="38.0" prefWidth="52.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text=" " textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="376.0" layoutY="4200.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Resources/Icons/play_arrow.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </content>
