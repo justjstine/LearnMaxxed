@@ -36,7 +36,7 @@ public class IctDashController {
 
 
     @FXML
-    private JFXButton CreateButton112;
+    private JFXButton IllustrationButton;
 
 
     @FXML
@@ -196,6 +196,19 @@ public void WebDevButtonHandler(javafx.event.ActionEvent event) {
         Stage stage = (Stage) WebDevButton.getScene().getWindow();
         stage.setScene(new Scene(root, 1000, 600));
         stage.setTitle("Web Development Introduction");
+        stage.show();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
+@FXML
+public void illustrationButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ILLUSTRATION/FXML/IllustrationIntro.fxml"));
+        Stage stage = (Stage) IllustrationButton.getScene().getWindow();
+        stage.setScene(new Scene(root, 1000, 600));
+        stage.setTitle("Illustration Introduction");
         stage.show();
     } catch (Exception e) {
         e.printStackTrace();
