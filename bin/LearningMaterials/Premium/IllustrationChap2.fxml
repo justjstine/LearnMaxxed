@@ -353,7 +353,7 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premillustration3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premillustration3uttonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>

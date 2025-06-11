@@ -25,10 +25,10 @@ public class ComSysIntroController {
 
     @FXML
     private Button ComSysButton2;
- 
+
     @FXML
     private Button ComSysButton3;
- 
+
     @FXML
     private Button dashboardButton;
 
@@ -54,47 +54,53 @@ public class ComSysIntroController {
     public void initialize() {
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
-        subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development", "Illustration");
+        subjectComboBox.getItems().addAll(
+            "Computer Programming",
+            "Computer Systems",
+            "Animation",
+            "Web Development",
+            "Illustration"
+        );
     }
 
-   @FXML
-void comsys1ButtonHandler(ActionEvent event) {
-    try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter1.fxml"));
-        Stage stage = (Stage) ComSysButton1.getScene().getWindow();
-        stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Systems - Chapter 1");
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
+    @FXML
+    void comsys1ButtonHandler(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter1.fxml"));
+            Stage stage = (Stage) ComSysButton1.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Computer Systems - Chapter 1");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
 
     @FXML
     void comsys2ButtonHandler(ActionEvent event) {
-try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter2.fxml"));
-        Stage stage = (Stage) ComSysButton2.getScene().getWindow();
-        stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Systems - Chapter 2");
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter2.fxml"));
+            Stage stage = (Stage) ComSysButton2.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Computer Systems - Chapter 2");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
 
     @FXML
     void comsys3ButtonHandler(ActionEvent event) {
-try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter3.fxml"));
-        Stage stage = (Stage) ComSysButton3.getScene().getWindow();
-        stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Systems - Chapter 3");
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter3.fxml"));
+            Stage stage = (Stage) ComSysButton3.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Computer Systems - Chapter 3");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
 
     @FXML
     public void dashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
@@ -104,40 +110,40 @@ try {
     }
 
     @FXML
-public void handleSubjectSelection() {
-    String selected = subjectComboBox.getSelectionModel().getSelectedItem();
-    try {
-        if ("Computer Programming".equals(selected)) {
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgIntro.fxml"));
-            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
-            stage.setScene(new Scene(root, 1000, 600));
-            stage.setTitle("Computer Programming Introduction");
-            stage.show();
-        } else if ("Computer Systems".equals(selected)) {
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysIntro.fxml"));
-            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
-            stage.setScene(new Scene(root, 1000, 600));
-            stage.setTitle("Computer Systems Introduction");
-            stage.show();
-        } else if ("Web Development".equals(selected)) {
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
-            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
-            stage.setScene(new Scene(root, 1000, 600));
-            stage.setTitle("Web Development Introduction");
-            stage.show();
-        } else if ("Animation".equals(selected)) {
-            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
-            Stage stage = (Stage) subjectComboBox.getScene().getWindow();
-            stage.setScene(new Scene(root, 1000, 600));
-            stage.setTitle("Animation Introduction");
-            stage.show();
+    public void handleSubjectSelection() {
+        String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+        try {
+            if ("Computer Programming".equals(selected)) {
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERPROGRAMMING/FXML/ComProgIntro.fxml"));
+                Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+                stage.setScene(new Scene(root, 1000, 600));
+                stage.setTitle("Computer Programming Introduction");
+                stage.show();
+            } else if ("Computer Systems".equals(selected)) {
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysIntro.fxml"));
+                Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+                stage.setScene(new Scene(root, 1000, 600));
+                stage.setTitle("Computer Systems Introduction");
+                stage.show();
+            } else if ("Web Development".equals(selected)) {
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/WEBDEVELOPMENT/FXML/WebDevIntro.fxml"));
+                Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+                stage.setScene(new Scene(root, 1000, 600));
+                stage.setTitle("Web Development Introduction");
+                stage.show();
+            } else if ("Animation".equals(selected)) {
+                Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/ANIMATION/FXML/AnimationIntro.fxml"));
+                Stage stage = (Stage) subjectComboBox.getScene().getWindow();
+                stage.setScene(new Scene(root, 1000, 600));
+                stage.setTitle("Animation Introduction");
+                stage.show();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-    } catch (Exception e) {
-        e.printStackTrace();
     }
-}
 
-@FXML
+    @FXML
     public void logoutButtonHandler(javafx.event.ActionEvent event) throws IOException {
         Parent logoutRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Login/FXML/LoginPage.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
@@ -146,16 +152,16 @@ public void handleSubjectSelection() {
 
     @FXML
     void nextButtonHandler(ActionEvent event) {
-    try {
-        Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter1.fxml"));
-        Stage stage = (Stage) nextButton.getScene().getWindow();
-        stage.setScene(new Scene(root, 1000, 600));
-        stage.setTitle("Computer Systems - Chapter 1");
-        stage.show();
-    } catch (IOException e) {
-        e.printStackTrace();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("/LearningMaterials/ICT/COMPUTERSYSTEMS/FXML/ComSysChapter1.fxml"));
+            Stage stage = (Stage) nextButton.getScene().getWindow();
+            stage.setScene(new Scene(root, 1000, 600));
+            stage.setTitle("Computer Systems - Chapter 1");
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
-}
 
     @FXML
     public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
