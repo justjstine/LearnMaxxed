@@ -53,7 +53,6 @@ public class SignupController implements Initializable {
         loadPaymentMethods();
         loadPlanTypes();
 
-        // Use file: protocol if images are outside src (e.g. in project/Resources/Icons/)
         eyeoff = new Image("file:Resources/Icons/eyeoff.png");
         eyeon = new Image("file:Resources/Icons/eyeon.png");
 

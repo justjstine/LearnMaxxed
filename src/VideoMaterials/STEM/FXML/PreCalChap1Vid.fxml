@@ -40,7 +40,7 @@
             <Image url="@../../../../Resources/Icons/forward_10.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="571.0" layoutY="742.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="561.0" layoutY="742.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Resources/Icons/pause.png" />
          </image>
