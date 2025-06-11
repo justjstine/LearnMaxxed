@@ -106,6 +106,42 @@ public class pCalChap3Controller {
         stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    //No next button function yet.
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void prempCalIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCalIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCalIntroRoot, 1000, 600));
+    }
+
+    @FXML
+    public void prempCal1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCal1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCal1Root, 1000, 600));
+    }
+
+    @FXML
+    public void prempCal2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent pCal2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(pCal2Root, 1000, 600));
+    }
+
     public void scrollToTop() {
         if (scrollPane != null) {
         scrollPane.setVvalue(0);

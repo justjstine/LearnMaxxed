@@ -36,7 +36,7 @@
                         <Font name="Segoe UI Semibold" size="38.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="955.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="572.0" layoutY="955.0" onAction="#premnextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -152,22 +152,22 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+      <Button fx:id="premdashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#premDashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="BasicCalIntroButton" layoutX="12.0" layoutY="250.0" mnemonicParsing="false" onAction="#BasicCalIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+      <Button fx:id="premBasicCalIntroButton" layoutX="12.0" layoutY="250.0" mnemonicParsing="false" onAction="#premBasicCalIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="BasicCal2Button" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#BasicCal2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="premBasicCal2Button" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#premBasicCal2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="BasicCal3Button" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#BasicCal3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="premBasicCal3Button" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premBasicCal3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>

@@ -107,7 +107,7 @@ public class IctDashController {
     }
 
 
-@FXML
+    @FXML
     public void ComProgButtonHandler(javafx.event.ActionEvent event) throws IOException {
         try {
             Stage stage = (Stage) logoutButton.getScene().getWindow();

@@ -39,6 +39,12 @@ public class AnimationChap2Controller {
     private ScrollPane scrollPane;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
      @FXML
@@ -153,5 +159,40 @@ public void nextButtonHandler(ActionEvent event) {
         e.printStackTrace();
     }
 }
+
+@FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/AnimationChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premanimation1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent animation1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/AnimationChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(animation1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premanimation2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent animation2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/AnimationChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(animation2Root, 1000, 600));
+    }
+
+    @FXML
+    public void premanimation3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent animation3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/AnimationChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(animation3Root, 1000, 600));
+    }
 
 }

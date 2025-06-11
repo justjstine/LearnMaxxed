@@ -39,6 +39,12 @@ public class WebDevChap2Controller {
     private ScrollPane scrollPane;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
      @FXML
@@ -147,5 +153,40 @@ void nextButtonHandler(ActionEvent event) {
         e.printStackTrace();
     }
 }
+
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/WebDevChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premwebdev1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent webdev1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/WebDevChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(webdev1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premwebdev2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent webdev2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/WebDevChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(webdev2Root, 1000, 600));
+    }
+
+    @FXML
+    public void premwebdev3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent webdev3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/WebDevChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(webdev3Root, 1000, 600));
+    }
 
 }

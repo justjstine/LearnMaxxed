@@ -48,27 +48,27 @@
          <content>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="150.0" prefWidth="2000.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-region-background: white;">
                <children>
-                  <JFXButton fx:id="CreateButton" alignment="BASELINE_RIGHT" buttonType="RAISED" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="ChemistryButton" alignment="BASELINE_RIGHT" buttonType="RAISED" onAction="#chemistryButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton1" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="171.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="PhysicsButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="171.0" onAction="#physicsButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton11" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="342.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="BiologyButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="342.0" onAction="#biologyButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton111" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="513.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="preCalButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="513.0" onAction="#precalButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton112" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="684.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="BasicCalButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="684.0" onAction="#basicCalButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
@@ -98,27 +98,27 @@
                         <Image url="@../../../Resources/Icons/01.png" />
                      </image>
                   </ImageView>
-                  <JFXButton fx:id="CreateButton1121" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="855.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="ComProgButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="855.0" onAction="#ComProgButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton11211" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1026.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="ComSysButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1026.0" onAction="#ComSysButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton112111" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1197.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="WebDevButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1197.0" onAction="#WebDevButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton1121111" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1368.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="AnimationButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1368.0" onAction="#AnimationButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="CreateButton11211111" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1539.0" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
+                  <JFXButton fx:id="IllustrationButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="1539.0" onAction="#illustrationButtonHandler" prefHeight="147.0" prefWidth="147.0" style="-fx-text-fill: white; -fx-background-radius: 20; -fx-background-color: #002c36;" text=" " textFill="#42736c">
                      <font>
                         <Font name="Century Gothic Bold" size="24.0" />
                      </font>
@@ -148,6 +148,71 @@
                         <Image url="@../../../Resources/paint-brush-xxl.png" />
                      </image>
                   </ImageView>
+                  <Text fill="WHITE" layoutX="34.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemistry">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="218.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Physics">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="389.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="538.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pre-Calculus">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="702.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Calculus">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="886.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="876.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1058.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer ">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1069.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Systems">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1250.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web ">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1217.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Development">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1400.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="1575.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Illustration">
+                     <font>
+                        <Font name="Century Gothic" size="16.0" />
+                     </font>
+                  </Text>
                </children>
             </AnchorPane>
          </content>

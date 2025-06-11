@@ -29,6 +29,12 @@ public class BasicCalChap2Controller {
     private JFXButton nextButton;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
     @FXML
@@ -104,6 +110,41 @@ public class BasicCalChap2Controller {
         Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Basiccal/FXML/BasicCalChap3.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCalIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCalIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCalIntroRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCal1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCal1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCal1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCal3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCal3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCal3Root, 1000, 600));
     }
 
     @FXML

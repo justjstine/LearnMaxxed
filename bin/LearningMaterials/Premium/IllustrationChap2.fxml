@@ -46,7 +46,7 @@
                         <Font name="Segoe UI" size="16.0" />
                      </font>
                   </Text>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="581.0" layoutY="4450.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="581.0" layoutY="4450.0" onAction="#premnextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -338,22 +338,22 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+      <Button fx:id="premdashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#premDashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="ComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#comsys1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+      <Button fx:id="premComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#premillustration1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="ComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#comsys2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+      <Button fx:id="premComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#premillustration2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="ComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#comsys3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premillustration3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>

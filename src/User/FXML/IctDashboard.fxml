@@ -83,12 +83,12 @@
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="397.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web ">
+                  <Text fill="WHITE" layoutX="25.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming">
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="25.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming">
+                  <Text fill="WHITE" layoutX="397.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web ">
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>

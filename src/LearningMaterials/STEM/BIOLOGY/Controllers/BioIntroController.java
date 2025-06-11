@@ -15,7 +15,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 public class BioIntroController {
-     @FXML
+    @FXML
     private Button dashboardButton;
 
     @FXML

@@ -108,6 +108,41 @@ public class BasicCalChap3Controller {
     }
 
     @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCalIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCalIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCalIntroRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCal1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCal1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCal1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premBasicCal2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent premBasicCal2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(premBasicCal2Root, 1000, 600));
+    }
+
+    @FXML
     public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
         Parent vid4Root = FXMLLoader.load(getClass().getResource("/VideoMaterials/STEM/FXML/BasicCalChap3Vid.fxml"));
         Stage vidStage4 = new Stage();

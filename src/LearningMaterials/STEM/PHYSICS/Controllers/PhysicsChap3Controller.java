@@ -28,6 +28,12 @@ public class PhysicsChap3Controller {
     private JFXButton nextButton;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
     @FXML
@@ -104,6 +110,41 @@ public class PhysicsChap3Controller {
         Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Physics/FXML/PhysicsChap3.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premphysicsIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent physicsIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsIntro.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physicsIntroRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premphysics1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent physics1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physics1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premphysics2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent physics2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(physics2Root, 1000, 600));
     }
 
     public void scrollToTop() {
