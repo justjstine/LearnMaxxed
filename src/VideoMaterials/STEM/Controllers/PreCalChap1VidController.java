@@ -66,6 +66,10 @@ public class PreCalChap1VidController implements Initializable {
         }
     }
 
+    public MediaPlayer getMediaPlayer() {
+        return mediaPlayer;
+    }
+
 }
 
 

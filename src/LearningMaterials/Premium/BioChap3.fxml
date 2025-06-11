@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.STEM.BIOLOGY.Controllers.BioChap3Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1920.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="721.0" text="Biology 3: Genetics, Evolution, and Ecology">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="34.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="573.0" layoutY="1850.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="27.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genetics is the study of heredity and variation. Traits are inherited through genes found on chromosomes. Each gene has different forms called alleles. Mendel’s laws of segregation and independent assortment explain how traits are passed from parents to offspring. Punnett squares are used to predict genetic outcomes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="27.0" layoutY="828.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNA replication, transcription, and translation are key processes in gene expression. During replication, DNA makes an exact copy of itself. Transcription converts DNA into RNA, and translation uses that RNA to synthesize proteins. Mutations are changes in the DNA sequence that may lead to altered traits or diseases." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="1255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evolution explains the diversity of life through natural selection. Organisms with favorable traits are more likely to survive and reproduce. Over time, populations change as advantageous traits become more common. Evidence for evolution includes the fossil record, comparative anatomy, and molecular biology." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="1675.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ecology studies the relationships between organisms and their environment. Populations, communities, and ecosystems interact in dynamic ways. Biotic factors like predators and abiotic factors like temperature and water influence how organisms survive. Energy flows through ecosystems via food chains and food webs." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="1775.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Human activities affect ecosystems through pollution, deforestation, and climate change. Biodiversity is essential for ecosystem stability and resilience. Conservation biology seeks to protect species and habitats. Sustainable practices aim to balance human needs with environmental preservation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="244.0" fitWidth="428.0" layoutX="188.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/Cell-karyotype-exhibiting-trisomy_Credit_NIH.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="397.0" fitWidth="594.0" layoutX="105.0" layoutY="456.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/DNA-replication.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="349.0" fitWidth="624.0" layoutX="80.0" layoutY="896.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/evolution-wiki_ver_1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="327.0" fitWidth="483.0" layoutX="161.0" layoutY="1323.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/Environmental-Science-vs.-Ecology-2-scaled-1.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEM Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bioIntroButton" layoutX="13.0" layoutY="251.0" mnemonicParsing="false" onAction="#bioIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio1Button" layoutX="16.0" layoutY="276.0" mnemonicParsing="false" onAction="#bio1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio2Button" layoutX="16.0" layoutY="301.0" mnemonicParsing="false" onAction="#bio2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

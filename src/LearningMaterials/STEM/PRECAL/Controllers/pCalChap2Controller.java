@@ -5,6 +5,8 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+
+import VideoMaterials.STEM.Controllers.PreCalChap2VidController;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -107,12 +109,25 @@ public class pCalChap2Controller {
 
     @FXML
     public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent vid1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/STEM/FXML/PreCalChap2Vid.fxml"));
+        Parent vidRoot1 = FXMLLoader.load(getClass().getResource("/VideoMaterials/STEM/FXML/PreCalChap2Vid.fxml"));
         Stage vidStage1 = new Stage();
         vidStage1.setTitle("Pre-Calculus Chapter 2 Video");
-        vidStage1.setScene(new Scene(vid1Root, 1280, 800));
+        vidStage1.setScene(new Scene(vidRoot1, 1280, 800));
+        vidStage1.setResizable(false);
+
+        // Get the controller to access the mediaPlayer
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/VideoMaterials/STEM/FXML/PreCalChap2Vid.fxml"));
+        Parent root = loader.load();
+        PreCalChap2VidController controller = loader.getController();
+
+        vidStage1.setScene(new Scene(root, 1280, 800));
+        vidStage1.setOnCloseRequest(e -> {
+            if (controller != null && controller.getMediaPlayer() != null) {
+                controller.getMediaPlayer().stop();
+            }
+        });
+
         vidStage1.show();
-        
     }
 
     public void scrollToTop() {

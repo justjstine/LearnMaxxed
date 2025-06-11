@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.ICT.WEBDEVELOPMENT.Controllers.WebDevChap1Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="0.82">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="3200.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Web Development">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="42.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.1 Introduction" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="591.0" layoutY="3109.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web development starts with understanding the Internet—the vast network that connects computers worldwide. This chapter explains how the Internet works, the difference between the Internet and the World Wide Web, and how users access websites using browsers and search engines. Students will explore how data travels from servers to their devices using protocols like HTTP and HTTPS." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The chapter also highlights the history and evolution of the web, from simple static pages to today’s interactive and mobile-friendly websites. Learners will be introduced to domain names, IP addresses, and the role of web servers. For example, they'll understand how a website like www.gov.ph is structured and hosted." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="40.0" layoutY="109.0" prefHeight="53.0" prefWidth="771.0" text="Chapter 1: Introduction to the Internet and the World Wide Web">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="42.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.2 What Is the Internet?" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Internet is a global network of interconnected computers and devices that communicate through standardized protocols. It allows us to send emails, browse websites, stream videos, and use social media. In the Philippines, internet use has grown significantly with the rise of mobile phones and fiber broadband services." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Network – A group of connected computers and devices." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Server – A computer that provides data or services to other computers (clients)." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client – The device or user that requests data or services from a server." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="83.0" layoutY="665.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ISP (Internet Service Provider) – A company that provides Internet access (e.g., Globe, PLDT)." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The internet delivers different types of information and media across networked devices. It operates using an internet protocol (IP) and a transport control protocol (TCP) packet routing network. Whenever you visit a website, your computer or mobile device requests the server using such protocols. " textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="786.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A server is where web pages are stored, and it functions similarly to the hard drive of a computer, except with far greater processing power. The server accesses the web page and delivers the right information to your computer whenever the request arrives. This is broadly the end-to-end user experience. Let us now look at the more technical details of how the internet works. " textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="881.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.3 What Is the World Wide Web" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="916.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The World Wide Web is a system of web pages and content that are accessible through the Internet using a browser. It’s one of the most widely used services on the Internet. These pages and documents are interconnected by means of hyperlinks that users click on for information. This information can be in different formats, including text, images, audio and video." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="1017.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.3.1 How does the World Wide Web work?" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1046.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paving the way for an internet revolution that has transformed the world in only three decades, the World Wide Web consists of multiple components that enable users to access various resources, documents and web pages on the internet. Thus, the WWW is like a vast electronic book whose pages are stored or hosted on different servers worldwide." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These pages are the primary component or building blocks of the WWW and are linked through hyperlinks, which provide access from one specific spot in a hypertext or hypermedia document to another spot within that document or a different one. Hyperlinks are another defining concept of the WWW and provide its identity as a collection of interconnected documents." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most web documents and pages are created using Hypertext Markup Language (HTML), a text-based way of describing how content within an HTML file is structured. HTML describes the structure of web pages using elements or tags and displays the content of these pages through a web browser." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="130.0" fitWidth="778.0" layoutX="43.0" layoutY="1303.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/html.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="273.0" layoutY="1450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example of HTML Code" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To access one of these pages, a user and their client machine supply a universal identifier to the web server via a browser. This identifier may be a uniform resource locator (URL) or uniform resource identifier (URI) and is unique to each web page." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A collection of web pages belonging to a URL is called a website." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="62.0" layoutY="1587.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The browser accepts the URL or URI provided by the user and communicates it to the web server. The server then retrieves the web page associated with that URL or URI and presents it to the user in the browser window of their client machine." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="1671.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.4 Components of a Website" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="1702.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A website is not just made of text and images you see on a screen. Behind every website are different parts that work together to provide a smooth and meaningful experience for users. Understanding these components is essential before building one." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="1774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Domain Name" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="243.0" fitWidth="418.0" layoutX="173.0" layoutY="1790.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/Domain-name-structure-1024x423.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="65.0" layoutY="1993.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A domain name is the unique address that people type into their web browser to visit a website (e.g., www.google.com, www.deped.gov.ph). It acts as a human-readable version of a website's location on the internet. Behind every domain is a numeric IP address that points to the server where the website is stored. Think of it like your home address—it directs users to where your website &quot;lives.&quot;" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Web Hosting" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web hosting is the service that stores all the files (HTML, CSS, images, videos, etc.) that make up your website. Hosting companies rent out server space where your website data is saved and made accessible online. Without hosting, your website would have nowhere to &quot;live&quot; on the internet." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Web Server" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A web server is a computer system that delivers website content to users. When someone types your domain name into their browser, the server receives the request and sends back the appropriate web page. Web servers must always be online and able to handle multiple users at the same time." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="227.0" layoutY="2554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example Video of how Web Servers works" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2598.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 4. Web Pages (HTML Files)" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2626.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These are the individual documents that make up a website. Each page is written in HTML (HyperText Markup Language) and may include CSS for design and JavaScript for interactivity. These files contain all the content—text, headings, links, images—that visitors see and interact with." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="174.0" fitWidth="351.0" layoutX="204.0" layoutY="2695.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/image-32-1024x526.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="145.0" layoutY="2886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example of a Web Page where user an interact to certain elements" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2932.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Security Features (HTTPS, SSL)" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="2964.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modern websites must have security features. HTTPS (Hypertext Transfer Protocol Secure) encrypts the data between the user and the website. This is made possible using SSL (Secure Sockets Layer) certificates. Security is especially important for e-commerce, online forms, or anything dealing with personal data." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="65.0" layoutY="3049.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: Look for the lock icon 🔒 in the browser’s address bar—it means the site is secure." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="210.0" fitWidth="278.0" layoutX="243.0" layoutY="2314.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/t2dHScJSUkQ-SD.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="playVid" buttonType="RAISED" layoutX="357.0" layoutY="2406.0" onAction="#playVidHandler" prefHeight="38.0" prefWidth="52.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text=" " textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="29.0" fitWidth="25.0" layoutX="370.0" layoutY="2412.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/Icons/play_arrow.png" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WebDev Chapter 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#comsys1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#comsys2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#comsys3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

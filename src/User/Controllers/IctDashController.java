@@ -86,7 +86,7 @@ public class IctDashController {
             welcomebackUsername.setText("Welcome back!");
             usernameSidePanel.setText("");
         }
-         subjectComboBox.getItems().clear();
+        subjectComboBox.getItems().clear();
         subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Web Development", "Animation", "Illustration");
     }
 

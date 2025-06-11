@@ -28,6 +28,12 @@ public class Chem1Chap4Controller {
     private JFXButton nextButton;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
     @FXML
@@ -71,6 +77,26 @@ public class Chem1Chap4Controller {
         stage.setScene(new Scene(chem3Root, 1000, 600));
     }
 
+    public void premchem1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent chem1Root = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem1Root, 1000, 600));
+    }
+
+    @FXML
+    public void premchem2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent chem2Root = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem2Root, 1000, 600));
+    }
+
+    @FXML
+    public void premchem3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent chem3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(chem3Root, 1000, 600));
+    }
+
     @FXML
     public void handleSubjectSelection() {
         String selected = subjectComboBox.getSelectionModel().getSelectedItem();
@@ -110,6 +136,20 @@ public class Chem1Chap4Controller {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premNextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter4.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
     public void scrollToTop() {

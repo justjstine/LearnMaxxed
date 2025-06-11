@@ -66,6 +66,10 @@ public class BasicCalChap3VidController implements Initializable {
         }
     }
 
+    public MediaPlayer getMediaPlayer() {
+    return mediaPlayer;
+
+}
 }
 
 

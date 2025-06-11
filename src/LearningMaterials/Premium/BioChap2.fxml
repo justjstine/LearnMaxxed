@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.STEM.BIOLOGY.Controllers.BioChap2Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="1650.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="62.0" prefWidth="758.0" text="Biology 2: Life Processes and Organismal Biology">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="34.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1580.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="30.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photosynthesis and cellular respiration are essential life processes. In photosynthesis, plants convert light energy into chemical energy stored in glucose using carbon dioxide and water. This process occurs in the chloroplasts. Cellular respiration, in contrast, takes place in mitochondria and breaks down glucose to produce ATP, the main energy currency of cells." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="29.0" layoutY="886.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The human body is organized into systems that perform specific functions. The circulatory system transports nutrients, gases, and waste through the blood. The respiratory system enables gas exchange between the body and the environment. The digestive system breaks down food into nutrients, while the excretory system removes metabolic wastes." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="29.0" layoutY="984.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The nervous system and endocrine system coordinate bodily functions. The nervous system uses electrical impulses to respond quickly to stimuli. It consists of the brain, spinal cord, and peripheral nerves. The endocrine system uses hormones released by glands such as the thyroid and pancreas to regulate growth, metabolism, and development over longer periods." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="29.0" layoutY="1079.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The immune system protects the body against disease. It includes physical barriers like skin, specialized white blood cells, and antibodies. Vaccination introduces harmless forms of pathogens to stimulate immune memory. This system plays a critical role in recognizing and eliminating foreign invaders." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="29.0" layoutY="1474.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In plants, structures such as roots, stems, leaves, and flowers serve vital roles. Roots absorb water and minerals, stems transport nutrients, leaves carry out photosynthesis, and flowers enable reproduction. Plant hormones like auxins and gibberellins regulate growth and development, responding to environmental cues such as light and gravity." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="345.0" fitWidth="326.0" layoutX="239.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/istockphoto-459951679-612x612.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="304.0" fitWidth="481.0" layoutX="180.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/different-types-of-systems-in-our-body.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="291.0" fitWidth="388.0" layoutX="214.0" layoutY="1144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/SimplePhotosynthesis_CarbonCycle_UGC.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STEM Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Biology 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bioIntroButton" layoutX="12.0" layoutY="251.0" mnemonicParsing="false" onAction="#bioIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio1Button" layoutX="12.0" layoutY="275.0" mnemonicParsing="false" onAction="#bio1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="bio3Button" layoutX="12.0" layoutY="326.0" mnemonicParsing="false" onAction="#bio3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -44,7 +44,7 @@
          </image>
       </ImageView>
       <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
-      <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" hvalue="1.0" layoutX="258.0" layoutY="375.0" prefHeight="180.0" prefWidth="668.0" style="-fx-border-color: white; -fx-background-color: white; -fx-background: white;" vbarPolicy="NEVER">
+      <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="258.0" layoutY="375.0" prefHeight="180.0" prefWidth="668.0" style="-fx-border-color: white; -fx-background-color: white; -fx-background: white;" vbarPolicy="NEVER">
          <content>
             <AnchorPane prefHeight="150.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-region-background: white;">
                <children>
@@ -78,7 +78,7 @@
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="180.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer ">
+                  <Text fill="WHITE" layoutX="202.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer ">
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
@@ -88,7 +88,7 @@
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="25.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming">
+                  <Text fill="WHITE" layoutX="25.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Programming">
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
@@ -98,7 +98,7 @@
                         <Font name="Century Gothic" size="16.0" />
                      </font>
                   </Text>
-                  <Text fill="WHITE" layoutX="255.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Systems">
+                  <Text fill="WHITE" layoutX="215.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Systems">
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
@@ -118,12 +118,12 @@
                         <Image url="@../../../Resources/connected_tv.png" />
                      </image>
                   </ImageView>
-                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="530.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="530.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../Resources/nordic_walking.png" />
                      </image>
                   </ImageView>
-                  <ImageView disable="true" fitHeight="112.0" fitWidth="124.0" layoutX="189.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="108.0" fitWidth="105.0" layoutX="192.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../Resources/keyboard-xxl.png" />
                      </image>

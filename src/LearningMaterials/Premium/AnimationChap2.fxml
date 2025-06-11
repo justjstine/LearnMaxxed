@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.ICT.ANIMATION.Controllers.AnimationChap2Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="4300.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Animation">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="42.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2.1 Introduction" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="595.0" layoutY="4227.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The &quot;12 Principles of Animation&quot; serve as the foundational guidelines for creating realistic and appealing animations. Developed by Disney animators Ollie Johnston and Frank Thomas in the early 20th century, these principles remain essential in today’s 2D and 3D animation, including Filipino-created works. They help animators bring characters and environments to life in ways that feel natural, expressive, and emotionally engaging." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="40.0" layoutY="109.0" prefHeight="53.0" prefWidth="771.0" text="Chapter 2: The Principles of Animation">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="55.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Below are the 12 Principles of Animation, which will be covered in this chapter:" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Squash and Stretch" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arguably the most fundamental of the 12 principles of animation. Squash and stretch is applied to give a sense of weight and/or flexibility to objects or even to people. Animate a simple object like a bouncing ball - as it hits the ground, you can squash the ball flat and widen it." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: When a rubber ball hits the ground, it squashes flat, then stretches as it bounces back." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Anticipation" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Use anticipation to add some realism when you want to prepare your audience for some action. Consider what people do when they prepare to do something. A footballer about to take a penalty would steady themselves with their arms or swing their foot back ready to kick. If a golfer wants to hit a golf ball, they must swing their arms back first." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Anticipation doesn’t just have to apply to sporty actions. Focus on an object a character may be about to pick up or have a character anticipating somebody’s arrival on screen." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example: A person pulls their arm back before throwing a ball." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="739.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Staging" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="770.0" strokeType="OUTSIDE" strokeWidth="0.0" text="When considering staging, you’re in the role of a film or theatre director. You need to think about where you’re putting the camera, what it’s focusing on, where the ‘actors’ will be and what they’re going to do. Whether they’re fun cartoon characters or realistically drawn people, staging matters and is sometimes underestimated." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="182.0" fitWidth="374.0" layoutX="200.0" layoutY="857.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/Staging-example.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="68.0" layoutY="1050.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You want your audience’s attention to be on the important elements of the story you’re telling and avoid distracting them with unnecessary detail. With a combination of lighting, framing and composition, plus ensuring that you remove clutter, you’ll be able to effectively advance your story." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Straight Ahead Action and Pose to Pose" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="1164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Straight Ahead and Pose to Pose are in a sense two principles in one, each concerning different approaches to drawing. Straight ahead action scenes involve animating each frame from beginning to end. Do this to create a fluid illusion of movement for action scenes, but not if you want to create exact poses with proportions maintained." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="159.0" fitWidth="334.0" layoutX="231.0" layoutY="1242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/79ae607e6f559757479dae214ad26da3.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="55.0" layoutY="1536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Follow Through and Overlapping Action." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="1427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With pose to pose, animators start by drawing key frames and they fill in the intervals later. Because relation to surroundings and composition become more important, this approach is preferable for emotional, dramatic scenes. As Disney films often involve dramatic and action scenes, their animators would often adopt both approaches." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="1577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="These two movement-based principles combine to make movement in animation more realistic and create the impression characters are following the laws of physics.Follow through concerns the parts of the body that continue to move when a character stops. The parts then pull back towards the centre of mass, just like with a real person. Follow through also applies to objects." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1682.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Ease In, Ease Out" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="1714.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This animation principle is also known as ‘slow in and slow out’. In the real world, objects have to accelerate as they start moving and slow down before stopping. For example, a person running, a car on the road or a pendulum." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="184.0" fitWidth="287.0" layoutX="232.0" layoutY="1771.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/ease.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="55.0" layoutY="2067.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Arcs." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="61.0" layoutY="1984.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To represent this in animation, more frames must be drawn at the beginning and end in an action sequence. Ease in, ease out adds more realism to your animation and will help the audience identify and sympathise with your characters." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2097.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In real life, most actions have an arched trajectory. To achieve greater realism, animators should follow this principle. Whether you’re creating the effect of limbs moving or an object thrown into the air, movements that follow natural arcs will create fluidity and avoid unnatural, erratic animation." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To keep arcs in mind, traditional animators often draw them lightly on paper to use as reference and to erase when they’re no longer needed. Speed and timing are important with arcs, as sometimes they happen so quickly that they blur to the point they’re unrecognisable." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="2257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8. Secondary Action." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This principle of animation helps emphasise the main action within a scene by adding an extra dimension to your characters and objects. Subtleties, such as the way a person swings their arms while walking down the street, give colour to your creations and make them appear more human." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="210.0" fitWidth="317.0" layoutX="233.0" layoutY="2358.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/secondary-action1_orig.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="231.0" layoutY="2592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Secondary Action " textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2623.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Providing they don’t take attention away from the main action, secondary actions can really bring a scene to life." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="2691.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9. Timing." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2731.0" strokeType="OUTSIDE" strokeWidth="0.0" text="As in real life, animation is all about timing. Get this principle right and it grounds your animation in realism, as everything will appear to follow the laws of physics. Think about the size and weight of your characters in relation to what and who are around them. A lightweight person or object is going to react quicker to being pushed than a heavy one." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2830.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To get your timing right in animation, get your number of frames or drawings right. As with the ease in, ease out animation principle, the slower the action, the more frames or drawings you’ll need to add." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="2919.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10. Exaggeration." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="2951.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a fine art and one that Disney animators are experts at. Many of the 12 principles of animation are grounded in realism and this is no exception. However, if you totally avoid exaggeration, animation can often be too real and is in danger of looking dull." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="3027.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Disney believes that exaggeration should be true to reality to an extent, but made more extreme - often pushed just beyond the realms of realism, to make their characters pop and add fun to their adventures." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="223.0" fitWidth="333.0" layoutX="257.0" layoutY="3082.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/1000003263.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="257.0" layoutY="3322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Example of Exaggeration" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="68.0" layoutY="3353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A classic trope and great example of exaggeration in animation is the jaw drop. When a character is surprised, shocked or falls in love at first sight, animators often don’t just show a slightly stunned, open-mouthed expression. They get their point across by showing their character’s mouth dropping way beyond realism - often literally to the floor." textAlignment="JUSTIFY" wrappingWidth="714.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="3461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11. Solid Drawing" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="54.0" layoutY="3494.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solid drawing in animation is one of the more difficult principles to get right, especially in traditional animation. This is because you need to make your creations feel 3D and give them weight and volume. Art classes are useful to give you deeper knowledge of weight, balance, gravity, light, shadow and more. In The Illusion of Life, Johnston and Thomas warned of the danger of creating ‘twins’, where characters would appear lifeless because their left and right sides were exactly the same." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="3624.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12. Appeal" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="3655.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The last of the 12 principles of animation is one of the most important. In film, TV and theatre, directors want their actors to have charisma. It doesn’t matter whether they’re a hero or villain - the characters should be interesting enough to make viewers want to know how their story develops." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="4014.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animators should give all their creations appeal, whether it’s a cute caterpillar or a dragon hell-bent on destruction. There is no real formula, though a good idea for giving a creation the ‘awww’ factor is to make their face round and childlike. Heroes often have strong, angular and symmetrical features." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="231.0" fitWidth="485.0" layoutX="219.0" layoutY="3721.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/a8562e78db09e8b8a7cfd435011f7620.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="179.0" layoutY="3978.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image showing  the Right has more Depth and Appeal" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="30.0" layoutY="4086.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By understanding and applying the 12 Principles of Animation, you now hold the essential tools that bring drawings and digital objects to life. These principles are not just technical rules—they are the heart of what makes animation believable, emotional, and entertaining. Whether you’re animating a Filipino folk hero, a bouncing ball, or an original character of your own, these foundational techniques will guide your creative journey." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#comsys1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#comsys2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="ComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#comsys3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
