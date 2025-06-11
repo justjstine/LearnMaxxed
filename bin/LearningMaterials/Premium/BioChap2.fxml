@@ -36,7 +36,7 @@
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="nextButton" buttonType="RAISED" layoutX="572.0" layoutY="1580.0" onAction="#nextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="572.0" layoutY="1580.0" onAction="#premNextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -142,22 +142,22 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="dashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+      <Button fx:id="premdashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#premDashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="bioIntroButton" layoutX="12.0" layoutY="251.0" mnemonicParsing="false" onAction="#bioIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
+      <Button fx:id="prembioIntroButton" layoutX="12.0" layoutY="251.0" mnemonicParsing="false" onAction="#prembioIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text=" " textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="bio1Button" layoutX="12.0" layoutY="275.0" mnemonicParsing="false" onAction="#bio1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="prembio1Button" layoutX="12.0" layoutY="275.0" mnemonicParsing="false" onAction="#prembio1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="bio3Button" layoutX="12.0" layoutY="326.0" mnemonicParsing="false" onAction="#bio3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
+      <Button fx:id="prembio3Button" layoutX="12.0" layoutY="326.0" mnemonicParsing="false" onAction="#prembio3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>

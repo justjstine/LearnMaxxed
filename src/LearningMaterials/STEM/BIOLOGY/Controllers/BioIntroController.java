@@ -37,6 +37,12 @@ public class BioIntroController {
     private ScrollPane scrollPane;
 
     @FXML
+    private Button premdashboardButton;
+
+    @FXML
+    private JFXButton premnextButton;
+
+    @FXML
     private JFXComboBox<String> subjectComboBox;
 
     @FXML
@@ -110,6 +116,41 @@ public class BioIntroController {
     @FXML
     public void bio3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
         Parent bio3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Biology/FXML/BioChap3.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(bio3Root, 1000, 600));
+    }
+
+    @FXML
+    public void premDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent dashboardRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(dashboardRoot, 1000, 600));
+    }
+
+    @FXML
+    public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(nextRoot, 1000, 600));
+    }
+
+    @FXML
+    public void prembio1ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent bio1Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioChap1.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(bio1Root, 1000, 600));
+    }
+
+    @FXML
+    public void prembio2ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent bio2Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioChap2.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(bio2Root, 1000, 600));
+    }
+
+    @FXML
+    public void prembio3ButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent bio3Root = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioChap3.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(bio3Root, 1000, 600));
     }
