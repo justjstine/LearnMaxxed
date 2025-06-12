@@ -40,6 +40,9 @@ public class PremiumDashController {
     @FXML
     private JFXComboBox<String> stemSubjectComboBox;
 
+    @FXML
+    private Button changetoFreeButton;
+
     public void displayName(String name) {
         usernameSidePanel.setText(name);
     }
@@ -195,4 +198,18 @@ public class PremiumDashController {
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(logoutRoot, 1000, 600));
     }
+
+    @FXML
+    public void changetoFreeButtonHandler(javafx.event.ActionEvent event) {
+    try {
+        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/PremiumToFreePopup.fxml"));
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Back To Free Version?");
+        popupStage.setScene(new Scene(root));
+        popupStage.initOwner(changetoFreeButton.getScene().getWindow());
+        popupStage.showAndWait();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
 }
