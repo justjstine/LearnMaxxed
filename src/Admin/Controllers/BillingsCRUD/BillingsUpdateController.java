@@ -8,6 +8,7 @@ import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.List;
 
 public class BillingsUpdateController implements Initializable {
     
@@ -20,12 +21,19 @@ public class BillingsUpdateController implements Initializable {
     @FXML
     private ComboBox<String> statusCombo;
 
+    @FXML
+    private ComboBox<String> paymentmethodCombo;
+
     private int userId;
 
 
- @Override
+    @Override
     public void initialize(URL location, ResourceBundle resources) {
         statusCombo.getItems().addAll("Subscribed", "Free");
+
+        // Populate payment methods from database
+        List<String> paymentMethods = Database.DatabaseHandler.getPaymentMethods();
+        paymentmethodCombo.getItems().addAll(paymentMethods);
     }
 
     @FXML
@@ -33,18 +41,39 @@ public class BillingsUpdateController implements Initializable {
         ((Stage) cancelButton.getScene().getWindow()).close();
     }
 
-   @FXML
-private void handleUpdateStatusButton() {
+    @FXML
+    private void handleUpdateStatusButton() {
     String selectedStatus = statusCombo.getValue();
+    String selectedPayment = paymentmethodCombo.getValue();
+
     if (userId == 0) {
         showAlert("Please choose a user.");
         return;
     }
-    if (selectedStatus == null) {
+
+    if (selectedStatus == null || selectedStatus.trim().isEmpty()) {
         showAlert("Please select a status.");
         return;
     }
-    boolean success = Database.DatabaseHandler.updateUserSubscriptionStatus(userId, selectedStatus);
+
+    boolean success;
+
+    if ("Subscribed".equalsIgnoreCase(selectedStatus)) {
+        if (selectedPayment == null || selectedPayment.trim().isEmpty()) {
+            showAlert("Please select a payment method.");
+            return;
+        }
+        success = Database.DatabaseHandler.updateUserSubscriptionStatus(userId, selectedStatus, selectedPayment);
+
+    } else if ("Free".equalsIgnoreCase(selectedStatus)) {
+        // No payment required for free status
+        success = Database.DatabaseHandler.updateUserSubscriptionStatus(userId, selectedStatus, "None");
+
+    } else {
+        showAlert("Invalid status selected.");
+        return;
+    }
+
     if (success) {
         showAlert("Status updated successfully!");
         ((Stage) updateSubscriptionButton.getScene().getWindow()).close();

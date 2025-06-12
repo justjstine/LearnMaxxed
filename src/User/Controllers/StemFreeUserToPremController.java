@@ -56,7 +56,7 @@ public class StemFreeUserToPremController implements Initializable {
     }
 
     @FXML
-    private void changetoPremiumButtonHandler(ActionEvent event) {
+private void changetoPremiumButtonHandler(ActionEvent event) {
     String selectedPlan = subscriptionCombo.getValue();
     String selectedPayment = paymentCombo.getValue();
 
@@ -65,26 +65,23 @@ public class StemFreeUserToPremController implements Initializable {
         return;
     }
 
-    if (selectedPayment == null || selectedPayment.isEmpty()) {
+    if (selectedPayment == null || selectedPayment.trim().isEmpty()) {
         showAlert(AlertType.WARNING, "Please select a payment method.");
         return;
     }
 
     int userId = Session.getLoggedInStudent().getUserID();
-    boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed");
+
+    boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed", selectedPayment);
 
     if (success) {
         Session.clearSession();
-
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Subscription Updated");
         alert.setHeaderText(null);
-        alert.setContentText("Your account has been upgraded. The application will now close.");
+        alert.setContentText("Your account has been upgraded. Please re-login.");
         alert.showAndWait();
-
-    
         System.exit(0);
-
     } else {
         showAlert(AlertType.ERROR, "Upgrade failed. Please try again.");
     }

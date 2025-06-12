@@ -62,6 +62,16 @@ public class BillingsAdminController implements Initializable {
     @FXML
     private TableColumn<Billings, Integer> billingUserIdColumn;
 
+      @FXML
+    private TableColumn<?, ?> PaymentDetailsColumn;
+
+    @FXML
+    private TableColumn<Billings, String> PaymentMethodColumn;
+
+    @FXML
+    private TableColumn<Billings, String> paymentDetailsColumn;
+
+
     @FXML
     private ComboBox<String> strandfilterCombo;
 
@@ -81,6 +91,8 @@ public class BillingsAdminController implements Initializable {
         billingTransactColumn.setCellValueFactory(new PropertyValueFactory<>("transactionID"));
         billingStrandColumn.setCellValueFactory(new PropertyValueFactory<>("strand"));
         billingSubColumn.setCellValueFactory(new PropertyValueFactory<>("subscriptionID"));
+        PaymentMethodColumn.setCellValueFactory(new PropertyValueFactory<>("paymentMethod"));
+        PaymentDetailsColumn.setCellValueFactory(new PropertyValueFactory<>("paymentDetails"));
         billingSubColumn.setCellFactory(column -> new TableCell<Billings, Integer>() {
             @Override
             protected void updateItem(Integer item, boolean empty) {
@@ -112,15 +124,17 @@ public class BillingsAdminController implements Initializable {
             ResultSet rs = Database.DatabaseHandler.getBillings();
             while (rs.next()) {
                 Billings billing = new Billings(
-                    rs.getInt("UserID"),
-                    rs.getInt("TransactionID"),
-                    rs.getString("TransactionDate"),
-                    rs.getString("StrandName"),
-                    rs.getInt("SubscriptionID"),
-                    rs.getString("FirstName"),
-                    rs.getString("LastName"),
-                    rs.getString("EmailAddress")
-                );
+    rs.getInt("UserID"),
+    rs.getInt("TransactionID"),
+    rs.getString("TransactionDate"),
+    rs.getString("StrandName"),
+    rs.getInt("SubscriptionID"),
+    rs.getString("FirstName"),
+    rs.getString("LastName"),
+    rs.getString("EmailAddress"),
+    rs.getString("PaymentMethod"),
+    rs.getString("PaymentDetails")
+);
                 billingList.add(billing);
             }
         } catch (Exception e) {
@@ -133,23 +147,23 @@ public class BillingsAdminController implements Initializable {
         String selected = strandfilterCombo.getSelectionModel().getSelectedItem();
         billingList.clear();
         try {
-            ResultSet rs;
-            if ("All Students".equals(selected)) {
-                rs = Database.DatabaseHandler.getBillings();
-            } else {
-                rs = Database.DatabaseHandler.getBillingsByStrand(selected);
-            }
+            ResultSet rs = "All Students".equals(selected)
+                ? Database.DatabaseHandler.getBillings()
+                : Database.DatabaseHandler.getBillingsByStrand(selected);
+
             while (rs.next()) {
                 Billings billing = new Billings(
-                    rs.getInt("UserID"),
-                    rs.getInt("TransactionID"),
-                    rs.getString("TransactionDate"),
-                    rs.getString("StrandName"),
-                    rs.getInt("SubscriptionID"),
-                    rs.getString("FirstName"),
-                    rs.getString("LastName"),
-                    rs.getString("EmailAddress")
-                );
+    rs.getInt("UserID"),
+    rs.getInt("TransactionID"),
+    rs.getString("TransactionDate"),
+    rs.getString("StrandName"),
+    rs.getInt("SubscriptionID"),
+    rs.getString("FirstName"),
+    rs.getString("LastName"),
+    rs.getString("EmailAddress"),
+    rs.getString("PaymentMethod"),
+    rs.getString("PaymentDetails")
+);
                 billingList.add(billing);
             }
         } catch (Exception e) {
