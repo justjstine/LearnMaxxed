@@ -77,6 +77,10 @@ public class DatabaseHandler {
         return false;
     }
 
+    public static boolean usernameExists(String username) {
+    return isUsernameTaken(username);
+    }
+
     public static boolean isEmailTaken(String email) {
         String sql = "SELECT 1 FROM User WHERE EmailAddress = ?";
         try (Connection conn = getDBConnection();
