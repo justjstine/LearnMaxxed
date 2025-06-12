@@ -141,7 +141,7 @@ public class StemDashController {
     @FXML
 public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
     try {
-        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/StemToPremiumPopup1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/StemToPremiumPopup.fxml"));
         Stage popupStage = new Stage();
         popupStage.setTitle("Upgrade to Premium");
         popupStage.setScene(new Scene(root));
