@@ -25,7 +25,7 @@ public class BillingsUpdateController implements Initializable {
 
  @Override
     public void initialize(URL location, ResourceBundle resources) {
-        statusCombo.getItems().addAll("Subscribed", "Free");
+        statusCombo.getItems().addAll("Subscribed", "Cancelled");
     }
 
     @FXML

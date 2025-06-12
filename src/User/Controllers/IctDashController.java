@@ -66,9 +66,6 @@ public class IctDashController {
     @FXML
     private Label welcomebackUsername;
 
-    @FXML
-    private Button changetoPremiumButton;
-
 
     public void displayName(String name) {
         usernameSidePanel.setText(name);
@@ -213,20 +210,6 @@ public void illustrationButtonHandler(javafx.event.ActionEvent event) {
         stage.setScene(new Scene(root, 1000, 600));
         stage.setTitle("Illustration Introduction");
         stage.show();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
-
-@FXML
-public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
-    try {
-        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctToPremiumPopup.fxml"));
-        Stage popupStage = new Stage();
-        popupStage.setTitle("Upgrade to Premium");
-        popupStage.setScene(new Scene(root));
-        popupStage.initOwner(changetoPremiumButton.getScene().getWindow());
-        popupStage.showAndWait();
     } catch (Exception e) {
         e.printStackTrace();
     }

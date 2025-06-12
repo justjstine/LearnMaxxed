@@ -270,20 +270,5 @@
       </Button>
       <JFXComboBox fx:id="ictSubjectComboBox" layoutX="26.0" layoutY="254.0" onAction="#handleIctSubjectSelection" prefHeight="26.0" prefWidth="152.0" />
       <JFXComboBox fx:id="stemSubjectComboBox" layoutX="26.0" layoutY="216.0" onAction="#handleStemSubjectSelection" prefHeight="26.0" prefWidth="152.0" />
-      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="290.0">
-         <image>
-            <Image url="@../../../Resources/Icons/dollar-sign.png" />
-         </image>
-      </ImageView>
-      <Text fill="WHITE" layoutX="55.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subscription">
-         <font>
-            <Font name="Century Gothic Bold" size="16.0" />
-         </font>
-      </Text>
-      <Button fx:id="changetoFreeButton" layoutX="22.0" layoutY="288.0" mnemonicParsing="false" onAction="#changetoFreeButtonHandler" prefHeight="26.0" prefWidth="145.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
-         <font>
-            <Font size="1.0" />
-         </font>
-      </Button>
    </children>
 </AnchorPane>

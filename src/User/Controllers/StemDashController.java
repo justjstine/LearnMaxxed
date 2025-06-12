@@ -43,11 +43,6 @@ public class StemDashController {
     @FXML
     private Button logoutButton;
 
-     @FXML
-    private Button changetoPremiumButton;
-
-    
-
     public void displayName(String name) {
         usernameSidePanel.setText(name);
     }
@@ -137,18 +132,4 @@ public class StemDashController {
             e.printStackTrace();
         }
     }
-
-    @FXML
-public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
-    try {
-        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/StemToPremiumPopup.fxml"));
-        Stage popupStage = new Stage();
-        popupStage.setTitle("Upgrade to Premium");
-        popupStage.setScene(new Scene(root));
-        popupStage.initOwner(changetoPremiumButton.getScene().getWindow());
-        popupStage.showAndWait();
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-}
 }
