@@ -168,5 +168,20 @@
          </font>
       </Button>
       <JFXComboBox fx:id="subjectComboBox" layoutX="30.0" layoutY="217.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="152.0" />
+      <Text fill="WHITE" layoutX="55.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try Premium">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="changetoPremiumButton" layoutX="40.0" layoutY="253.0" mnemonicParsing="false" onAction="#changetoPremiumButtonHandler" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: transparent;" text="Try Premium" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="255.0">
+         <image>
+            <Image url="@../../../Resources/Icons/dollar-sign.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

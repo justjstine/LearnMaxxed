@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controllers.IctDashController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#002c36" height="145.0" layoutX="260.0" layoutY="92.0" stroke="#002c36" strokeType="INSIDE" width="658.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
