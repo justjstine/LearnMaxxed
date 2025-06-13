@@ -5,6 +5,8 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+import Data.Session;
+import Data.Students;
 import VideoMaterials.STEM.Controllers.BasicCalChap3VidController;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -37,6 +39,13 @@ public class BasicCalChap3Controller {
 
     @FXML
     public void initialize() {
+        Students student = Session.getLoggedInStudent();
+        if (student != null) {
+            usernameSidePanel.setText(student.getFirstName());
+        } else {
+            usernameSidePanel.setText("");
+        }
+        
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
         subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology", "Pre Calculus", "Basic Calculus");
@@ -222,6 +231,7 @@ public class BasicCalChap3Controller {
 
         Stage popupStage = new Stage();
         popupStage.setTitle("Congratulations!");
+        popupStage.initStyle(javafx.stage.StageStyle.UNDECORATED);
         popupStage.setScene(new Scene(root, 555, 333));
         popupStage.initOwner(((JFXButton) event.getSource()).getScene().getWindow());
         popupStage.initModality(javafx.stage.Modality.WINDOW_MODAL);

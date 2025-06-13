@@ -128,7 +128,7 @@
          </font>
       </Text>
       <Line endX="658.0" layoutX="286.0" layoutY="524.0" startX="-70.0" stroke="#4e4c4c" />
-      <Text fill="#b91212" layoutX="837.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: regular;" text="Change" wrappingWidth="98.18116760253906">
+      <Text fill="#b91212" layoutX="845.0" layoutY="498.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: regular;" text="Delete" wrappingWidth="78.18116760253906">
          <font>
             <Font name="Century Gothic Bold" size="24.0" />
          </font>
@@ -138,7 +138,7 @@
             <Font name="Century Gothic Bold" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="deleteButton" layoutX="835.0" layoutY="477.0" mnemonicParsing="false" onAction="#deleteButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="98.0" />
+      <Button fx:id="deleteButton" layoutX="845.0" layoutY="476.0" mnemonicParsing="false" onAction="#deleteButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="78.0" />
       <Button fx:id="badgeButton" layoutX="15.0" layoutY="217.0" mnemonicParsing="false" onAction="#badgeButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="146.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="13.0" layoutY="484.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
       <Text fill="WHITE" layoutX="72.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back">

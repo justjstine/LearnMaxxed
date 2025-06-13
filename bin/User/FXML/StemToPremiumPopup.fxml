@@ -25,7 +25,7 @@
             <Image url="@../../../Resources/Icons/Logo.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="165.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try our Premium Subscription!">
+      <Text fill="WHITE" layoutX="151.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try our Premium Subscription!">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>
@@ -40,9 +40,9 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <ComboBox fx:id="paymentCombo" layoutX="82.0" layoutY="158.0" prefHeight="25.0" prefWidth="226.0" promptText="Payment Method" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
-      <ComboBox fx:id="subscriptionCombo" layoutX="335.0" layoutY="158.0" prefHeight="25.0" prefWidth="128.0" promptText="Plan Type" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
-      <Text fill="WHITE" layoutX="100.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are Currently on a Free Subscription Mode">
+      <ComboBox fx:id="paymentCombo" layoutX="82.0" layoutY="172.0" prefHeight="25.0" prefWidth="226.0" promptText="Payment Method" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
+      <ComboBox fx:id="subscriptionCombo" layoutX="335.0" layoutY="172.0" prefHeight="25.0" prefWidth="128.0" promptText="Plan Type" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="75.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are Currently on a Free Subscription Mode">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>

@@ -59,6 +59,23 @@ public class SignupController implements Initializable {
         if (eyeIcon != null && eyeoff != null) {
             eyeIcon.setImage(eyeoff);
         }
+
+        // Add this block to handle enabling/disabling paymentCombo
+        planTypeCombo.valueProperty().addListener((obs, oldVal, newVal) -> {
+            if ("Free".equalsIgnoreCase(newVal)) {
+                paymentCombo.setDisable(true);
+                paymentCombo.getSelectionModel().clearSelection();
+            } else {
+                paymentCombo.setDisable(false);
+            }
+        });
+
+        // Optionally, set initial state on load
+        if ("Free".equalsIgnoreCase(planTypeCombo.getValue())) {
+            paymentCombo.setDisable(true);
+        } else {
+            paymentCombo.setDisable(false);
+        }
     }
 
     private void loadStrands() {

@@ -131,5 +131,16 @@
       <Button fx:id="adminbillingsbutton" layoutX="20.0" layoutY="252.0" mnemonicParsing="false" onAction="#adminbillingsButtonHandler" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: transparent;" textFill="WHITE" />
       <Button fx:id="logoutadminbutton" layoutX="12.0" layoutY="543.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE" />
       <Button fx:id="adminbutton" layoutX="15.0" layoutY="289.0" mnemonicParsing="false" onAction="#adminButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="138.0" />
+      <Text fill="WHITE" layoutX="56.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Badges">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="329.0">
+         <image>
+            <Image url="@../../../Resources/Icons/slack.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="badgesbutton" layoutX="12.0" layoutY="329.0" mnemonicParsing="false" onAction="#goTobadgesHandler" opacity="0.0" prefHeight="20.0" prefWidth="138.0" />
    </children>
 </AnchorPane>

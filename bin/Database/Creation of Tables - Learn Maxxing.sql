@@ -59,6 +59,72 @@ CREATE TABLE Transaction (
     FOREIGN KEY (StrandID) REFERENCES Strand(StrandID)
 );
 
+-- Create Badge table
+CREATE TABLE Badge (
+    BadgeID INT AUTO_INCREMENT PRIMARY KEY,
+    BadgeName VARCHAR(100) NOT NULL
+);
+
+-- Create UserBadge table
+CREATE TABLE UserBadge (
+    UserBadgeID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT NOT NULL,
+    BadgeID INT NOT NULL,
+    AwardedAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE (UserID, BadgeID),
+    FOREIGN KEY (UserID) REFERENCES User(UserID),
+    FOREIGN KEY (BadgeID) REFERENCES Badge(BadgeID)
+);
+
+DELIMITER $$
+
+CREATE TRIGGER prevent_duplicate_badge
+BEFORE INSERT ON UserBadge
+FOR EACH ROW
+BEGIN
+    DECLARE badge_exists INT;
+
+    SELECT COUNT(*) INTO badge_exists
+    FROM UserBadge
+    WHERE UserID = NEW.UserID AND BadgeID = NEW.BadgeID;
+
+    IF badge_exists > 0 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'User already has this badge!';
+    END IF;
+END$$
+
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE TRIGGER limit_free_user_badges
+BEFORE INSERT ON UserBadge
+FOR EACH ROW
+BEGIN
+    DECLARE user_subscription INT;
+    DECLARE badge_count INT;
+
+    -- Get the subscription type of the user
+    SELECT SubscriptionID INTO user_subscription
+    FROM User
+    WHERE UserID = NEW.UserID;
+
+    -- Count how many badges the user already has
+    SELECT COUNT(*) INTO badge_count
+    FROM UserBadge
+    WHERE UserID = NEW.UserID;
+
+    -- If user is Free (SubscriptionID = 2) and already has 2 badges, block insert
+    IF user_subscription = 2 AND badge_count >= 2 THEN
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Free users can only earn a maximum of 2 badges.';
+    END IF;
+END$$
+
+DELIMITER ;
+
+
 -- Insert of Values Of Strand
 INSERT INTO Strand (StrandName) VALUES 
 ('STEM'),
@@ -94,6 +160,24 @@ INSERT INTO Payment (PaymentMethod) VALUES
 ('Gcash'),
 ('Bank'),
 ('Maya');
+
+-- Insertion of Badges
+INSERT INTO Badge (BadgeName) VALUES
+('Chemistry'),
+('Physics'),
+('Biology'),
+('Pre-Calculus'),
+('Basic Calculus'),
+('Computer Programming'),
+('Computer Systems'),
+('Web Development'),
+('Animation'),
+('Illustration')
+
+
+
+
+
 
 
 

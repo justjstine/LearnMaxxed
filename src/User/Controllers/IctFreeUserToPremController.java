@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
 
-import Utils.StageManager;
+import Utils.StageHelper;
 import Database.DatabaseHandler;
 import javafx.scene.Node;
 import Data.Session;
@@ -91,24 +91,23 @@ private void changetoPremiumButtonHandler(ActionEvent event) {
     }
 }
 
-    @FXML
+@FXML
 private void redirectToLogin(ActionEvent event) {
     try {
-        // Close all currently open stages safely
-        StageManager.closeAllStages();
+        
+        for (Stage stage : StageHelper.getStages()) {
+            stage.close();
+        }
 
-        // Load the login FXML
+       
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login/FXML/LoginPage.fxml"));
         Parent root = loader.load();
 
-        // Create a new stage for the login page
+        
         Stage loginStage = new Stage();
         loginStage.setTitle("Login");
         loginStage.setScene(new Scene(root, 1000, 600));
         loginStage.show();
-
-        // Register the new stage so it's tracked
-        StageManager.register(loginStage);
 
     } catch (IOException e) {
         e.printStackTrace();

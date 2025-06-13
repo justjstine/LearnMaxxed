@@ -107,7 +107,7 @@
             <Font name="Century Gothic" size="24.0" />
          </font>
       </Text>
-      <TableView fx:id="billingAdminTable" layoutX="194.0" layoutY="109.0" prefHeight="386.0" prefWidth="860.0">
+      <TableView fx:id="billingAdminTable" layoutX="194.0" layoutY="109.0" prefHeight="386.0" prefWidth="793.0">
          <columns>
             <TableColumn fx:id="adminIDColumn" minWidth="0.0" prefWidth="0.0" />
             <TableColumn fx:id="billingTransactColumn" minWidth="0.0" prefWidth="89.0" text="Transaction ID" />
@@ -117,9 +117,9 @@
             <TableColumn fx:id="billingEmailColumn" minWidth="0.0" prefWidth="101.60006713867188" text="Email" />
             <TableColumn fx:id="billingStrandColumn" minWidth="0.0" prefWidth="58.39996337890625" text="Strand" />
             <TableColumn fx:id="billingSubColumn" minWidth="0.0" text="Plan Type" />
-            <TableColumn fx:id="billingTransactionDateColumn" minWidth="0.0" prefWidth="106.39996337890625" text="Transaction Date" />
             <TableColumn fx:id="PaymentMethodColumn" minWidth="0.0" prefWidth="106.39996337890625" text="Payment Method" />
             <TableColumn fx:id="PaymentDetailsColumn" minWidth="0.0" prefWidth="106.39996337890625" text="Payment Details" />
+            <TableColumn fx:id="billingTransactionDateColumn" minWidth="0.0" prefWidth="106.39996337890625" text="Transaction Date" />
          </columns>
       </TableView>
       <JFXButton fx:id="BillingsUpdateButton" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="246.0" layoutY="509.0" onAction="#BillingsUpdateButtonHandler" prefHeight="47.0" prefWidth="163.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Update" textFill="#42736c">
@@ -145,5 +145,16 @@
       <ComboBox fx:id="strandfilterCombo" layoutX="486.0" layoutY="514.0" prefHeight="38.0" prefWidth="226.0" promptText="Strand" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10; -fx-border-color: black;" />
       <Button fx:id="dashboardButton" layoutX="20.0" layoutY="179.0" mnemonicParsing="false" onAction="#dashboardButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="140.0" />
       <Button fx:id="adminbutton" layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#adminButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="56.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Badges">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="329.0">
+         <image>
+            <Image url="@../../../Resources/Icons/slack.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="badgebutton" layoutX="12.0" layoutY="329.0" mnemonicParsing="false" onAction="#goTobadgesHandler" opacity="0.0" prefHeight="26.0" prefWidth="128.0" />
    </children>
 </AnchorPane>

@@ -69,4 +69,8 @@ public class WebDevChap1VidController  implements Initializable {
         }
     }
 
+    public MediaPlayer getMediaPlayer() {
+    return mediaPlayer;
+}
+
 }

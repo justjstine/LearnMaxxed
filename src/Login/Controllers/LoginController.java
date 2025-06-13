@@ -4,6 +4,7 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 
 import Database.DatabaseHandler;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +12,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -84,76 +84,75 @@ public class LoginController {
             }
         }
     }
-
+    @FXML
     public void loginbuttonHandler(ActionEvent event) throws IOException {
         String uname = usernametextfield.getText();
         String pword = passwordtextfield.isVisible() ? passwordtextfield.getText() : passwordText.getText();
-        FXMLLoader loader;
 
-    
-        if (DatabaseHandler.validateadminLogin(uname, pword)) {
-            loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
-            root = loader.load();
-        } else if (DatabaseHandler.usernameExists(uname)) { 
-        
-            if (DatabaseHandler.validatestudentLogin(uname, pword)) {
-                Data.Students student = DatabaseHandler.getStudentByUsername(uname);
-                if (student != null) {
-                    Data.Session.setLoggedInStudent(student);
-                    String strand = student.getStrand();
-                    String planType = student.getPlanType();
-                    int subscriptionID = student.getSubscriptionID();
+        Task<Parent> loadTask = new Task<>() {
+            @Override
+            protected Parent call() throws Exception {
+                FXMLLoader loader;
+                Parent loadedRoot = null;
 
-                    if ("Subscribed".equalsIgnoreCase(planType) || subscriptionID == 1) {
-                        loader = new FXMLLoader(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
-                        root = loader.load();
-                    } else {
-                        if ("STEM".equalsIgnoreCase(strand)) {
-                            loader = new FXMLLoader(getClass().getResource("/User/FXML/StemDashboard.fxml"));
-                            root = loader.load();
-                        } else if ("ICT".equalsIgnoreCase(strand)) {
-                            loader = new FXMLLoader(getClass().getResource("/User/FXML/IctDashboard.fxml"));
-                            root = loader.load();
+                if (DatabaseHandler.validateadminLogin(uname, pword)) {
+                    loader = new FXMLLoader(getClass().getResource("/Admin/FXML/AdminPage.fxml"));
+                    loadedRoot = loader.load();
+                } else if (DatabaseHandler.usernameExists(uname)) {
+                    if (DatabaseHandler.validatestudentLogin(uname, pword)) {
+                        Data.Students student = DatabaseHandler.getStudentByUsername(uname);
+                        if (student != null) {
+                            Data.Session.setLoggedInStudent(student);
+                            String strand = student.getStrand();
+                            String planType = student.getPlanType();
+                            int subscriptionID = student.getSubscriptionID();
+
+                            if ("Subscribed".equalsIgnoreCase(planType) || subscriptionID == 1) {
+                                loader = new FXMLLoader(getClass().getResource("/User/FXML/PremiumDashboard.fxml"));
+                                loadedRoot = loader.load();
+                            } else {
+                                if ("STEM".equalsIgnoreCase(strand)) {
+                                    loader = new FXMLLoader(getClass().getResource("/User/FXML/StemDashboard.fxml"));
+                                    loadedRoot = loader.load();
+                                } else if ("ICT".equalsIgnoreCase(strand)) {
+                                    loader = new FXMLLoader(getClass().getResource("/User/FXML/IctDashboard.fxml"));
+                                    loadedRoot = loader.load();
+                                } else {
+                                    throw new Exception("Your strand does not have a dashboard.");
+                                }
+                            }
                         } else {
-                            Alert alert = new Alert(Alert.AlertType.ERROR);
-                            alert.setTitle("Access Denied");
-                            alert.setHeaderText(null);
-                            alert.setContentText("Your strand does not have a dashboard.");
-                            alert.showAndWait();
-                            return;
+                            throw new Exception("No user exists with that username.");
                         }
+                    } else {
+                        throw new Exception("Invalid username or password. Please try again.");
                     }
                 } else {
-                    Alert alert = new Alert(Alert.AlertType.ERROR);
-                    alert.setTitle("Error");
-                    alert.setHeaderText(null);
-                    alert.setContentText("No user exists with that username.");
-                    alert.showAndWait();
-                    return;
+                    throw new Exception("No user exists with that username.");
                 }
-            } else {
-                // Username exists but password is wrong
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Error");
-                alert.setHeaderText(null);
-                alert.setContentText("Invalid username or password. Please try again.");
-                alert.showAndWait();
-                return;
+                return loadedRoot;
             }
-        } else {
-            // Username does not exist
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Error");
-            alert.setHeaderText(null);
-            alert.setContentText("No user exists with that username.");
-            alert.showAndWait();
-            return;
-        }
+        };
 
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+        loadTask.setOnSucceeded(workerStateEvent -> {
+            try {
+                Parent root = loadTask.get();
+                stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                scene = new Scene(root);
+                stage.setScene(scene);
+                stage.show();
+            } catch (Exception e) {
+                showAlert(Alert.AlertType.ERROR, "Error", e.getMessage());
+            }
+        });
+
+        loadTask.setOnFailed(workerStateEvent -> {
+            Throwable ex = loadTask.getException();
+            String message = ex.getMessage() != null ? ex.getMessage() : "An error occurred during login.";
+            showAlert(Alert.AlertType.ERROR, "Error", message);
+        });
+
+        new Thread(loadTask).start();
     }
     
     public void signupButtonHandler(ActionEvent event) {
@@ -164,5 +163,14 @@ public class LoginController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    // Add this helper method if not present
+    private void showAlert(Alert.AlertType type, String title, String message) {
+        Alert alert = new Alert(type);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 }

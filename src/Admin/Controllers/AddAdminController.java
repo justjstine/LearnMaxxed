@@ -1,6 +1,7 @@
 package Admin.Controllers;
 
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
 import java.util.ResourceBundle;
@@ -50,7 +51,7 @@ public class AddAdminController implements Initializable {
     private TableColumn<Admin, String> adminPasswordColumn;
 
     @FXML
-    private Button logoutButton, billingsButton;
+    private Button logoutButton, billingsButton, badgebutton;
 
     @FXML
     private Button goToStudentsbutton, dashboardButton;
@@ -69,6 +70,18 @@ public class AddAdminController implements Initializable {
         adminIDColumn.setCellValueFactory(new PropertyValueFactory<>("adminID"));
         adminUsernameColumn.setCellValueFactory(new PropertyValueFactory<>("adminUserName"));
         adminPasswordColumn.setCellValueFactory(new PropertyValueFactory<>("adminPassword"));
+
+        adminPasswordColumn.setCellFactory(column -> new javafx.scene.control.TableCell<Admin, String>() {
+            @Override
+            protected void updateItem(String password, boolean empty) {
+                super.updateItem(password, empty);
+                if (empty || password == null) {
+                    setText(null);
+                } else {
+                    setText("•".repeat(password.length())); 
+                }
+            }
+        });
 
         displayAdmins();
     }
@@ -239,5 +252,12 @@ private void logoutButtonHandler(javafx.event.ActionEvent event) {
         }
 
         adminTable.setItems(filteredList);
+    }
+
+     @FXML
+    public void goTobadgesHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent badgesRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BadgesAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(badgesRoot, 1000, 600));
     }
 }

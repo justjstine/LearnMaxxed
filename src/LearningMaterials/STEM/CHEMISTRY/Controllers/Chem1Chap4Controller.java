@@ -5,12 +5,15 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+import Data.Session;
+import Data.Students;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
@@ -37,7 +40,16 @@ public class Chem1Chap4Controller {
     private JFXComboBox<String> subjectComboBox;
 
     @FXML
+    private Label usernameSidePanel;
+
+    @FXML
     public void initialize() {
+        Students student = Session.getLoggedInStudent();
+        if (student != null) {
+            usernameSidePanel.setText(student.getFirstName());
+        } else {
+            usernameSidePanel.setText("");
+        }
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
         subjectComboBox.getItems().addAll("Chemistry", "Physics", "Biology", "Pre Calculus", "Basic Calculus");
@@ -179,6 +191,7 @@ public class Chem1Chap4Controller {
 
         Stage popupStage = new Stage();
         popupStage.setTitle("Congratulations!");
+        popupStage.initStyle(javafx.stage.StageStyle.UNDECORATED);
         popupStage.setScene(new Scene(root, 555, 333));
         popupStage.initOwner(((JFXButton) event.getSource()).getScene().getWindow());
         popupStage.initModality(javafx.stage.Modality.WINDOW_MODAL);

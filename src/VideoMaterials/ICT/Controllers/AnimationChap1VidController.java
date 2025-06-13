@@ -67,4 +67,8 @@ public class AnimationChap1VidController implements Initializable {
         }
     }
 
+     public MediaPlayer getMediaPlayer() {
+    return mediaPlayer;
+}
+
 }

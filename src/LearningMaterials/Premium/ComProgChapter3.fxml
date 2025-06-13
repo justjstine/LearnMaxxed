@@ -193,12 +193,12 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="premComProg1Button" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#premcomprogIntroButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 1" textFill="WHITE">
+      <Button fx:id="premComProg1Button" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#premcomprog1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 1" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="premComProg2Button" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#premcomprog1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 2" textFill="WHITE">
+      <Button fx:id="premComProg2Button" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#premcomprog2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Chemistry 2" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
@@ -208,5 +208,10 @@
             <Font size="1.0" />
          </font>
       </Button>
+      <Label fx:id="usernameSidePanel" layoutX="49.0" layoutY="101.0" prefHeight="42.0" prefWidth="230.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import com.jfoenix.controls.JFXButton;
 import Database.DatabaseHandler;
-import Utils.StageManager;
 import Data.Session;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,6 +14,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
+import javafx.scene.Node;
 
 public class PremiumToFreeController {
 
@@ -34,7 +34,7 @@ public class PremiumToFreeController {
     }
 
     @FXML
-    void changetoFreeButtonHandler(ActionEvent event) {
+void changetoFreeButtonHandler(ActionEvent event) {
     String selectedPlan = subscriptionCombo.getValue();
 
     if (!"Free".equalsIgnoreCase(selectedPlan)) {
@@ -47,48 +47,45 @@ public class PremiumToFreeController {
     boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Free");
 
     if (success) {
-        // Clear session
         Session.clearSession();
 
-        // Inform user
         Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Subscription Downgraded");
+        alert.setTitle("Subscription Cancellation");
         alert.setHeaderText(null);
-        alert.setContentText("Your subscription has been changed to Free. You will be redirected to the login page.");
+        alert.setContentText("Your subscription has been changed to Free. Please Re-login.");
         alert.showAndWait();
 
-        // Redirect to login page
-        redirectToLogin(event);
-
+        redirectToLogin(); // ✅ use redirect instead of exit
     } else {
         showAlert(AlertType.ERROR, "Downgrade failed. Please try again.");
     }
 }
 
-@FXML
-private void redirectToLogin(ActionEvent event) {
+private void redirectToLogin() {
     try {
-        // Close all currently open stages safely
-        StageManager.closeAllStages();
-
-        // Load the login FXML
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login/FXML/LoginPage.fxml"));
         Parent root = loader.load();
 
-        // Create a new stage for the login page
+       
+        for (Stage stage : Utils.StageHelper.getStages()) {
+            stage.close();
+        }
+
+       
         Stage loginStage = new Stage();
-        loginStage.setTitle("Login");
         loginStage.setScene(new Scene(root, 1000, 600));
+        loginStage.setTitle("Login");
         loginStage.show();
-
-        // Register the new stage so it's tracked
-        StageManager.register(loginStage);
-
     } catch (IOException e) {
         e.printStackTrace();
-        showAlert(Alert.AlertType.ERROR, "Could not load login page. Please restart the application.");
+        showAlert(AlertType.ERROR, "Failed to load login page.");
     }
 }
+
+ @FXML
+    private void handleCancelButton() {
+        ((Stage) cancelButton.getScene().getWindow()).close();
+    }
 
     private void showAlert(AlertType type, String message) {
         Alert alert = new Alert(type);
