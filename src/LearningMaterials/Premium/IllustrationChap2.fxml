@@ -353,10 +353,15 @@
             <Font size="1.0" />
          </font>
       </Button>
-      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premillustration3uttonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premillustration3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
          <font>
             <Font size="1.0" />
          </font>
       </Button>
+      <Label fx:id="usernameSidePanel" layoutX="49.0" layoutY="101.0" prefHeight="42.0" prefWidth="230.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

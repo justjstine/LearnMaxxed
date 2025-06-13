@@ -42,6 +42,16 @@ public class StudentsCreateController implements Initializable {
         loadPaymentMethods();
         loadStrands();
         loadPlanTypes();
+
+        // Add this block to handle enabling/disabling paymentCombo
+        subscriptionCombo.valueProperty().addListener((obs, oldVal, newVal) -> {
+            if ("Free".equalsIgnoreCase(newVal)) {
+                paymentCombo.setDisable(true);
+                paymentCombo.getSelectionModel().clearSelection();
+            } else {
+                paymentCombo.setDisable(false);
+            }
+        });
     }
 
     private void loadPaymentMethods() {

@@ -208,6 +208,7 @@ public class PremiumDashController {
         Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/PremiumToFreePopup.fxml"));
         Stage popupStage = new Stage();
         popupStage.setTitle("Back To Free Version?");
+        popupStage.initStyle(javafx.stage.StageStyle.UNDECORATED);
         popupStage.setScene(new Scene(root));
         popupStage.initOwner(changetoFreeButton.getScene().getWindow());
         popupStage.showAndWait();

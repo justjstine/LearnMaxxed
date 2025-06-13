@@ -5,6 +5,9 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+import Data.Session;
+import Data.Students;
+import VideoMaterials.ICT.Controllers.IllustrationChap2VidController;
 import VideoMaterials.STEM.Controllers.BasicCalChap2VidController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -13,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
@@ -48,8 +52,17 @@ public class IllustrationChap2Controller {
     @FXML
     private JFXComboBox<String> subjectComboBox;
 
-     @FXML
+    @FXML
+    private Label usernameSidePanel;
+
+    @FXML
     public void initialize() {
+        Students student = Session.getLoggedInStudent();
+        if (student != null) {
+            usernameSidePanel.setText(student.getFirstName());
+        } else {
+            usernameSidePanel.setText("");
+        }
         Platform.runLater(() -> scrollPane.setVvalue(0));
         subjectComboBox.getItems().clear();
         subjectComboBox.getItems().addAll("Computer Programming", "Computer Systems", "Animation", "Web Development", "Illustration");
@@ -208,7 +221,7 @@ public void nextButtonHandler(ActionEvent event) {
         // Get the controller to access the mediaPlayer
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/VideoMaterials/ICT/FXML/IllustrationChap2Vid.fxml"));
         Parent root = loader.load();
-        BasicCalChap2VidController controller = loader.getController();
+        IllustrationChap2VidController controller = loader.getController();
 
         vidStage.setScene(new Scene(root, 1280, 800));
         vidStage.setOnCloseRequest(e -> {

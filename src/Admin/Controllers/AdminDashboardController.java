@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 public class AdminDashboardController {
     
     @FXML
-    private Button addadminbutton, adminbutton;
+    private Button addadminbutton, adminbutton, badgebutton;
 
     @FXML
     private Button addstudentbutton;
@@ -69,5 +69,12 @@ public class AdminDashboardController {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void goTobadgesHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent badgesRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BadgesAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(badgesRoot, 1000, 600));
     }
 }

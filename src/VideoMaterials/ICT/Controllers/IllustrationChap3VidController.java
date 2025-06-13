@@ -66,4 +66,8 @@ public class IllustrationChap3VidController implements Initializable {
         }
     }
 
+    public MediaPlayer getMediaPlayer() {
+    return mediaPlayer;
+}
+
 }

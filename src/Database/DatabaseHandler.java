@@ -230,6 +230,78 @@ public class DatabaseHandler {
     return false;
 
 }
+
+
+    /////////////////////////////////Badges Admin (Adding, Deleting, Getting) ///////////////////////////////
+    
+    public static boolean awardBadgeToUser(int userID, int badgeID) {
+    String sql = "INSERT INTO UserBadge (UserID, BadgeID) VALUES (?, ?)";
+    try (PreparedStatement stmt = getDBConnection().prepareStatement(sql)) {
+        stmt.setInt(1, userID);
+        stmt.setInt(2, badgeID);
+        stmt.executeUpdate();
+        return true;
+    } catch (SQLException e) {
+        e.printStackTrace();
+        return false;
+    }
+}
+
+public static ResultSet getAllBadges() {
+    String query = "SELECT BadgeID, BadgeName FROM Badge";
+    try {
+        return handler.execQuery(query);
+    } catch (Exception e) {
+        e.printStackTrace();
+        return null;
+    }
+}
+
+    public static ResultSet getBadges() {
+    ResultSet result = null;
+    String query = """
+    SELECT 
+        ub.UserBadgeID,
+        u.UserID,
+        u.FirstName,
+        u.LastName,
+        u.EmailAddress,
+        u.Username,
+        s.StrandName,
+        sub.PlanType,
+        b.BadgeID,
+        b.BadgeName,
+        ub.AwardedAt AS DateAwarded
+    FROM UserBadge ub
+    JOIN User u ON ub.UserID = u.UserID
+    JOIN Badge b ON ub.BadgeID = b.BadgeID
+    LEFT JOIN Strand s ON u.StrandID = s.StrandID
+    LEFT JOIN Subscription sub ON u.SubscriptionID = sub.SubscriptionID
+""";
+
+
+    try {
+        result = handler.execQuery(query); // Make sure handler is initialized
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+
+    return result;
+}
+
+    public static boolean deleteBadgeFromUser(int userBadgeID) {
+        String sql = "DELETE FROM UserBadge WHERE UserBadgeID = ?";
+        try (Connection conn = getDBConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, userBadgeID);
+            return stmt.executeUpdate() > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+
     ////////////////////////// Badges (Has Badge) ///////////////////////////////
     public static boolean hasBadge(int userID, String badgeName) {
         String sql = """

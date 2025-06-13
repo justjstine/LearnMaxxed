@@ -203,6 +203,6 @@
             <Image url="@../../../Resources/Icons/dollar-sign.png" />
          </image>
       </ImageView>
-      <Button fx:id="userdashboardbutton" layoutX="13.0" layoutY="106.0" mnemonicParsing="false" onAction="#userdashboardButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="28.0" />
+      <Button fx:id="userdashboardbutton" layoutX="13.0" layoutY="106.0" mnemonicParsing="false" onAction="#userDashboardButtonHandler" opacity="0.0" prefHeight="25.0" prefWidth="28.0" />
    </children>
 </AnchorPane>

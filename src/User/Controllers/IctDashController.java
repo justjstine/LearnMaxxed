@@ -207,23 +207,18 @@ public class IctDashController {
 
     @FXML 
     public void userDashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        try {
-            Parent user = FXMLLoader.load(getClass().getResource("/User/FXML/UserDashboard.fxml"));
-            Stage newStage = new Stage();
-            newStage.setTitle("User Dashboard");
-            newStage.setScene(new Scene(user, 1000, 600));
-            newStage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        Parent userDashboardRoot = FXMLLoader.load(getClass().getResource("/User/FXML/UserDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(userDashboardRoot, 1000, 600));
     }
 
     @FXML
     public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) { 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctFreeUserToPrem.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctToPremiumPopup.fxml"));
             Stage popupStage = new Stage();
             popupStage.setTitle("Upgrade to Premium");
+            popupStage.initStyle(javafx.stage.StageStyle.UNDECORATED);
             popupStage.setScene(new Scene(root));
             popupStage.initOwner(changetoPremiumButton.getScene().getWindow());
             popupStage.showAndWait();

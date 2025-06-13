@@ -86,6 +86,15 @@ public class UserSettingsController {
                 alert.showAndWait();
                 return;
             }
+            // Check if email is already taken
+            if (DatabaseHandler.isEmailTaken(newEmail)) {
+                javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.ERROR);
+                alert.setTitle("Email In Use");
+                alert.setHeaderText(null);
+                alert.setContentText("This email is already registered to another user.");
+                alert.showAndWait();
+                return;
+            }
             boolean success = DatabaseHandler.changeEmail(student.getUsername(), newEmail);
             if (success) {
                 javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.INFORMATION);

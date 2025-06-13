@@ -76,7 +76,7 @@ public class BillingsAdminController implements Initializable {
     private ComboBox<String> strandfilterCombo;
 
     @FXML
-    private Button adminstudentbutton, adminbutton;
+    private Button adminstudentbutton, adminbutton, badgebutton;
 
     @FXML
     private Button logoutButton, dashboardButton;
@@ -301,5 +301,12 @@ public class BillingsAdminController implements Initializable {
     stage.setScene(new Scene(adminRoot, 1000, 600));
     }
 
-    
+    @FXML
+    public void goTobadgesHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent badgesRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/Admin/FXML/BadgesAdmin.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(badgesRoot, 1000, 600));
+    }
 }
+
+    

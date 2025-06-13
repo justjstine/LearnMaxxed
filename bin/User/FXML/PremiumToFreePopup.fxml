@@ -25,7 +25,7 @@
             <Image url="@../../../Resources/Icons/Logo.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="162.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rollback to the Free Version?">
+      <Text fill="WHITE" layoutX="162.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rollback to the Free Version?">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>
@@ -35,18 +35,18 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="399.0" layoutY="267.0" opacity="0.54" prefHeight="38.0" prefWidth="86.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Cancel" textFill="#5ae8d2">
+      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="399.0" layoutY="267.0" onAction="#handleCancelButton" opacity="0.54" prefHeight="38.0" prefWidth="86.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Cancel" textFill="#5ae8d2">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
       </JFXButton>
-      <ComboBox fx:id="subscriptionCombo" layoutX="213.0" layoutY="186.0" prefHeight="25.0" prefWidth="128.0" promptText="Plan Type" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
-      <Text fill="WHITE" layoutX="87.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are currently on a Premium Subscription Mode">
+      <ComboBox fx:id="subscriptionCombo" layoutX="214.0" layoutY="200.0" prefHeight="25.0" prefWidth="128.0" promptText="Plan Type" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="56.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are currently on a Premium Subscription Mode">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="119.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="you can access both ICT and Stem Subjects">
+      <Text fill="WHITE" layoutX="87.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="you can access both ICT and Stem Subjects">
          <font>
             <Font name="Century Gothic Bold" size="18.0" />
          </font>

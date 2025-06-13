@@ -21,6 +21,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 import javafx.application.Platform;
+import javafx.scene.Node;
 
 public class StemFreeUserToPremController implements Initializable {
 
@@ -57,48 +58,49 @@ public class StemFreeUserToPremController implements Initializable {
 
     @FXML
     private void changetoPremiumButtonHandler(ActionEvent event) {
-    String selectedPlan = subscriptionCombo.getValue();
-    String selectedPayment = paymentCombo.getValue();
+        String selectedPlan = subscriptionCombo.getValue();
+        String selectedPayment = paymentCombo.getValue();
 
-    if (!"Subscribed".equalsIgnoreCase(selectedPlan)) {
-        showAlert(AlertType.ERROR, "Only the 'Subscribed' plan is available.");
-        return;
+        if (!"Subscribed".equalsIgnoreCase(selectedPlan)) {
+            showAlert(AlertType.ERROR, "Only the 'Subscribed' plan is available.");
+            return;
+        }
+
+        if (selectedPayment == null || selectedPayment.isEmpty()) {
+            showAlert(AlertType.WARNING, "Please select a payment method.");
+            return;
+        }
+
+        int userId = Session.getLoggedInStudent().getUserID();
+        boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed");
+
+        if (success) {
+            Session.clearSession();
+
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("Subscription Updated");
+            alert.setHeaderText(null);
+            alert.setContentText("Your account has been upgraded. The window will now close.");
+            alert.showAndWait();
+
+            // Close only the current window
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.close();
+
+        } else {
+            showAlert(AlertType.ERROR, "Upgrade failed. Please try again.");
+        }
     }
 
-    if (selectedPayment == null || selectedPayment.isEmpty()) {
-        showAlert(AlertType.WARNING, "Please select a payment method.");
-        return;
-    }
-
-    int userId = Session.getLoggedInStudent().getUserID();
-    boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed");
-
-    if (success) {
-        Session.clearSession();
-
-        Alert alert = new Alert(AlertType.INFORMATION);
-        alert.setTitle("Subscription Updated");
+    private void showAlert(AlertType type, String message) {
+        Alert alert = new Alert(type);
+        alert.setTitle(type.name());
         alert.setHeaderText(null);
-        alert.setContentText("Your account has been upgraded. The application will now close.");
+        alert.setContentText(message);
         alert.showAndWait();
-
-    
-        System.exit(0);
-
-    } else {
-        showAlert(AlertType.ERROR, "Upgrade failed. Please try again.");
     }
-}
 
-private void showAlert(AlertType type, String message) {
-    Alert alert = new Alert(type);
-    alert.setTitle(type.name());
-    alert.setHeaderText(null);
-    alert.setContentText(message);
-    alert.showAndWait();
-}
-
- @FXML
+    @FXML
     private void handleCancelButton() {
         ((Stage) cancelButton.getScene().getWindow()).close();
     }
