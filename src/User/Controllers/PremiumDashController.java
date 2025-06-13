@@ -34,6 +34,9 @@ public class PremiumDashController {
     @FXML
     private Button logoutButton;
 
+     @FXML
+    private Button cancelButton;
+
     @FXML
     private JFXComboBox<String> ictSubjectComboBox;
 
@@ -212,4 +215,17 @@ public class PremiumDashController {
         e.printStackTrace();
     }
 }
+
+@FXML
+    public void userdashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent userDashboardRoot = FXMLLoader.load(getClass().getResource("/User/FXML/UserDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(userDashboardRoot, 1000, 600));
+    }
+    
+@FXML
+    private void handleCancelButton() {
+        ((Stage) cancelButton.getScene().getWindow()).close();
+    }
 }
+

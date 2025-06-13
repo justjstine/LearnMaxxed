@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+import VideoMaterials.STEM.Controllers.BasicCalChap2VidController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -189,15 +190,27 @@ public void nextButtonHandler(ActionEvent event) {
         stage.setScene(new Scene(animation3Root, 1000, 600));
     }
 
-
-@FXML
+    @FXML
     public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent vidRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/ICT/FXML/AnimationChap1Vid.fxml"));
+        Parent vidRoot = FXMLLoader.load(getClass().getResource("/VideoMaterials/ICT/FXML/AnimationChap1Vid.fxml"));
         Stage vidStage = new Stage();
         vidStage.setTitle("Animation Chapter 1 Video");
         vidStage.setScene(new Scene(vidRoot, 1280, 800));
+        vidStage.setResizable(false);
+
+        // Get the controller to access the mediaPlayer
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/VideoMaterials/ICT/FXML/AnimationChap1Vid.fxml"));
+        Parent root = loader.load();
+        BasicCalChap2VidController controller = loader.getController();
+
+        vidStage.setScene(new Scene(root, 1280, 800));
+        vidStage.setOnCloseRequest(e -> {
+            if (controller != null && controller.getMediaPlayer() != null) {
+                controller.getMediaPlayer().stop();
+            }
+        });
+
         vidStage.show();
-        
     }
 
 }

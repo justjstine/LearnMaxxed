@@ -44,7 +44,7 @@ public class StemDashController {
     private Button logoutButton;
 
      @FXML
-    private Button changetoPremiumButton;
+    private Button changetoPremiumButton, userdashboardbutton;
 
     
 
@@ -139,9 +139,9 @@ public class StemDashController {
     }
 
     @FXML
-public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
+    public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
     try {
-        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/StemToPremiumPopup1.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctToPremiumPopup.fxml"));
         Stage popupStage = new Stage();
         popupStage.setTitle("Upgrade to Premium");
         popupStage.setScene(new Scene(root));
@@ -151,4 +151,11 @@ public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) {
         e.printStackTrace();
     }
 }
+    @FXML
+    public void userdashboardButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        Parent userDashboardRoot = FXMLLoader.load(getClass().getResource("/User/FXML/UserDashboard.fxml"));
+        Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(userDashboardRoot, 1000, 600));
 }
+}
+

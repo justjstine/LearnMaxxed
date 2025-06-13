@@ -105,23 +105,23 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <JFXComboBox fx:id="subjectComboBox" disable="true" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
       <Text fill="WHITE" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
          <font>
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 1">
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation 1">
          <font>
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 2">
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation 2">
          <font>
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 3">
+      <Text fill="#817a7a" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation 3">
          <font>
             <Font name="Century Gothic" size="16.0" />
          </font>

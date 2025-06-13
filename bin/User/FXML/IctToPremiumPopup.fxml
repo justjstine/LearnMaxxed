@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controllers.IctFreeUserToPremController">
+   <children>
+      <ImageView fitHeight="352.0" fitWidth="555.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Popup%20BG.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="358.0" fitWidth="555.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Border.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="104.0" layoutX="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="165.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try our Premium Subscription!">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="updateSubscriptionButton" buttonType="RAISED" layoutX="176.0" layoutY="270.0" onAction="#changetoPremiumButtonHandler" prefHeight="32.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Become Premium User!" textFill="#42736c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="cancelButton" buttonType="RAISED" layoutX="399.0" layoutY="267.0" opacity="0.54" prefHeight="38.0" prefWidth="86.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Cancel" textFill="#5ae8d2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ComboBox fx:id="paymentCombo" layoutX="82.0" layoutY="158.0" prefHeight="25.0" prefWidth="226.0" promptText="Payment Method" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
+      <ComboBox fx:id="subscriptionCombo" layoutX="335.0" layoutY="158.0" prefHeight="25.0" prefWidth="128.0" promptText="Plan Type" style="-fx-background-color: white; -fx-font-weight: bold; -fx-background-radius: 10;" />
+      <Text fill="WHITE" layoutX="100.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are Currently on a Free Subscription Mode">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
@@ -26,10 +27,13 @@ public class BasicCalChap3Controller {
     private ScrollPane scrollPane;
 
     @FXML
-    private JFXButton nextButton;
+    private JFXButton finishButton;
 
     @FXML
     private JFXComboBox<String> subjectComboBox;
+
+    @FXML
+    private Label usernameSidePanel;
 
     @FXML
     public void initialize() {
@@ -71,6 +75,32 @@ public class BasicCalChap3Controller {
                 stage.setScene(new Scene(biologyRoot, 1000, 600));
             }else if ("Basic Calculus".equals(selected)) {
                 Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Basiccal/FXML/BasicCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    public void premhandleSubjectSelection() {
+        String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        try {
+            if ("Chemistry".equals(selected)) {
+                Parent chemistryRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter1.fxml"));
+                stage.setScene(new Scene(chemistryRoot, 1000, 600));
+            } else if ("Physics".equals(selected)) {
+                Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsIntro.fxml"));
+                stage.setScene(new Scene(physicsRoot, 1000, 600));
+            } else if ("Biology".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Pre Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Basic Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalIntro.fxml"));
                 stage.setScene(new Scene(biologyRoot, 1000, 600));
             }
         } catch (Exception e) {
@@ -164,6 +194,41 @@ public class BasicCalChap3Controller {
 
         vidStage4.show();
     }
+
+    @FXML
+    private void finishButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        boolean badgeAdded = false;
+        boolean alreadyHasBadge = false;
+        if (Data.Session.getLoggedInStudent() != null) {
+            int userID = Data.Session.getLoggedInStudent().getUserID();
+            badgeAdded = Database.DatabaseHandler.addBadgeIfAllowed(userID, "Basic Calculus");
+            // Check if the user already has the badge
+            if (!badgeAdded && Database.DatabaseHandler.hasBadge(userID, "Basic Calculus")) {
+                alreadyHasBadge = true;
+            }
+        }
+
+        String fxmlPath;
+        if (badgeAdded) {
+            fxmlPath = "/User/FXML/Congratulations.fxml";
+        } else if (alreadyHasBadge) {
+            fxmlPath = "/User/FXML/AlreadyHasBadge.fxml"; // Create this FXML for a custom message
+        } else {
+            fxmlPath = "/User/FXML/CongratulationsNoBadge.fxml";
+        }
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
+        Parent root = loader.load();
+
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Congratulations!");
+        popupStage.setScene(new Scene(root, 555, 333));
+        popupStage.initOwner(((JFXButton) event.getSource()).getScene().getWindow());
+        popupStage.initModality(javafx.stage.Modality.WINDOW_MODAL);
+        popupStage.setResizable(false);
+        popupStage.showAndWait();
+    }
+
 
     public void scrollToTop() {
         if (scrollPane != null) {

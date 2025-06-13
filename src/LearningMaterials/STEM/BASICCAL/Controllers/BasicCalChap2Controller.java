@@ -85,6 +85,32 @@ public class BasicCalChap2Controller {
     }
 
     @FXML
+    public void premhandleSubjectSelection() {
+        String selected = subjectComboBox.getSelectionModel().getSelectedItem();
+        Stage stage = (Stage) logoutButton.getScene().getWindow();
+        try {
+            if ("Chemistry".equals(selected)) {
+                Parent chemistryRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/ChemChapter1.fxml"));
+                stage.setScene(new Scene(chemistryRoot, 1000, 600));
+            } else if ("Physics".equals(selected)) {
+                Parent physicsRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PhysicsIntro.fxml"));
+                stage.setScene(new Scene(physicsRoot, 1000, 600));
+            } else if ("Biology".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BioIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Pre Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }else if ("Basic Calculus".equals(selected)) {
+                Parent biologyRoot = FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/BasicCalIntro.fxml"));
+                stage.setScene(new Scene(biologyRoot, 1000, 600));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
     public void BasicCalIntroButtonHandler(javafx.event.ActionEvent event) throws IOException {
         Parent BasicCalIntroRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/STEM/Basiccal/FXML/BasicCalIntro.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();

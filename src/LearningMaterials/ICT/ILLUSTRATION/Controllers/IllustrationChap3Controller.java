@@ -5,6 +5,7 @@ import java.io.IOException;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 
+import VideoMaterials.STEM.Controllers.BasicCalChap2VidController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -185,14 +186,63 @@ public void nextButtonHandler(ActionEvent event) {
         stage.setScene(new Scene(illustration3Root, 1000, 600));
     }
 
-@FXML
+    @FXML
     public void playVidHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent vidRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/VideoMaterials/ICT/FXML/IllustrationChap3Vid.fxml"));
+        Parent vidRoot = FXMLLoader.load(getClass().getResource("/VideoMaterials/ICT/FXML/IllustrationChap3Vid.fxml"));
         Stage vidStage = new Stage();
-        vidStage.setTitle("Illustration Chapter 3 Video");
+        vidStage.setTitle("Ilustration Chapter 3 Video");
         vidStage.setScene(new Scene(vidRoot, 1280, 800));
+        vidStage.setResizable(false);
+
+        // Get the controller to access the mediaPlayer
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/VideoMaterials/ICT/FXML/IllustrationChap3Vid.fxml"));
+        Parent root = loader.load();
+        BasicCalChap2VidController controller = loader.getController();
+
+        vidStage.setScene(new Scene(root, 1280, 800));
+        vidStage.setOnCloseRequest(e -> {
+            if (controller != null && controller.getMediaPlayer() != null) {
+                controller.getMediaPlayer().stop();
+            }
+        });
+
         vidStage.show();
-        
+    }
+
+    
+
+    @FXML
+    private void finishButtonHandler(javafx.event.ActionEvent event) throws IOException {
+        boolean badgeAdded = false;
+        boolean alreadyHasBadge = false;
+        if (Data.Session.getLoggedInStudent() != null) {
+            int userID = Data.Session.getLoggedInStudent().getUserID();
+            badgeAdded = Database.DatabaseHandler.addBadgeIfAllowed(userID, "Illustration");
+            // Check if the user already has the badge
+            if (!badgeAdded && Database.DatabaseHandler.hasBadge(userID, "Illustration")) {
+                alreadyHasBadge = true;
+            }
+        }
+
+        String fxmlPath;
+        if (badgeAdded) {
+            fxmlPath = "/User/FXML/Congratulations.fxml";
+        } else if (alreadyHasBadge) {
+            fxmlPath = "/User/FXML/AlreadyHasBadge.fxml"; // Create this FXML for a custom message
+        } else {
+            fxmlPath = "/User/FXML/CongratulationsNoBadge.fxml";
+        }
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
+        Parent root = loader.load();
+
+        Stage popupStage = new Stage();
+        popupStage.setTitle("Congratulations!");
+        popupStage.setScene(new Scene(root, 555, 333));
+        popupStage.initOwner(((JFXButton) event.getSource()).getScene().getWindow());
+        popupStage.initModality(javafx.stage.Modality.WINDOW_MODAL);
+        popupStage.setResizable(false);
+        popupStage.showAndWait();
     }
 
 }
