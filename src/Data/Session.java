@@ -14,4 +14,9 @@ public class Session {
     public static void clearSession() {
         loggedInStudent = null;
     }
+    
+    public static String getLoggedInUsername() {
+        Students student = getLoggedInStudent();
+        return student != null ? student.getUsername() : null;
+    }
 }

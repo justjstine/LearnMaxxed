@@ -1,12 +1,15 @@
 package User.Controllers;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
 
+import Utils.StageManager;
 import Database.DatabaseHandler;
+import javafx.scene.Node;
 import Data.Session;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -55,48 +58,74 @@ public class IctFreeUserToPremController implements Initializable {
         subscriptionCombo.getSelectionModel().selectFirst(); 
     }
 
-    @FXML
+@FXML
 private void changetoPremiumButtonHandler(ActionEvent event) {
     String selectedPlan = subscriptionCombo.getValue();
     String selectedPayment = paymentCombo.getValue();
 
     if (!"Subscribed".equalsIgnoreCase(selectedPlan)) {
-        showAlert(AlertType.ERROR, "Only the 'Subscribed' plan is available.");
+        showAlert(Alert.AlertType.ERROR, "Only the 'Subscribed' plan is available.");
         return;
     }
 
-    if (selectedPayment == null || selectedPayment.isEmpty()) {
-        showAlert(AlertType.WARNING, "Please select a payment method.");
+    if (selectedPayment == null || selectedPayment.trim().isEmpty()) {
+        showAlert(Alert.AlertType.WARNING, "Please select a payment method.");
         return;
     }
 
     int userId = Session.getLoggedInStudent().getUserID();
-    boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed");
+    boolean success = DatabaseHandler.updateUserSubscriptionStatus(userId, "Subscribed", selectedPayment);
 
     if (success) {
         Session.clearSession();
 
-        Alert alert = new Alert(AlertType.INFORMATION);
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Subscription Updated");
         alert.setHeaderText(null);
-        alert.setContentText("Your account has been upgraded. Please Re-login.");
+        alert.setContentText("Your account has been upgraded. Please re-login.");
         alert.showAndWait();
 
-        // ✅ Immediately terminate the application without crashing
-        System.exit(0);
-
+        redirectToLogin(event); // ✅ use the event to close the current window
     } else {
-        showAlert(AlertType.ERROR, "Upgrade failed. Please try again.");
+        showAlert(Alert.AlertType.ERROR, "Upgrade failed. Please try again.");
     }
 }
 
-private void showAlert(AlertType type, String message) {
+    @FXML
+private void redirectToLogin(ActionEvent event) {
+    try {
+        // Close all currently open stages safely
+        StageManager.closeAllStages();
+
+        // Load the login FXML
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Login/FXML/LoginPage.fxml"));
+        Parent root = loader.load();
+
+        // Create a new stage for the login page
+        Stage loginStage = new Stage();
+        loginStage.setTitle("Login");
+        loginStage.setScene(new Scene(root, 1000, 600));
+        loginStage.show();
+
+        // Register the new stage so it's tracked
+        StageManager.register(loginStage);
+
+    } catch (IOException e) {
+        e.printStackTrace();
+        showAlert(Alert.AlertType.ERROR, "Could not load login page. Please restart the application.");
+    }
+}
+
+private void showAlert(Alert.AlertType type, String message) {
     Alert alert = new Alert(type);
     alert.setTitle(type.name());
     alert.setHeaderText(null);
     alert.setContentText(message);
     alert.showAndWait();
 }
-
+@FXML
+    private void handleCancelButton() {
+        ((Stage) cancelButton.getScene().getWindow()).close();
+    }
 
 }

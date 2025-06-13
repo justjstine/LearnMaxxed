@@ -41,7 +41,7 @@
                         <Font name="Segoe UI Semibold" size="34.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="572.0" layoutY="970.0" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="572.0" layoutY="970.0" onAction="#finishButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Finish" textFill="#42736c">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -120,7 +120,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <JFXComboBox fx:id="subjectComboBox" disable="true" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
       <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
          <font>
             <Font name="Century Gothic" size="16.0" />

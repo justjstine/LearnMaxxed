@@ -186,7 +186,7 @@
             <Font name="Century Gothic" size="16.0" />
          </font>
       </Text>
-      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <JFXComboBox fx:id="subjectComboBox" disable="true" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
       <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
          <font>
             <Font name="Century Gothic" size="16.0" />

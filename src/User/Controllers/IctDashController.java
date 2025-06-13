@@ -221,7 +221,7 @@ public class IctDashController {
     @FXML
     public void changetoPremiumButtonHandler(javafx.event.ActionEvent event) { 
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctToPremiumPopup.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/User/FXML/IctFreeUserToPrem.fxml"));
             Stage popupStage = new Stage();
             popupStage.setTitle("Upgrade to Premium");
             popupStage.setScene(new Scene(root));
@@ -232,4 +232,3 @@ public class IctDashController {
         }
     }
 }
-

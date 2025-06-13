@@ -146,6 +146,8 @@ public class Chem1Chap3Controller {
         stage.setScene(new Scene(nextRoot, 1000, 600));
     }
 
+    
+
     public void scrollToTop() {
         if (scrollPane != null) {
         scrollPane.setVvalue(0);
