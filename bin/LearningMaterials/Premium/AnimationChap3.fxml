@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LearningMaterials.ICT.ANIMATION.Controllers.AnimationChap3Controller">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#002c36" height="600.0" stroke="#002c36" strokeType="INSIDE" width="180.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="30.0" layoutX="15.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 10; -fx-arc-height: 15;" width="163.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="27.0" layoutY="181.0">
+         <image>
+            <Image url="@../../../Resources/Icons/inbox.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="55.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+        <ScrollPane fx:id="scrollPane" fitToHeight="false" fitToWidth="true" hbarPolicy="NEVER" layoutX="180.8" prefHeight="600.0" prefWidth="819.0" vbarPolicy="NEVER" vvalue="1.0">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="2200.0" prefWidth="804.0">
+               <children>
+                  <Label layoutX="30.0" layoutY="25.0" prefHeight="61.0" prefWidth="686.0" text="Animation">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="51.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="42.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.1 Introduction" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <JFXButton fx:id="premnextButton" buttonType="RAISED" layoutX="595.0" layoutY="2103.0" onAction="#premnextButtonHandler" prefHeight="38.0" prefWidth="202.0" style="-fx-text-fill: white; -fx-background-radius: 25; -fx-background-color: #42736c;" text="Go Next" textFill="#42736c">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text layoutX="55.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In today’s digital world, animation relies heavily on powerful software tools and efficient workflows. Whether you're working on 2D or 3D animation, understanding how to navigate animation programs and follow a step-by-step production pipeline is essential. In this chapter, students will explore the most commonly used animation tools and learn how professionals plan, execute, and finalize animated content from concept to completion." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation software provides the digital workspace where artists draw, move, and refine their creations. Programs like Adobe Animate, Toon Boom Harmony, Pencil2D, and Blender are widely used in both education and professional studios. In the Philippines, many animation BPO companies train artists in these platforms because of their global relevance. For example, Blender (which is free and open-source) is increasingly popular among independent Filipino animators for its 3D capabilities, while Adobe Animate remains a strong choice for 2D character animation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="40.0" layoutY="109.0" prefHeight="53.0" prefWidth="771.0" text="Chapter 3: Animation Tools and Workflows">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="55.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation software provides the digital workspace where artists draw, move, and refine their creations. Programs like Adobe Animate, Toon Boom Harmony, Pencil2D, and Blender are widely used in both education and professional studios. In the Philippines, many animation BPO companies train artists in these platforms because of their global relevance. For example, Blender (which is free and open-source) is increasingly popular among independent Filipino animators for its 3D capabilities, while Adobe Animate remains a strong choice for 2D character animation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="42.0" layoutY="657.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.2 Common  Animation Tools" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="694.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation software provides the digital workspace where artists draw, move, and refine their creations. Programs like Adobe Animate, Toon Boom Harmony, Pencil2D, and Blender are widely used in both education and professional studios. In the Philippines, many animation BPO companies train artists in these platforms because of their global relevance. For example, Blender (which is free and open-source) is increasingly popular among independent Filipino animators for its 3D capabilities, while Adobe Animate remains a strong choice for 2D character animation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="839.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pencil 2D" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="875.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pencil2D is a free, open-source animation program designed for traditional hand-drawn 2D animation. It has a very simple and intuitive interface, making it perfect for beginners. Users can create animations using both bitmap and vector graphics. Pencil2D is especially useful for learners who want to practice frame-by-frame animation without the complexity of more advanced tools." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="986.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blender" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1029.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blender is a powerful open-source 3D animation suite that has gained significant popularity among Filipino artists and students. It covers the entire 3D pipeline, including modeling, rigging, animation, simulation, rendering, and compositing. Blender is completely free and supported by a large global community, making it an excellent choice for independent creators and those with limited resources. It is widely used in both educational settings and professional environments." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adobe Animate" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adobe Animate is one of the most widely used tools for creating 2D animations, especially for web and multimedia platforms. It offers a timeline-based interface and integrates seamlessly with other Adobe Creative Cloud applications like Photoshop and After Effects. Its vector-based environment allows users to create smooth, scalable animations, making it ideal for interactive content and educational media. In the Philippines, Adobe Animate is commonly used in ICT and animation courses due to its accessibility and industry relevance." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="40.0" layoutY="1361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.3 Traditional Animation Workflow" textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In a traditional workflow, many steps are done manually. Harmony is used for the digital portion. Familiarize yourself with this simplified version and then move to the next graphic explaining in more details how the various steps connect." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1483.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Animation Production Pipeline is the step-by-step process used to create an animated project, whether it's a short film, TV commercial, educational video, or animated series. This pipeline is followed by studios and freelancers alike to organize work, ensure quality, and manage time effectively. Understanding the pipeline is crucial for any aspiring animator, as it teaches collaboration, planning, and the creative flow behind every animation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1609.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The first stage is Pre-production, where all the planning takes place. This includes brainstorming ideas, writing the script, creating storyboards, designing characters, and setting the visual style. At this stage, the foundation of the animation is built. For example, if a student is working on an animation about Filipino folklore, they would design the characters (like a kapre or diwata) and create a storyboard showing the sequence of events." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1733.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next is the Production stage, where the animation itself is created. This includes background design, character rigging (for digital puppets), animating scenes, lip-syncing voiceovers, and timing movements based on the storyboard and audio. Students may use tools like Adobe Animate or Blender here to bring characters and environments to life. This stage involves the most hands-on work and requires both creativity and technical skill." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Once animation is complete, the project moves to the Post-production stage. Here, everything is polished—music and sound effects are added, visual effects are applied, scenes are edited, and the final output is rendered. For example, background music can be added to enhance emotion, or transitions can smoothen scene changes. This stage ensures the project is clean, professional, and ready for presentation." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="55.0" layoutY="1970.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Finally, the Distribution stage involves sharing the finished animation with an audience. This could mean uploading to platforms like YouTube, showcasing in school events, or presenting as part of a multimedia project. By learning the animation pipeline, students not only understand how professional studios work but also gain the skills to manage and complete their own animation projects from concept to final output." textAlignment="JUSTIFY" wrappingWidth="727.7760620117188">
+                     <font>
+                        <Font name="Segoe UI" size="16.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+            </content>
+        </ScrollPane>
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="32.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="13.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/Icons/1.png" />
+         </image>
+      </ImageView>
+      <Line endX="92.0" layoutX="79.0" layoutY="152.0" startX="-70.0" stroke="WHITE" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="28.0" layoutY="218.0">
+         <image>
+            <Image url="@../../../Resources/Icons/library_books.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="56.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ICT Subjects">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="subjectComboBox" focusColor="#f2f2f2" layoutX="15.0" layoutY="215.0" onAction="#handleSubjectSelection" prefHeight="26.0" prefWidth="167.0" />
+      <Text fill="#817a7a" layoutX="27.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intro">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 1">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#817a7a" layoutX="27.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 2">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animation Chapter 3">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004e54" height="36.0" layoutX="12.0" layoutY="535.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-arc-width: 20; -fx-arc-height: 100;" width="152.0" />
+      <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="39.0" layoutY="542.0">
+         <image>
+            <Image url="@../../../Resources/Icons/x.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="70.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font name="Century Gothic Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="logoutButton" layoutX="12.0" layoutY="539.0" mnemonicParsing="false" onAction="#logoutButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="premdashboardButton" layoutX="26.0" layoutY="178.0" mnemonicParsing="false" onAction="#premDashboardButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="Dashboard" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="premComSysButton1" layoutX="9.0" layoutY="275.0" mnemonicParsing="false" onAction="#premanimation1ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 1" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="premComSysButton2" layoutX="12.0" layoutY="300.0" mnemonicParsing="false" onAction="#premanimation2ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 2" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Button fx:id="premComSysButton3" layoutX="12.0" layoutY="325.0" mnemonicParsing="false" onAction="#premanimation3ButtonHandler" prefHeight="26.0" prefWidth="152.0" style="-fx-background-color: transparent;" text="ComSys 3" textFill="WHITE">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
