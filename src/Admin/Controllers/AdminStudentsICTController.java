@@ -64,6 +64,20 @@ public class AdminStudentsICTController implements Initializable {
         passwordColumn.setCellValueFactory(new PropertyValueFactory<>("password"));
         createdColumn.setCellValueFactory(new PropertyValueFactory<>("created"));
 
+                // Mask password column with asterisks
+        passwordColumn.setCellFactory(column -> new javafx.scene.control.TableCell<Students, String>() {
+            @Override
+            protected void updateItem(String password, boolean empty) {
+                super.updateItem(password, empty);
+                if (empty || password == null) {
+                    setText(null);
+                } else {
+                    setText("•".repeat(password.length())); // or use "*" if you prefer
+                }
+            }
+        });
+
+
         displayStudents();
     }
 

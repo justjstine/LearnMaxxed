@@ -133,7 +133,7 @@ public class pCalChap2Controller {
 
     @FXML
     public void premnextButtonHandler(javafx.event.ActionEvent event) throws IOException {
-        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalChap2.fxml"));
+        Parent nextRoot = javafx.fxml.FXMLLoader.load(getClass().getResource("/LearningMaterials/Premium/PCalChap3.fxml"));
         Stage stage = (Stage) ((Button) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(nextRoot, 1000, 600));
     }

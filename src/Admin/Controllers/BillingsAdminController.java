@@ -284,10 +284,13 @@ public class BillingsAdminController implements Initializable {
         ObservableList<Billings> filteredList = FXCollections.observableArrayList();
 
         for (Billings billing : billingList) {
-            if (billing.getFirstName().toLowerCase().contains(searchText) ||
-                billing.getLastName().toLowerCase().contains(searchText) ||
-                billing.getEmail().toLowerCase().contains(searchText)) {
-                filteredList.add(billing);
+            String subscriptionStatus = billing.getSubscriptionID() == 1 ? "subscribed" : "free";
+
+             if (billing.getFirstName().toLowerCase().contains(searchText) ||
+            billing.getLastName().toLowerCase().contains(searchText) ||
+            billing.getEmail().toLowerCase().contains(searchText) ||
+            subscriptionStatus.contains(searchText)) {
+            filteredList.add(billing);
             }
         }
 
